@@ -3,7 +3,10 @@ core.mongo*
 core.python*
 env.py
 __pycache__/
+__pycache__
 *.py[cod]
+*.sqlite3
+*.pyc
 node_modules/
 .github/
 cloudinary_python.txt
