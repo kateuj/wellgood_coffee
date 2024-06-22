@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=subscriptions" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Subscribe &amp; Save
             </a>
         </li>
@@ -13,17 +13,17 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-black mr-5" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=coffee_ground,coffee_beans" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop Coffees
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="coffee-link">
-                <a href="" class="dropdown-item">Best Sellers</a>
-                <a href="" class="dropdown-item">Filter Coffee</a>
-                <a href="" class="dropdown-item">Espresso Coffee</a>
-                <a href="" class="dropdown-item">Decaf Coffee</a>
-                <a href="" class="dropdown-item">Syrups</a>
-                <a href="" class="dropdown-item">Barista Milk</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All coffee</a>
+                <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
+                <a href="{% url 'products' %}?category=coffee_ground" class="dropdown-item">Filter Coffee</a>
+                <a href="{% url 'products' %}?category=coffee_beans" class="dropdown-item">Coffee Beans</a>
+                <a href="{% url 'products' %}?category=decaf" class="dropdown-item">Decaf Coffee</a>
+                <a href="{% url 'products' %}?category=syrup" class="dropdown-item">Syrups</a>
+                <a href="{% url 'products' %}?category=milk" class="dropdown-item">Barista Milk</a>
+                <a href="{% url 'products' %}?category=coffee_ground,coffee_beans" class="dropdown-item">All coffee</a>
             </div>
         </li>
 
@@ -32,16 +32,16 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">Brewing Equipment</a>
-                <a href="" class="dropdown-item">Grinders</a>
-                <a href="" class="dropdown-item">Filter Papers</a>
-                <a href="" class="dropdown-item">Espresso Machines</a>
-                <a href="" class="dropdown-item">Apparel</a>
-                <a href="" class="dropdown-item">Chemex</a>
-                <a href="" class="dropdown-item">V60</a>
-                <a href="" class="dropdown-item">Stove Top</a>
-                <a href="" class="dropdown-item">Aeropress</a>
+                <a href="{% url 'products' %}?category=equipment_sale" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=brewing_equipment" class="dropdown-item">Brewing Equipment</a>
+                <a href="{% url 'products' %}?category=grinders" class="dropdown-item">Grinders</a>
+                <a href="{% url 'products' %}?category=filter_paper" class="dropdown-item">Filter Papers</a>
+                <a href="{% url 'products' %}?category=coffee_machines" class="dropdown-item">Espresso Machines</a>
+                <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
+                <a href="{% url 'products' %}?category=chemex" class="dropdown-item">Chemex</a>
+                <a href="{% url 'products' %}?category=v60" class="dropdown-item">V60</a>
+                <a href="{% url 'products' %}?category=stove_top" class="dropdown-item">Stove Top</a>
+                <a href="{% url 'products' %}?category=aeropress" class="dropdown-item">Aeropress</a>
             </div>
         </li>
 
@@ -50,10 +50,10 @@
                 Gifts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
-                <a href="" class="dropdown-item">Gift Subscription</a>
-                <a href="" class="dropdown-item">Gifts Sale</a>
-                <a href="" class="dropdown-item">Bundles</a>
-                <a href="" class="dropdown-item">Starter Kits</a>
+                <a href="{% url 'products' %}?category=gift_subscriptions" class="dropdown-item">Gift Subscription</a>
+                <a href="{% url 'products' %}?category=sale" class="dropdown-item">Gifts Sale</a>
+                <a href="{% url 'products' %}?category=bundles" class="dropdown-item">Bundles</a>
+                <a href="{% url 'products' %}?category=starter_kits" class="dropdown-item">Starter Kits</a>
             </div>
         </li>
 
