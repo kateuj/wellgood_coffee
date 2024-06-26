@@ -3,11 +3,20 @@
 WellGood Coffee Roasters is an up-and-coming roastery that have approached me to create a website to showcase their brand and all they have to offer. It is their platform to sell their retail coffee, equipment as well as offer their customers a place to order coffee subscriptions.
 Their mission is to get a more wide-spread client base, offering delivery to all of the UK.
 They specialise in roasting limited edition retail bags of coffee, which works perfectly for their subscription customers who can choose their favourite coffee notes and get a new bag to try every subscription cycle.
-They want to inspire their customers to start their real coffee adventure, explore and find a new passion in doing so, just like they have.
+They want to inspire their customers to start their real coffee adventure, explore and find a new hobby in doing so, just like they have.
 
 I have created this as my fourth milestone project for the Code Institute's Level 5 Diploma in Web Application Development.
 
 [View the live project here.](#)
+
+## Table of Contents
+
+1. [User Experience (UX)](#user-experience-(UX))
+2. [Features](#features)
+3. [Deployment](#deployment)
+4. [Technologies Used](#technologies-used)
+5. [Code](#code)
+6. [Credits](#credits)
 
 <img src="#" alt="Screen mockup of WellGood Coffee">
 
@@ -288,26 +297,26 @@ I have created this as my fourth milestone project for the Code Institute's Leve
   </tbody>
 </table>
 
+### User Journey
+I created UX flow charts using FigJam to map out the user stories.
+
+![UX Flow key](media/readme-images/ux-flow-key.png)
+
+New visitor
+
+![UX Flow for new visitor](media/readme-images/new-user-ux-flow.png)
+
+Returning and frequent visitor
+
+![UX Flow for returning visitor](media/readme-images/returning-user-ux-flow.png)
 
 ### Design
 
 #### Colour Scheme
 The colour scheme was primarily crafted with a focus on aesthetics and accessibility. I decided to go with a simplistic and minimalist style choice, mostly using the Bootstrap colour pallette, this minimalist and understated approach I feel provided an excellent contrast against the vibrant colours of the food/product pictures, allowing the products themselves to shine through the design.
 
--   ##### Main Colours Used
-    - Text colour 1 - Dark Blue `#084298`
-    - Text colour 2 - Bootstrap Standard Black `#212529`
-    - Text colour 3 - Bootstrap Standard `text-muted` class `rgba(33, 37, 41, 0.75)`
-    - Background colour - `#ffffff`
-    - Button colour 1 - Bootstrap `primary` class `#0d6efd`
-    - Button colour 2 - Bootstrap `success` class `#198754`
-    - Button colour 3 - Bootstrap `danger` class `#dc3545`
-    - Button text colour - `#ffffff`
-    - Badge colour 1 (sale) - Bootstrap `danger` class `#dc3545`
-    - Badge colour 2 (new) - Bootstrap `primary` class `#0d6efd`
-    - Badge colour 3 (out of stock) - Bootstrap `warning` class `#FFC107`
-    - Badge text colour 1 & 2 - `#ffffff`
-    - Badge text colour 3 - Bootstrap Standard Black `#212529`
+<img src="media/readme-images/colour-palette-ms4.png" alt="Screen mockup of WellGood Coffee">
+
 
 #### Colour Accessibility
 			
@@ -522,9 +531,9 @@ The wireframes were creates using [Figma](https://www.figma.com/). I have deviat
 
 I did not create separate wireframes for mobile and tablet as the layout is identical.
 
-  - #### Desktop Wireframes
+  - #### Mobile Wireframes
 
-  <img src="readme_and_testing_media/desktopwireframes.png" alt="Website desktop wireframes">
+  <img src="media/readme-images/MS4-mobile-wireframes.png" alt="Website mobile wireframes">
 
 
   - #### Tablet & Mobile Wireframes
@@ -539,7 +548,7 @@ The database schema flow charts were created using [Figma](https://www.figma.com
 
 [Back to top](#title)  
 
-### Features
+## Features
 
 - Fully responsive across all screen sizes.
 
