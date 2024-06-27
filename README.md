@@ -539,6 +539,8 @@ I did not create separate wireframes for mobile and tablet as the layout is iden
   - #### Tablet Wireframes
 
   <img src="media/readme-images/MS4-tablet-wireframes.png" alt="Website tablet wireframes">
+
+[Link to my Figma page](https://www.figma.com/design/IYOwfhepgdhys2z3s7EsUc/Milestone-4---WellGood-Coffee-Roasters?node-id=0-1&t=pPxFqoFWM4APLAXC-1)
   
 ### Database Schema
 The database schema flow charts were created using [Miro](https://www.miro.com/).
