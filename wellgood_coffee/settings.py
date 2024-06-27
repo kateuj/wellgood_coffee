@@ -32,7 +32,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kateuj-wellgoodcoffee-qxm7uju6vgd.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-kateuj-wellgoodcoffee-rbbzlckbe92.ws.codeinstitute-ide.net']
 
 
 # Application definition
