@@ -536,14 +536,14 @@ I did not create separate wireframes for mobile and tablet as the layout is iden
   <img src="media/readme-images/MS4-mobile-wireframes.png" alt="Website mobile wireframes">
 
 
-  - #### Tablet & Mobile Wireframes
+  - #### Tablet Wireframes
 
-  <img src="readme_and_testing_media/tablet&mobilewireframes.png" alt="Website tablet & mobile wireframes">
+  <img src="media/readme-images/MS4-tablet-wireframes.png" alt="Website tablet wireframes">
   
 ### Database Schema
-The database schema flow charts were created using [Figma](https://www.figma.com/).
+The database schema flow charts were created using [Miro](https://www.miro.com/).
 
-<img src="readme_and_testing_media/dbschema.png" alt="Database schema chart">
+<img src="media/readme-images/database-schema.png" alt="Database schema chart">
 
 
 [Back to top](#title)  
