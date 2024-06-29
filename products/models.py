@@ -31,13 +31,16 @@ class Product(models.Model):
 
 class Variant(models.Model):
     product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
+    name = models.CharField(max_length=254)
     sku = models.CharField(max_length=254, blank=True)
-    size = models.BooleanField(default=False, null=True, blank=True)
+    size = models.CharField(max_length=254, default=False, null=True, blank=True)
     grind = models.CharField(max_length=254, default=False, null=True, blank=True)
     roast = models.CharField(max_length=254, default=False, null=True, blank=True)
     flavour = models.CharField(max_length=254, default=False, null=True, blank=True)
     flavour_notes = CharField(max_length=254, default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    stock_count = models.IntegerField(null=True, blank=True)
+
 
     def __str__(self):
         return self.name
