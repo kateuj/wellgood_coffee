@@ -13,14 +13,13 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=coffee_ground,coffee_beans" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=coffee" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop Coffees
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="coffee-link">
-                <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
-                <a href="{% url 'products' %}?category=coffee_ground" class="dropdown-item">Filter Coffee</a>
-                <a href="{% url 'products' %}?category=coffee_beans" class="dropdown-item">Coffee Beans</a>
-                <a href="{% url 'products' %}?category=decaf" class="dropdown-item">Decaf Coffee</a>
+                <a href="{% url 'products' %}?type=Blend" class="dropdown-item">Blends</a>
+                <a href="{% url 'products' %}?type=Single Origin" class="dropdown-item">Single Origin</a>
+                <a href="{% url 'products' %}?q=decaf" class="dropdown-item">Decaf</a>
                 <a href="{% url 'products' %}?category=syrup" class="dropdown-item">Syrups</a>
                 <a href="{% url 'products' %}?category=milk" class="dropdown-item">Barista Milk</a>
                 <a href="{% url 'products' %}?category=coffee" class="dropdown-item">All coffee</a>

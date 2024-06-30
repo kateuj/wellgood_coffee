@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Variant
 
 # Create your views here.
 
@@ -35,6 +35,10 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        # if 'type' in request.GET:
+        #     types = request.GET['type'].split(',')
+        #     products = products.filter(type__name__in=types)
 
         if 'q' in request.GET:
             query = request.GET['q']
