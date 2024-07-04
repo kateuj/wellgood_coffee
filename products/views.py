@@ -3,7 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Variant
+from .models import Product, Category
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -36,10 +37,6 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        # if 'type' in request.GET:
-        #     types = request.GET['type'].split(',')
-        #     products = products.filter(type__name__in=types)
-
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -71,3 +68,14 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
