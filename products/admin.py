@@ -7,6 +7,7 @@ class VariantAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'product',
+        'name',
         'price',
         'grind',
         'roast',
@@ -20,6 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'category',
         'type',
+        'price',
         'rating',
         'image',
     )
