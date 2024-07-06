@@ -69,7 +69,15 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            {% if product.variants.all %}
+                                                {% with lowest_price=product.variants.all|dictsort:'price'|first %}
+                                                        <span class="font-weight-bold">From
+                                                            <del class="text-muted">£{{ lowest_price.price }}</del>
+                                                        </span>
+                                                {% endwith %}
+                                            {% else %}
+                                                <span>£{{ product.price }}</span>
+                                            {% endif %}
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
