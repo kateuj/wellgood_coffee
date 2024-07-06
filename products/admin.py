@@ -11,7 +11,6 @@ class VariantAdmin(admin.ModelAdmin):
         'price',
         'grind',
         'roast',
-        'flavour',
         'flavour_notes',
         'size',
     )
