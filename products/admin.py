@@ -10,8 +10,6 @@ class VariantAdmin(admin.ModelAdmin):
         'name',
         'price',
         'grind',
-        'roast',
-        'flavour_notes',
         'size',
     )
 
@@ -23,6 +21,8 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'rating',
         'image',
+        'roast',
+        'flavour_notes',
     )
 
     ordering = ('name',)
