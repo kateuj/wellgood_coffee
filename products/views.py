@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Variant
 from .forms import ProductForm
 
 # Create your views here.
@@ -17,6 +17,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    type = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -37,6 +38,10 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        if 'type' in request.GET:
+            types = request.GET['type'].split(',')
+            products = products.filter(type__in=types)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -63,9 +68,22 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    variants = Variant.objects.filter(product=product_id)
+    sizes = Variant.objects.values('size').distinct()
+    print(sizes)
+    grinds = Variant.objects.values('grind').distinct()
+    print(grinds)
+    roasts = Variant.objects.values('roast').distinct()
+    flavour_notes = Variant.objects.values('flavour_notes').distinct()
+
 
     context = {
         'product': product,
+        'variants': variants,
+        'sizes': [i['size'] for i in sizes ],
+        'grinds': [i['grind'] for i in grinds ],
+        'roasts': roasts,
+        'flavour_notes': flavour_notes,
     }
 
     return render(request, 'products/product_detail.html', context)
