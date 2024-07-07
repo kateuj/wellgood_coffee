@@ -18,6 +18,9 @@ def all_products(request):
     sort = None
     direction = None
     type = None
+    flavour_notes = None
+    roast = None
+    variants = Variant.objects.all()
 
     if request.GET:
         if 'sort' in request.GET:
@@ -42,6 +45,14 @@ def all_products(request):
         if 'type' in request.GET:
             types = request.GET['type'].split(',')
             products = products.filter(type__in=types)
+
+        if 'flavour_notes' in request.GET:
+            flavour_notes = request.GET['flavour_notes'].split(',')
+            products = products.filter(flavour_notes__in=flavour_notes)
+
+        if 'roast' in request.GET:
+            roasts = request.GET['roast'].split(',')
+            products = products.filter(roast__in=roasts)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -70,11 +81,8 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     variants = Variant.objects.filter(product=product_id)
     sizes = Variant.objects.values('size').distinct()
-    print(sizes)
     grinds = Variant.objects.values('grind').distinct()
-    print(grinds)
-    roasts = Variant.objects.values('roast').distinct()
-    flavour_notes = Variant.objects.values('flavour_notes').distinct()
+    variant_prices = Variant.objects.values('price').distinct()
 
 
     context = {
@@ -82,9 +90,10 @@ def product_detail(request, product_id):
         'variants': variants,
         'sizes': [i['size'] for i in sizes ],
         'grinds': [i['grind'] for i in grinds ],
-        'roasts': roasts,
-        'flavour_notes': flavour_notes,
+        'variant_prices': [i['price'] for i in variant_prices ],
+        #'choices': maincategory._meta.get_field('variant').choices
     }
+
 
     return render(request, 'products/product_detail.html', context)
 
