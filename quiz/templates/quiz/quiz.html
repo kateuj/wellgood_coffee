@@ -2,13 +2,60 @@
 {% load static %}
 
 {% block page_header %}
+
 <div class="container header-container">
     <div class="row">
-        <div class="col"></div>
+        <h1>Coffee Recommendation Quiz</h1>
     </div>
 </div>
+    
 {% endblock %}
 
 {% block content %}
 
+<form id="quizForm">
+    <div class="question">
+        <p>1. How do you like to make your coffee normally?</p>
+        <label>
+            <input type="radio" name="coffee" value="espresso"> Espresso
+        </label><br>
+        <label>
+            <input type="radio" name="coffee" value="filter"> Filter
+        </label><br>
+        <label>
+            <input type="radio" name="coffee" value="whole-bean"> Bean to cup
+        </label>
+        <label>
+            <input type="radio" name="coffee" value="cafetiere"> Cafetiere
+        </label>
+    </div>
+    <div class="question">
+        <p>2. Do you drink caffeinated or prefer decaf?</p>
+        <label>
+            <input type="radio" name="caffeineChoice" value="caffeinated"> Caffeinated
+        </label><br>
+        <label>
+            <input type="radio" name="caffeineChoice" value="decaf"> Decaf
+        </label><br>
+            <input type="radio" name="caffeineChoice" value="either"> I don't mind
+        </label><br>
+    </div>
+    <div class="question">
+        <p>3. What flavour notes do like the most?</p>
+        <label>
+            <input type="radio" name="flavour_notes" value="caramel-chocolate-sweet"> Caramel, Chocolate, Sweet
+        </label><br>
+        <label>
+            <input type="radio" name="flavour_notes" value="floral-rose"> Floral, Rose
+        </label><br>
+        <label>
+            <input type="radio" name="flavour_notes" value="fruity-light"> Fruity, Light
+        </label>
+    </div>
+    <button type="button" onclick="showResult()">Submit</button>
+</form>
+<div class="recommendation" id="recommendation"></div>
+
 {% endblock %}
+
+{% block postloadjs %}
