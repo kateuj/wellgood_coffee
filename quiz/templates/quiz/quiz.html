@@ -1,61 +1,70 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-
-<div class="container header-container">
-    <div class="row">
-        <h1>Coffee Recommendation Quiz</h1>
-    </div>
-</div>
-    
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'quiz/css/quiz.css' %}">
 {% endblock %}
 
 {% block content %}
-
-<form id="quizForm">
-    <div class="question">
-        <p>1. How do you like to make your coffee normally?</p>
-        <label>
-            <input type="radio" name="coffee" value="espresso"> Espresso
-        </label><br>
-        <label>
-            <input type="radio" name="coffee" value="filter"> Filter
-        </label><br>
-        <label>
-            <input type="radio" name="coffee" value="whole-bean"> Bean to cup
-        </label>
-        <label>
-            <input type="radio" name="coffee" value="cafetiere"> Cafetiere
-        </label>
+<div class="quiz-container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Coffee Recommendation Quiz</h1>
+        </div>
     </div>
-    <div class="question">
-        <p>2. Do you drink caffeinated or prefer decaf?</p>
-        <label>
-            <input type="radio" name="caffeineChoice" value="caffeinated"> Caffeinated
-        </label><br>
-        <label>
-            <input type="radio" name="caffeineChoice" value="decaf"> Decaf
-        </label><br>
-            <input type="radio" name="caffeineChoice" value="either"> I don't mind
-        </label><br>
+    <div class="row">
+        <div class="col-12">
+        <form id="quizForm">
+            <div class="question">
+                <p>1. How do you like to make your coffee normally?</p>
+                <label>
+                    <input type="radio" name="q1" value="espresso"> Espresso
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="filter"> Filter
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="whole-bean"> Bean to cup
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="cafetiere"> Cafetiere
+                </label>
+            </div>
+            <div class="question">
+                <p>2. Do you drink caffeinated or prefer decaf?</p>
+                <label>
+                    <input type="radio" name="q2" value="caffeinated"> Caffeinated
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="decaf"> Decaf
+                </label><br>
+                <input type="radio" name="q2" value="either"> I don't mind
+                </label><br>
+            </div>
+            <div class="question">
+                <p>3. What flavour notes do like the most?</p>
+                <label>
+                    <input type="radio" name="q3" value="caramel-chocolate-sweet"> Caramel, Chocolate, Sweet
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="floral-rose"> Floral, Rose
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="fruity-light"> Fruity, Light
+                </label>
+            </div>
+            <button type="button" onclick="showResult()">Submit</button>
+        </form>
     </div>
-    <div class="question">
-        <p>3. What flavour notes do like the most?</p>
-        <label>
-            <input type="radio" name="flavour_notes" value="caramel-chocolate-sweet"> Caramel, Chocolate, Sweet
-        </label><br>
-        <label>
-            <input type="radio" name="flavour_notes" value="floral-rose"> Floral, Rose
-        </label><br>
-        <label>
-            <input type="radio" name="flavour_notes" value="fruity-light"> Fruity, Light
-        </label>
+    <div class="row">
+        <div class="result" id="result"></div>
     </div>
-    <button type="button" onclick="showResult()">Submit</button>
-</form>
-<div class="recommendation" id="recommendation"></div>
+    </div>
+</div>
 
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'quiz/js/quiz.js' %}"></script>
+{% endblock %}
