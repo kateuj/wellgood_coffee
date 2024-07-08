@@ -11,17 +11,17 @@ function showResult() {
     let recommendation = '';
 
     if (q1.value === 'espresso' && q2.value === 'caffeinated' && q3.value === 'caramel-chocolate-sweet') {
-        recommendation = 'Espresso with steamed milk';
+        recommendation = '';
     } else if (q1.value === 'filter' && q2.value === 'decaf' && q3.value === 'floral-rose') {
-        recommendation = 'Iced black coffee with almond milk';
+        recommendation = '';
     } else if (q1.value === 'whole-bean' && q2.value === 'either' && q3.value === 'fruity-light') {
-        recommendation = 'Americano';
-    } else if (q1.value === 'cafetiere' && q2.value === 'cold' && q3.value === 'dairy') {
-        recommendation = 'Iced caramel latte';
-    } else if (q1.value === 'cafetiere' && q2.value === 'cold' && q3.value === 'dairy') {
-        recommendation = 'Iced caramel latte';    
+        recommendation = '';
+    } else if (q1.value === 'cafetiere' && q2.value === 'decaf' && q3.value === 'fruity-light') {
+        recommendation = '';
+    } else if (q1.value === 'cafetiere' && q2.value === 'decaf' && q3.value === 'fruity-light') {
+        recommendation = '';    
     } else {
-        recommendation = 'Classic black coffee';
+        recommendation = '';
     }
 
     const resultDiv = document.getElementById('result');
