@@ -29,7 +29,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold" id="product-price">£{{ product.price }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -74,7 +74,7 @@
                                 {% if grinds %}
                                 <div class="col-12">
                                     <p><strong>Grind Type:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control rounded-0 w-50" name="product_grind" id='id_product_grind'>
                                         {% for grind in grinds %}
                                         <option value="{{ grind }}">{{ grind }}</option>
                                         {% endfor %}
@@ -130,6 +130,10 @@
 {% endblock %}
 
 {% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+    {{ block.super }}
+    <script type="text/javascript">
+    var priceList = JSON.parse("{{ variant_prices }}");
+    </script>
+    <script type="text/javascript" src="{% static 'products/js/products.js' %}"></script>
+    {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

@@ -80,17 +80,18 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     variants = Variant.objects.filter(product=product_id)
-    sizes = Variant.objects.values('size').distinct()
-    grinds = Variant.objects.values('grind').distinct()
-    variant_prices = Variant.objects.values('price').distinct()
+    sizes = Variant.objects.filter(product=product_id).values('size').distinct()
+    grinds = Variant.objects.filter(product=product_id).values('grind').distinct()
+    variant_prices = Variant.objects.filter(product=product_id).values('price').distinct().order_by('price')
+    print(grinds)
 
 
     context = {
         'product': product,
         'variants': variants,
         'sizes': [i['size'] for i in sizes ],
-        'grinds': [i['grind'] for i in grinds ],
-        'variant_prices': [i['price'] for i in variant_prices ],
+        'grinds': [i['grind'] for i in grinds if i['grind'] is not None],
+        'variant_prices': [float(i['price']) for i in variant_prices ],
         #'choices': maincategory._meta.get_field('variant').choices
     }
 
