@@ -83,7 +83,6 @@ def product_detail(request, product_id):
     sizes = Variant.objects.filter(product=product_id).values('size').distinct()
     grinds = Variant.objects.filter(product=product_id).values('grind').distinct()
     variant_prices = Variant.objects.filter(product=product_id).values('price').distinct().order_by('price')
-    print(grinds)
 
 
     context = {
