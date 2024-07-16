@@ -10,21 +10,19 @@ function showResult() {
 
     let recommendation = '';
 
-    if (q1.value === 'espresso' && q2.value === 'caffeinated' && q3.value === 'caramel-chocolate-sweet') {
-        recommendation = '';
-    } else if (q1.value === 'filter' && q2.value === 'decaf' && q3.value === 'floral-rose') {
-        recommendation = '';
-    } else if (q1.value === 'whole-bean' && q2.value === 'either' && q3.value === 'fruity-light') {
-        recommendation = '';
-    } else if (q1.value === 'cafetiere' && q2.value === 'decaf' && q3.value === 'fruity-light') {
-        recommendation = '';
-    } else if (q1.value === 'cafetiere' && q2.value === 'decaf' && q3.value === 'fruity-light') {
-        recommendation = '';    
-    } else {
-        recommendation = '';
+    if (q2.value === 'decaf') {
+        recommendation = 'Swiss Water Decaf';
+    } else if (q3.value === 'floral-rose') {
+        recommendation = 'Sunrise Serenade or Brew-tiful Day';
+    } else if (q3.value === 'fruity-light') {
+        recommendation = 'Brew-tiful Day or Rocket Fuel';
+    } else if (q2.value === 'caffeinated' && q3.value === 'caramel-chocolate-sweet') {
+        recommendation = 'Java Joyride, Happy Camper or Perky Panther';
+    } else if (q2.value === 'either' && q3.value === 'caramel-chocolate-sweet') {
+        recommendation = 'Java Joyride, Happy Camper, Swiss Water Decaf or Perky Panther';
     }
 
     const resultDiv = document.getElementById('result');
-    resultDiv.textContent = 'We recommend: ' + recommendation;
+    resultDiv.textContent = 'We recommend: ' + recommendation + ' ' + q1.value;
     resultDiv.style.display = 'block';
 }
