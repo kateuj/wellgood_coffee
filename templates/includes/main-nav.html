@@ -1,12 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=subscriptions" id="all-products-link" aria-haspopup="true" aria-expanded="false">
-                Subscribe &amp; Save
-            </a>
-        </li>
-
-        <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link text-black mr-5" href="{% url 'quiz' %}" id="coffee-quiz-link" aria-haspopup="true" aria-expanded="false">
                 Coffee Quiz
             </a>
@@ -21,7 +15,6 @@
                 <a href="{% url 'products' %}?type=Single Origin" class="dropdown-item">Single Origin</a>
                 <a href="{% url 'products' %}?q=decaf" class="dropdown-item">Decaf</a>
                 <a href="{% url 'products' %}?category=syrups" class="dropdown-item">Syrups</a>
-                <a href="{% url 'products' %}?category=milk" class="dropdown-item">Barista Milk</a>
                 <a href="{% url 'products' %}?category=coffee" class="dropdown-item">All coffee</a>
             </div>
         </li>
@@ -31,7 +24,6 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
-                <a href="{% url 'products' %}?category=equipment_sale" class="dropdown-item">Sale</a>
                 <a href="{% url 'products' %}?category=brewing_equipment" class="dropdown-item">Brewing Equipment</a>
                 <a href="{% url 'products' %}?category=grinders" class="dropdown-item">Grinders</a>
                 <a href="{% url 'products' %}?category=filter_paper" class="dropdown-item">Filter Papers</a>
@@ -45,8 +37,7 @@
                 Gifts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
-                <a href="{% url 'products' %}?category=gift_subscriptions" class="dropdown-item">Gift Subscription</a>
-                <a href="{% url 'products' %}?category=sale" class="dropdown-item">Gifts Sale</a>
+                <a href="{% url 'products' %}?category=gifts" class="dropdown-item">Gifts</a>
                 <a href="{% url 'products' %}?category=bundles" class="dropdown-item">Bundles</a>
                 <a href="{% url 'products' %}?category=starter_kits" class="dropdown-item">Starter Kits</a>
             </div>

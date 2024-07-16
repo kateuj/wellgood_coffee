@@ -6,12 +6,17 @@ body {
     background: url('/media/coffee-cup-background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #212121;
     font-family: 'Mulish';
 }
 
 .bg-black {
     background-color: #0081A7 !important;
+}
+
+.strapline-message {
+    font-size: 0.5rem;
+    font-family: 'Playwrite IE';
 }
 
 /* from Bulma */
@@ -43,16 +48,16 @@ body {
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    background: #FDFCDC;
+    color: #0081A7 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #0081A7;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
-    color: white !important;
+    background: #0081A7;
+    color: #FDFCDC !important;
 }
 
 .shop-now-button:hover,
@@ -88,8 +93,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #0081A7 !important;
+    color: #FDFCDC !important;
 }
 
 .btt-button {
@@ -133,7 +138,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #0081A7;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -141,35 +146,35 @@ input[name='q']::placeholder {
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #0081a7 !important;
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d !important;
+    border-bottom-color: #00afb9 !important;
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+    border-bottom-color: #5dca77 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #F07167 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #FED9B7 !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+    border-bottom-color: #0081a7 !important;
 }
 
 .arrow-light {
-    border-bottom-color: #f8f9fa !important;
+    border-bottom-color: #FDFCDC !important;
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 !important;
+    border-bottom-color: #212121 !important;
 }
 
 .bag-notification-wrapper {
@@ -186,7 +191,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #0081A7;
     border-radius: 0;
 }
 
@@ -210,8 +215,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #0081A7;
+    border: 1px solid #0081A7;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -223,13 +228,13 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: #FDFCDC;
+    background-color: #212121;
+    border-color: #212121;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #00afb9; /* text-info */
 }
 
 /* Product Form */
@@ -251,12 +256,12 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #F07167;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #F07167;
+    border-color: #F07167;
     border-radius: 0;
 }
 
