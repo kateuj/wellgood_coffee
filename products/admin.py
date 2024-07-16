@@ -19,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
         'category',
         'type',
         'rating',
+        'price',
         'image',
         'roast',
         'flavour_notes',
