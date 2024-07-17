@@ -39,7 +39,8 @@ def add_to_bag(request, item_id):
     #         bag[item_id] = {'items_by_size': {size: quantity}}
     #         messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
     # else:
-    print(type(variant))
+    print(variant)
+    print(bag)
     if variant.get('id') in list(bag.keys()):
         bag[variant['id']] += quantity
         messages.success(request, f'Updated {product.name} quantity to {bag[variant['id']]}')
@@ -47,7 +48,7 @@ def add_to_bag(request, item_id):
         bag[variant['id']] = quantity
         messages.success(request, f'Added {product.name} to your bag')
 
-    # request.session['bag'] = bag
+    request.session['bag'] = bag
     return redirect(redirect_url)
     
 
