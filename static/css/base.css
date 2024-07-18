@@ -15,8 +15,40 @@ body {
 }
 
 .strapline-message {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Playwrite IE';
+}
+
+.dark-overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: #212121 !important;
+    opacity: 50%;
+	z-index: -1;
+}
+
+.bg-white {
+    background-color: #FDFCDC !important;
+}
+
+.header-container {
+    background-color: #FDFCDC;
+}
+
+#delivery-banner {
+    height: 4.5vh;
+    color: #FDFCDC;
+}
+
+.result {
+    padding: 30px;
+}
+
+.text-muted {
+    color: #F07167 !important;
 }
 
 /* from Bulma */
@@ -30,6 +62,17 @@ body {
 
 .logo-font {
     font-family: 'Playwrite IE';
+    color: #0081a7;
+}
+
+.card-body {
+    background-color: #F07167;
+    color: #FDFCDC;
+}
+
+.home-title {
+    color: #FDFCDC !important;
+    line-height: 6rem;
 }
 
 .main-logo-link {
@@ -42,7 +85,7 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
+.btn-blue {
     background: #0081A7 !important; 
     color: #FDFCDC;
 }
@@ -63,14 +106,14 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
     background: #0081A7 !important;
     color: #FDFCDC;
 }
 
-.text-black {
+.text-blue {
     color: #0081A7 !important;
 }
 
