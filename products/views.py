@@ -91,7 +91,6 @@ def product_detail(request, product_id):
         'sizes': [i['size'] for i in sizes if i['size'] is not None],
         'grinds': [i['grind'] for i in grinds if i['grind'] is not None],
         'variant_prices': [float(i['price']) for i in variant_prices ],
-        #'choices': maincategory._meta.get_field('variant').choices
     }
 
 
