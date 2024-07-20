@@ -1,5 +1,6 @@
 asgiref==3.8.1
 bootstrap4==0.1.0
+dj-database-url==0.5.0
 Django==5.0.6
 django-allauth==0.63.3
 django-bootstrap==0.2.4
@@ -8,6 +9,7 @@ django-countries==7.2.1
 django-crispy-forms==1.14.0
 django-money==3.5.2
 pillow==10.3.0
+psycopg2==2.9.9
 py-moneyed==3.0
 sqlparse==0.5.0
 stripe==10.1.0
