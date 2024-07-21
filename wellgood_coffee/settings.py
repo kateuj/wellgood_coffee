@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'checkout',
     'quiz',
     'profiles',
+    'about',
     
     'crispy_forms',
     'storages',

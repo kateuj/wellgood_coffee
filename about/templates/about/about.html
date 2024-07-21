@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row h-100">
+            <div  class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font home-title">
+                    Hi there! We are WellGood Coffee.
+                </h1>
+                <div>
+                    <h4>A little bit about us and what we do.</h4>
+                    <p>
+                        Welcome to the world of coffee roasting, where the magic of transforming raw coffee beans into rich, aromatic coffee begins. Roasting coffee is both an art and a science, requiring skill, precision, and a deep understanding of the beans and the process. Here’s a comprehensive introduction to the essentials of coffee roasting:
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

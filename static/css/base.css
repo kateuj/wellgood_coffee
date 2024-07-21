@@ -31,16 +31,16 @@ body {
 }
 
 .bg-white {
-    background-color: #FDFCDC !important;
+    background-color: #FFFFFF !important;
 }
 
 .header-container {
-    background-color: #FDFCDC;
+    background-color: #FFFFFF;
 }
 
 #delivery-banner {
     height: 4.5vh;
-    color: #FDFCDC;
+    color: #FFFFFF;
 }
 
 .result {
@@ -67,11 +67,11 @@ body {
 
 .card-body {
     background-color: #F07167;
-    color: #FDFCDC;
+    color: #FFFFFF;
 }
 
 .home-title {
-    color: #FDFCDC !important;
+    color: #FFFFFF !important;
     line-height: 6rem;
 }
 
@@ -81,17 +81,17 @@ body {
 
 .shop-now-button {
     background: #0081A7 !important;
-    color: #FDFCDC;
+    color: #FFFFFF;
     min-width: 260px;
 }
 
 .btn-blue {
     background: #0081A7 !important; 
-    color: #FDFCDC;
+    color: #FFFFFF;
 }
 
 .btn-outline-black {
-    background: #FDFCDC;
+    background: #FFFFFF;
     color: #0081A7 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #0081A7;
 }
@@ -100,7 +100,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: #0081A7;
-    color: #FDFCDC !important;
+    color: #FFFFFF !important;
 }
 
 .shop-now-button:hover,
@@ -110,7 +110,7 @@ body {
 .btn-blue:active,
 .btn-blue:focus {
     background: #0081A7 !important;
-    color: #FDFCDC;
+    color: #FFFFFF;
 }
 
 .text-blue {
@@ -131,13 +131,13 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background-color: #FDFCDC !important;
+	background-color: #FFFFFF !important;
 	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
     background: #0081A7 !important;
-    color: #FDFCDC !important;
+    color: #FFFFFF !important;
 }
 
 .btt-button {
@@ -213,7 +213,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-light {
-    border-bottom-color: #FDFCDC !important;
+    border-bottom-color: #FFFFFF !important;
 }
 
 .arrow-dark {
@@ -271,7 +271,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #FDFCDC;
+	color: #FFFFFF;
     background-color: #212121;
     border-color: #212121;
 }
