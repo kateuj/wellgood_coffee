@@ -358,7 +358,16 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td><img src="media/electric-espresso-grinder.webp" height="130" alt="Electric Coffee Grinder"></td>
       <td><a href="https://www.pexels.com/photo/crop-cafe-employees-with-coffee-grinders-and-machines-at-work-6205608/">Image by Tim Douglas</a> on Pexels</td>
     </tr>
-
+    <tr>
+      <td>V60 Plastic Dripper</td>
+      <td><img src="media/v60-plastic-image.webp" height="130" alt="Electric Coffee Grinder"></td>
+      <td><a href="https://www.pexels.com/photo/red-and-clear-glass-coffee-dripper-8211266/">Image by Arun Thomas</a> on Pexels</td>
+    </tr>
+    <tr>
+      <td>Aeropress</td>
+      <td><img src="media/aeropress-image.webp" height="130" alt="Aeropress"></td>
+      <td><a href="https://www.pexels.com/photo/black-coffee-press-on-wooden-table-3993825/">Image by Juan Gomez</a> on Pexels</td>
+    </tr>
   </tbody>
 </table>
 <br>
