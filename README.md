@@ -439,31 +439,27 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ### Search bar in navigation bar
 
-![Search page screenshot](media/readme-images/search-page.png)
+![Search page screenshot](media/readme-images/search-bar.png)
 
-* __Dropdown filters__ - I have included 3 dropdown filters for meal type, dish origin and star rating to give the user a few options of how they would like the filter and search through all the recipes on the database.
+* __Search product names and descriptions__ - The search bar allows users to add search words that will be cross referenced across the whole database and bring up products that match the search in their name or description.
 
-* __Clear selection button__ - This button allows to quicky refresh all the filters in one simple click when desired.
+### Profile page
 
-* __Collapsible recipe view__ - The collapsible recipe view allows more recipe titles to list on the screen at any given time, whilst also providing the user the ability to drill down into their chosen recipe content with one click.
+![Profile page screenshot](media/readme-images/profile-page.png)
 
-### User dashboard page
+* __Default delivery information__ - This page allows the user to add their chosen default delivery information for future purchases.
 
-![Dashboard page screenshot](media/readme-images/dashboard-page.png)
+* __Order history__ - The user can view their previous orders all in one place.
 
-* __Cookbook cards__ - For each cookbook linked to the user's id, a card will appear on their dashboard so they can see them all in one place and add/edit recipes for each of them.
+### Product Management page
 
-* __Add cookbook button__ - To create new cookbooks, the 'Add Cookbook' button is at the top of the page for a concise user journey.
+![Product management page screenshot](media/readme-images/product-management-page.png)
 
-* __View recipes button__ - On each cookbook card, there is a 'View Recipes' button which will take the user to a page that is populated with the recipes that are linked to that particular cookbook id.
+* __Add product__ - Allows super users to add products to the site with this form without them having to access the django admin board.
 
-* __Add recipe button__ - On each cookbook card, there is an 'Add Recipes' button for users to be redirected to the 'Create recipe' form.
+### Products page
 
-* __Edit and delete Cookbook buttons__ - These buttons give the user the option to update the cookbook name or delete it and all of the recipes linked with it. With the delete button, a modal pops up to explain to the user that the action cannot be undone and that the recipes linked to it will be deleted too, so they fully understand the action before choosing to commit.
-
-### User recipes page
-
-![Recipes page screenshot](media/readme-images/recipes-in-cookbook-page.png)
+![Products page screenshot](media/readme-images/ #TBC)
 
 * __Add recipes button__ - To create new recipes, the 'Add Recipe' button is at the top of the page for a concise user journey.
 * __Back to cookbook button__ - The user can also return to their dashboard cookbook overview with one click with the 'back to cookbooks' button, which is also at the top of the page so it is easily located by the user.
@@ -472,35 +468,22 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 * __Edit and delete recipe buttons__ - The edit and delete buttons are nested within each collapsible recipe, just below the instructions and ingredients content. These buttons allow the user to edit/delete that specific recipe. With the delete button, a modal pops up to explain to the user that the action cannot be undone, so they fully understand the action before choosing to commit.
 
-### Add recipe form
+### Edit product form
 
 ![Add recipe page screenshot](media/readme-images/add-recipe-page.png)
 
-* __Drop down options__ - To create a simple choice for the user, I included drop downs for certain inputs within the recipe forms, to allow the user to populate it as quickly as possible.
 
 * __Add recipe form__ - Once submitted, this form adds a new recipe to the database linked the cookbook id that was selected in the drop down.
 
-### Edit recipe form
+### Delete product form
 
 ![Edit recipe page screenshot](media/readme-images/edit-recipe-page.png)
 
 * __Pre-populated edit recipe__ - When the user is directed to the edit recipe page, the input fields are already populated with the previous content, to make editing and updating easy and quick for the user.
 
-* __Drop down options__ - To create a simple choice for the user, I included drop downs for certain inputs within the recipe forms, to allow the user to populate it as quickly as possible.
 
-* __Edit recipe form__ - Once submitted, this form updates the current recipe on the database linked the cookbook id that was selected in the drop down.
+### Coffee Quiz
 
-### Add cookbook form
-
-![Add cookbook page screenshot](media/readme-images/add-cookbook-page.png)
-
-* __Cookbook name form__ - This form posts the user's cookbook name to the database linked to the user id from the session cookie.
-
-### Edit cookbook form
-
-![Edit cookbook name page screenshot](media/readme-images/edit-cookbook-name-page.png)
-
-* __Edit cookbook name form__ - Once submitted, this form updates the current cookbook on the database linked the user id from the session cookie.
 
 ### Contact Form
 
