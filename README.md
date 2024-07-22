@@ -314,6 +314,11 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td><a href="https://www.pexels.com/photo/man-operating-a-machine-at-a-coffee-roasting-factory-4816478/">Image by Maksim Goncharenok</a> on Pexels</td>
     </tr>
     <tr>
+      <td>Coffee icon on coffee bags</td>
+      <td><img src="media/java-joyride.webp" height="130" alt="Coffee icon of coffee bag"></td>
+      <td><a href="https://logowik.com/coffee-vector-icon-16731.html">Icon by Logowik</a> on Logowik</td>
+    </tr>
+    <tr>
       <td>Coffee Bag Mockup</td>
       <td><img src="media/readme-images/coffee-bag-blank.jpg" height="130" alt="Coffee Bag image"></td>
       <td><a href="https://www.freepik.com/free-photo/white-plastic-tea-bag_3542875.htm#fromView=search&page=1&position=28&uuid=a4bb1b3b-8313-43fb-a456-eea4308b30a3">Image by Freepik</a> on Freepik</td>
@@ -353,32 +358,19 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td><img src="media/manual-coffee-grinder.webp" height="130" alt="Manual Coffee Grinder"></td>
       <td><a href="https://www.pexels.com/photo/brown-coffee-grinder-beside-mug-362135/">Image by Mateusz Dach</a> on Pexels</td>
     </tr>
-    <tr>
-      <td>Electric Coffee Grinder</td>
-      <td><img src="media/electric-espresso-grinder.webp" height="130" alt="Electric Coffee Grinder"></td>
-      <td><a href="https://www.pexels.com/photo/crop-cafe-employees-with-coffee-grinders-and-machines-at-work-6205608/">Image by Tim Douglas</a> on Pexels</td>
-    </tr>
-    <tr>
-      <td>V60 Plastic Dripper</td>
-      <td><img src="media/v60-plastic-image.webp" height="130" alt="Electric Coffee Grinder"></td>
-      <td><a href="https://www.pexels.com/photo/red-and-clear-glass-coffee-dripper-8211266/">Image by Arun Thomas</a> on Pexels</td>
-    </tr>
-    <tr>
-      <td>Aeropress</td>
-      <td><img src="media/aeropress-image.webp" height="130" alt="Aeropress"></td>
-      <td><a href="https://www.pexels.com/photo/black-coffee-press-on-wooden-table-3993825/">Image by Juan Gomez</a> on Pexels</td>
-    </tr>
+
   </tbody>
 </table>
 <br>
 
-All other imagery on the website are basic icons obtained from Font Awesome which can be found [here](https://fontawesome.com/).
+I used icons from Font Awesome throughout the site [Font Awesome](https://fontawesome.com/).
 
 
 ### Wireframes
-The wireframes were creates using [Figma](https://www.figma.com/). I have deviated somewhat from my original wireframes, but this was mainly design preference and ensuring a good responsive layout on smaller screens.
 
-I did not create separate wireframes for mobile and tablet as the layout is identical.
+I used Figma and Balsamiq to plan and design my wireframes and user journey. I like using Figma in particular because it always you to brainstorm and keep all ideas and inspiration in one place as a singular visual to refer back to, which has been very useful throughout the project. I designed my web app in mobile format initially, before moving onto bigger screens, to ensure responsiveness was considered from the beginning, especially since most users will predominantly use their phones to access this app.
+
+I had planned in an extra section for the site into the wireframes, which unfortunately I have not had enough scope to manage, which is a Suscribe & Save section, which would be a nice-to-have for future improvements to the site.
 
   - #### Mobile Wireframes
 
@@ -389,10 +381,14 @@ I did not create separate wireframes for mobile and tablet as the layout is iden
 
   <img src="media/readme-images/MS4-tablet-wireframes.png" alt="Website tablet wireframes">
 
+  - #### Laptop Wireframes
+
+  <img src="media/readme-images/MS4-tablet-wireframes.png" alt="Website tablet wireframes">
+
 [Link to my Figma page](https://www.figma.com/design/IYOwfhepgdhys2z3s7EsUc/Milestone-4---WellGood-Coffee-Roasters?node-id=0-1&t=pPxFqoFWM4APLAXC-1)
   
 ### Database Schema
-The database schema flow charts were created using [Miro](https://www.miro.com/).
+The database schema flow charts were created using [DrawSQL](https://drawsql.app/).
 
 <img src="media/readme-images/database-schema.png" alt="Database schema chart">
 
@@ -401,595 +397,347 @@ The database schema flow charts were created using [Miro](https://www.miro.com/)
 
 ## Features
 
-- Fully responsive across all screen sizes.
+### General
 
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">Desktop</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Welcome page</td>
-            <td><img height=300 src="readme_and_testing_media/welcome-desktop.png"
-                    alt="Screenshot of welcome screen on laptop"></td>
-        </tr>
-        <tr>
-            <td>Products page</td>
-            <td><img height=300 src="readme_and_testing_media/products-desktop.png"
-                    alt="Screenshot of products page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdeatil1-dekstop.png"
-                    alt="Screenshot of product details page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdetail2-dekstop.png"
-                    alt="Screenshot of product details page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Shopping bag page</td>
-            <td><img height=300 src="readme_and_testing_media/bag-desktop.png"
-                    alt="Screenshot of shopping bag page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 src="readme_and_testing_media/checkout-desktop.png"
-                    alt="Screenshot of checkout page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 src="readme_and_testing_media/checkout2-desktop.png"
-                    alt="Screenshot of checkout page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Checkout success page</td>
-            <td><img height=300 src="readme_and_testing_media/checkoutsuccess-desktop.png"
-                    alt="Screenshot of checkout success page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile1-desktop.png"
-                    alt="Screenshot of profile page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile2-desktop.png"
-                    alt="Screenshot of profile page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Product management page</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagement-desktop.png"
-                    alt="Screenshot of product management page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct1-desktop.png"
-                    alt="Screenshot of add product page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct2-desktop.png"
-                    alt="Screenshot of add product page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Add variant page</td>
-            <td><img height=300 src="readme_and_testing_media/addvariant-dekstop.png"
-                    alt="Screenshot of add variant page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct1-desktop.png"
-                    alt="Screenshot of edit product page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct2-desktop.png"
-                    alt="Screenshot of edit product page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Edit variant page</td>
-            <td><img height=300 src="readme_and_testing_media/editvariant-desktop.png"
-                    alt="Screenshot of edit variant page on laptop"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal1-desktop.png"
-                    alt="Screenshot of product management modal on product management page laptop"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal2-desktop.png"
-                    alt="Screenshot of product management modal on product management page laptop"></td>
-        </tr>
-        <tr>
-            <td>Stock management page</td>
-            <td><img height=300 src="readme_and_testing_media/stockmanagement1-desktop.png"
-                    alt="Screenshot of stock management page laptop"></td>
-        </tr>
-        <tr>
-            <td>Login page</td>
-            <td><img height=300 src="readme_and_testing_media/login-desktop.png" alt="Screenshot of login page laptop">
-            </td>
-        </tr>
-        <tr>
-            <td>Logout page</td>
-            <td><img height=300 src="readme_and_testing_media/logout-desktop.png"
-                    alt="Screenshot of logout page laptop"></td>
-        </tr>
-        <tr>
-            <td>Register page</td>
-            <td><img height=300 src="readme_and_testing_media/register-desktop.png"
-                    alt="Screenshot of register page laptop"></td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="2">Tablet</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Welcome page</td>
-            <td><img height=300 src="readme_and_testing_media/welcome-tablet.png"
-                    alt="Screenshot of welcome screen on tablet"></td>
-        </tr>
-        <tr>
-            <td>Products page</td>
-            <td><img height=300 src="readme_and_testing_media/products-tablet.png"
-                    alt="Screenshot of products page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdetail1-tablet.png"
-                    alt="Screenshot of product details page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdetail2-tablet.png"
-                    alt="Screenshot of product details page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Shopping bag page</td>
-            <td><img height=300 src="readme_and_testing_media/bag-tablet.png"
-                    alt="Screenshot of shopping bag page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 src="readme_and_testing_media/checkout1-tablet.png"
-                    alt="Screenshot of checkout page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 src="readme_and_testing_media/checkout2-tablet.png"
-                    alt="Screenshot of checkout page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Checkout success page</td>
-            <td><img height=300 src="readme_and_testing_media/checkoutsuccess-tablet.png"
-                    alt="Screenshot of checkout success page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile1-tablet.png"
-                    alt="Screenshot of profile page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile2-tablet.png"
-                    alt="Screenshot of profile page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile3-tablet.png"
-                    alt="Screenshot of profile page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Product management page</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagement1-tablet.png"
-                    alt="Screenshot of product management page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Product management page</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagment2-tablet.png"
-                    alt="Screenshot of product management page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct1-tablet.png"
-                    alt="Screenshot of add product page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct2-tablet.png"
-                    alt="Screenshot of add product page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Add variant page</td>
-            <td><img height=300 src="readme_and_testing_media/addvariant1-tablet.png"
-                    alt="Screenshot of add variant page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Add variant page</td>
-            <td><img height=300 src="readme_and_testing_media/addvariant2-tablet.png"
-                    alt="Screenshot of add variant page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct1-tablet.png"
-                    alt="Screenshot of edit product page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct2-tablet.png"
-                    alt="Screenshot of edit product page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Edit variant page</td>
-            <td><img height=300 src="readme_and_testing_media/editvariant1-tablet.png"
-                    alt="Screenshot of edit variant page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Edit variant page</td>
-            <td><img height=300 src="readme_and_testing_media/editvariant2-tablet.png"
-                    alt="Screenshot of edit variant page on tablet"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal1-tablet.png"
-                    alt="Screenshot of product management modal on product management page tablet"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal2-tablet.png"
-                    alt="Screenshot of product management modal on product management page tablet"></td>
-        </tr>
-        <tr>
-            <td>Stock management page</td>
-            <td><img height=300 src="readme_and_testing_media/stockmanagement1-tablet.png"
-                    alt="Screenshot of stock management page tablet"></td>
-        </tr>
-        <tr>
-            <td>Stock management page</td>
-            <td><img height=300 src="readme_and_testing_media/stockmanagement2-tablet.png"
-                    alt="Screenshot of stock management page tablet"></td>
-        </tr>
-        <tr>
-            <td>Login page</td>
-            <td><img height=300 src="readme_and_testing_media/login-tablet.png" alt="Screenshot of login page tablet">
-            </td>
-        </tr>
-        <tr>
-            <td>Logout page</td>
-            <td><img height=300 src="readme_and_testing_media/logout-tablet.png" alt="Screenshot of logout page tablet">
-            </td>
-        </tr>
-        <tr>
-            <td>Register page</td>
-            <td><img height=300 src="readme_and_testing_media/register-tablet.png"
-                    alt="Screenshot of register page tablet"></td>
-        </tr>
-        <tr>
-            <td>Sidenav</td>
-            <td><img height=300 src="readme_and_testing_media/sidenav-tablet.png" alt="Screenshot of sidenav tablet">
-            </td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="2">Mobile</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Welcome page</td>
-            <td><img height=300 src="readme_and_testing_media/welcome-mobile.png"
-                    alt="Screenshot of welcome screen on mobile"></td>
-        </tr>
-        <tr>
-            <td>Products page</td>
-            <td><img height=300 src="readme_and_testing_media/products-mobile.png"
-                    alt="Screenshot of products page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Products page</td>
-            <td><img height=300 src="readme_and_testing_media/products2-mobile.png"
-                    alt="Screenshot of products page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdetail1-mobile.png"
-                    alt="Screenshot of product details page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Product details page</td>
-            <td><img height=300 src="readme_and_testing_media/productdetail2-mobile.png"
-                    alt="Screenshot of product details page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Shopping bag page</td>
-            <td><img height=300 src="readme_and_testing_media/bag1-mobile.png"
-                    alt="Screenshot of shopping bag page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Shopping bag page</td>
-            <td><img height=300 src="readme_and_testing_media/bag2-mobile.png"
-                    alt="Screenshot of shopping bag page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 src="readme_and_testing_media/checkout1-mobile.png"
-                    alt="Screenshot of checkout page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Checkout page</td>
-            <td><img height=300 height=300 src="readme_and_testing_media/checkout2-mobile.png"
-                    alt="Screenshot of checkout page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Checkout success page</td>
-            <td><img height=300 src="readme_and_testing_media/checkoutsuccess1-mobile.png"
-                    alt="Screenshot of checkout success page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Checkout success page</td>
-            <td><img height=300 src="readme_and_testing_media/checkoutsuccess2-mobile.png"
-                    alt="Screenshot of checkout success page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile1-mobile.png"
-                    alt="Screenshot of profile page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile2-mobile.png"
-                    alt="Screenshot of profile page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Profile page</td>
-            <td><img height=300 src="readme_and_testing_media/profile3-mobile.png"
-                    alt="Screenshot of profile page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Product management page</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagement1-mobile.png"
-                    alt="Screenshot of product management page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Product management page</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagement2-mobile.png"
-                    alt="Screenshot of product management page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct1-mobile.png"
-                    alt="Screenshot of add product page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Add product page</td>
-            <td><img height=300 src="readme_and_testing_media/addproduct2-mobile.png"
-                    alt="Screenshot of add product page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Add variant page</td>
-            <td><img height=300 src="readme_and_testing_media/addvariant1-mobile.png"
-                    alt="Screenshot of add variant page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Add variant page</td>
-            <td><img height=300 src="readme_and_testing_media/addvariant2-mobile.png"
-                    alt="Screenshot of add variant page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct1-mobile.png"
-                    alt="Screenshot of edit product page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Edit product page</td>
-            <td><img height=300 src="readme_and_testing_media/editproduct2-mobile.png"
-                    alt="Screenshot of edit product page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Edit variant page</td>
-            <td><img height=300 src="readme_and_testing_media/editvariant1-mobile.png"
-                    alt="Screenshot of edit variant page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Edit variant page</td>
-            <td><img height=300 src="readme_and_testing_media/editvariant2-mobile.png"
-                    alt="Screenshot of edit variant page on mobile"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal1-mobile.png"
-                    alt="Screenshot of product management modal on product management page mobile"></td>
-        </tr>
-        <tr>
-            <td>Product management modal</td>
-            <td><img height=300 src="readme_and_testing_media/productmanagementmodal2-mobile.png"
-                    alt="Screenshot of product management modal on product management page mobile"></td>
-        </tr>
-        <tr>
-            <td>Stock management page</td>
-            <td><img height=300 src="readme_and_testing_media/stockamanagement1-mobile.png"
-                    alt="Screenshot of stock management page mobile"></td>
-        </tr>
-        <tr>
-            <td>Stock management page</td>
-            <td><img height=300 src="readme_and_testing_media/stockmanagement2-mobile.png"
-                    alt="Screenshot of stock management page tablet"></td>
-        </tr>
-        <tr>
-            <td>Login page</td>
-            <td><img height=300 src="readme_and_testing_media/login-mobile.png" alt="Screenshot of login page mobile">
-            </td>
-        </tr>
-        <tr>
-            <td>Logout page</td>
-            <td><img height=300 src="readme_and_testing_media/logout-mobile.png" alt="Screenshot of logout page mobile">
-            </td>
-        </tr>
-        <tr>
-            <td>Register page</td>
-            <td><img height=300 src="readme_and_testing_media/register-mobile.png"
-                    alt="Screenshot of register page mobile"></td>
-        </tr>
-        <tr>
-            <td>Sidenav</td>
-            <td><img height=300 src="readme_and_testing_media/sidenav-mobile.png" alt="Screenshot of sidenav mobile">
-            </td>
-        </tr>
-    </tbody>
-</table>
+* My site is fully responsive and can be viewed and used effectively on all screen sizes down to 320px width by 480px height.
+* I have considered readability contrast carefully for all visual elements.
+* __Favicon__ - I have included a Favicon page tab icon to make the page look professional and consistent.
 
-<hr>
+![Favicon screenshot](media/readme-images/favicon-screenshot.png)
 
-- Intuitive and easy to navigate using the top navbar on larger screens and sidenav on smaller screens which present different options to the user depending on whether or not they are logged in, and if they are a 'super user' as well as if there are products currently in their shopping bag. 
+* __Reponsive Nav Bar__ - The navigation bar at the top of all the pages reduces to an accordion menu on tablet and mobile view for ease for use for the user. The options displayed on the nav bar are also dependent on whether a user is logged in or not, for an optimum user experience where options, such as 'Register' are no longer visible for logged in users. This keeps the pages clean and easier to navigate. I have included a search icon instead of a search bar on mobile and tablet versions, so the bar does not take up unnecessary space on the screen when not required.
 
-	There is also a search function allowing the customer to search for the exact products they need .There are also various appropriately marked buttons throughout the site making navigation easy.
+* __Footer__ - #TBC Just like the nav bar, the links displayed in the footer are also dependent on whether a user is logged in or not, for an optimum user experience where options, such as 'Register' are no longer visible for logged in users. This keeps the pages clean and easier to navigate.
 
-  <img src="readme_and_testing_media/navbar.png" alt="Navbar">
-  <img src="readme_and_testing_media/mobilenav.png" alt="Mobile navbar">
-  <img src="readme_and_testing_media/sidenav.png" alt="Sidenav">
-  <img src="readme_and_testing_media/buttons.png" alt="Navigation buttons">
-<hr>
+* __Logo__ - I created my simple text logo using the Playwrite IE font to keep a design consistency within the site.
 
-- Full account management including the ability to...
-	- Sign in
-	- Sign out
-	- Sign up
-	- Reset forgotten passwords
+![Logo in navigation bar](media/readme-images/wellgood-coffee-navbar-logo.png)
 
-	The main functionality for account management is provided by AllAuth built into Django but the pages have been restyled to fit in with the page design and be fully responsive.
+* __Toast messages__ - At various actions, messages will flash at the top right of the page just below the nav bar to confirm to the user for instance, that a user account has been created, or a product has been added to the shopping bag. This gives the user a clear explanation of what has happened to avoid any unnecessary confusion.
 
-  <img src="readme_and_testing_media/login-desktop.png" alt="Login page">
-  <img src="readme_and_testing_media/logout-desktop.png" alt="Logout page">
-  <img src="readme_and_testing_media/register-desktop.png" alt="Register page">
-  <img src="readme_and_testing_media/passwordreset.png" alt="Password reset page">
-<hr>
+## Landing page
+![Home page screenshot](media/readme-images/home-page.png)
 
-- A homepage designed to convey straight away exactly what the site is about to the user.
+### Register page
 
-  <img src="readme_and_testing_media/welcome-desktop.png" alt="Password reset page">
-<hr>
+![Register page screenshot](media/readme-images/register-page.png)
 
-- A contact button which is always visible in the navbar or sidenav, giving users a quick and convenient way to contact the store with any queries.
+* __Registration form__ - This form submits a new username and password to the database and starts a session cookie, which triggers the 'Profile' page to be active. If a super user logs in, it activates the 'Product Management' page where the user can add products, and also makes 'edit' and 'delete' options visible on the product page annd product detail pages.
 
-  <img src="readme_and_testing_media/navbar.png" alt="Navbar">
-  <img src="readme_and_testing_media/sidenav.png" alt="Sidenav">
-<hr>
+* __Password pattern required__ -  To make sure the user is creating strong passwords to keep their account secure, I have included an HTML5 regex pattern, so that the registration form will not submit unless the user has conformed to the requirements.
 
-- A product page offering basic product information and pictures as well as various filtering and sorting options allowing the user to easily navigate the products available in the store. 
+* __Requirement prompts__ -  So it is clear what patterns are required for passwords and usernames, I have included prompts should the user fill a field in incorrectly.
 
-  <img src="readme_and_testing_media/products-desktop.png" alt="Products page">
-  <img src="readme_and_testing_media/productsort.png" alt="Products sort dropdown">
+### Login page
 
-<hr>
+![Login page screenshot](media/readme-images/login-page.png)
 
-- Conveniently placed badges and tags on products giving instant feedback to the user as to whether a product is new, on sale or out of stock as well as which category it belongs to.
+* __Login form__ - This form starts a session cookie, which triggers the 'Profile' to become visible and the 'Product Management' page if a super user has logged in.
 
-  <img src="readme_and_testing_media/badges.png" alt="Product badges">
-  <img src="readme_and_testing_media/badges2.png" alt="Product badges">
-<hr>
+* __Requirement prompts__ -  So it is clear what patterns are required for passwords and usernames, I have included prompts should the user fill a field in incorrectly.
 
-- A product details page giving more in depth information about the product such as the description, stock availability, reviews, ingredients, allergens and nutritional information.
 
-	It also shows any reviews that have been left for the product as well as giving registered users the ability to leave their own reviews.
+### Search bar in navigation bar
 
-  <img src="readme_and_testing_media/productdeatil1-dekstop.png" alt="Product details page">
-  <img src="readme_and_testing_media/productdetail2-dekstop.png" alt="Product details page">
-<hr>
+![Search page screenshot](media/readme-images/search-page.png)
 
-- A product selector on each product page where the product has different variants such as different package sizes, which also shows how many of each variant is currently in stock for purchase. When selected the price on the page is dynamically updated.
+* __Dropdown filters__ - I have included 3 dropdown filters for meal type, dish origin and star rating to give the user a few options of how they would like the filter and search through all the recipes on the database.
 
-  <img src="readme_and_testing_media/sizeselector.png" alt="Product size selector">
-<hr>
+* __Clear selection button__ - This button allows to quicky refresh all the filters in one simple click when desired.
 
-- The ability to store items in the shopping bag for purchase as well as the ability to update the quantity required or remove them all together.
+* __Collapsible recipe view__ - The collapsible recipe view allows more recipe titles to list on the screen at any given time, whilst also providing the user the ability to drill down into their chosen recipe content with one click.
 
-  <img src="readme_and_testing_media/bag-desktop.png" alt="Bag page">
-  <img src="readme_and_testing_media/qtyselector.png" alt="Quantity selector">
-  
-<hr>
+### User dashboard page
 
-- The ability to add available discount codes to your order.
+![Dashboard page screenshot](media/readme-images/dashboard-page.png)
 
-  <img src="readme_and_testing_media/discountbox.png" alt="Discount box">
-<hr>
+* __Cookbook cards__ - For each cookbook linked to the user's id, a card will appear on their dashboard so they can see them all in one place and add/edit recipes for each of them.
 
-- A secure checkout page powered by Stripe payments which shows a summary of the order and also give the user the ability to save their details for future orders if they are already registered.
+* __Add cookbook button__ - To create new cookbooks, the 'Add Cookbook' button is at the top of the page for a concise user journey.
 
-  <img src="readme_and_testing_media/checkout-desktop.png" alt="Checkout Page">
-  <img src="readme_and_testing_media/checkout2-desktop.png" alt="Checkout Page">
-  <img src="readme_and_testing_media/saveinfo.png" alt="Save info selector">
-  <img src="readme_and_testing_media/stripe.png" alt="Stripe payment box">
-<hr>
+* __View recipes button__ - On each cookbook card, there is a 'View Recipes' button which will take the user to a page that is populated with the recipes that are linked to that particular cookbook id.
 
-- A checkout success page with give confirmation of the current order as well as a summary of the order.
+* __Add recipe button__ - On each cookbook card, there is an 'Add Recipes' button for users to be redirected to the 'Create recipe' form.
 
-  <img src="readme_and_testing_media/checkoutsuccess-desktop.png" alt="Stripe payment box">
-<hr>
+* __Edit and delete Cookbook buttons__ - These buttons give the user the option to update the cookbook name or delete it and all of the recipes linked with it. With the delete button, a modal pops up to explain to the user that the action cannot be undone and that the recipes linked to it will be deleted too, so they fully understand the action before choosing to commit.
 
-- A user profile page which give users the ability to view and update their default delivery information, as well as an order history section, giving the user the ability to view details of all their past orders. 
+### User recipes page
 
-  There is also a reviews section which give the user the ability to see the past reviews as well as being able to edit or delete those reviews.
-  
-  <img src="readme_and_testing_media/profile1-desktop.png" alt="Profile page">
-  <img src="readme_and_testing_media/profile2-desktop.png" alt="Profile page">
-<hr>
+![Recipes page screenshot](media/readme-images/recipes-in-cookbook-page.png)
 
-- For super users the is a product management section which provides the ability to do the following...
-		- Add, edit and delete products and product variants
-		- Add, edit and delete discount codes
-		- Manage the stock levels of the store
+* __Add recipes button__ - To create new recipes, the 'Add Recipe' button is at the top of the page for a concise user journey.
+* __Back to cookbook button__ - The user can also return to their dashboard cookbook overview with one click with the 'back to cookbooks' button, which is also at the top of the page so it is easily located by the user.
 
-    <img src="readme_and_testing_media/productmanagement-desktop.png" alt="Product management page">
-<hr>
+* __Collapsible recipe view__ - The collapsible recipe view allows more recipe titles to list on the screen at any given time, whilst also providing the user the ability to drill down into their chosen recipe content with one click.
 
-- Custom success, warning and error messages giving customers feedback on their actions as they navigate the site, as well as a preview of their shopping carts when changes are made to their current 'bag items'.
+* __Edit and delete recipe buttons__ - The edit and delete buttons are nested within each collapsible recipe, just below the instructions and ingredients content. These buttons allow the user to edit/delete that specific recipe. With the delete button, a modal pops up to explain to the user that the action cannot be undone, so they fully understand the action before choosing to commit.
 
-    <img src="readme_and_testing_media/successmessage.png" alt="Success message">
-    <img src="readme_and_testing_media/errormessage.png" alt="Error message">
-    <img src="readme_and_testing_media/shoppingbagpreview.png" alt="Shopping bag preview">
-<hr>
+### Add recipe form
 
-- Confirmation emails sent for all orders made as well as when the custom makes contact with the store via the 'Contact' modal on the site.
+![Add recipe page screenshot](media/readme-images/add-recipe-page.png)
 
-  <img src="readme_and_testing_media/contactmodal.png" alt="Contact modal">
-  <img src="readme_and_testing_media/messagesent.png" alt="Message sent success message">
-  <img src="readme_and_testing_media/enquiryemail.png" alt="Customer enquiry email">
-  <img src="readme_and_testing_media/confirmationemail.png" alt="Customer enquiry confirmation email">
-  <img src="readme_and_testing_media/checkoutsuccess.png" alt="Checkout success">
-  <img src="readme_and_testing_media/orderconfirmationemail.png" alt="Order confirmation email">
-<hr>
+* __Drop down options__ - To create a simple choice for the user, I included drop downs for certain inputs within the recipe forms, to allow the user to populate it as quickly as possible.
 
-- A custom 404 page that informs the user the page they are looking for hasn't been found with a button directing them back to the homepage.
+* __Add recipe form__ - Once submitted, this form adds a new recipe to the database linked the cookbook id that was selected in the drop down.
 
-    <img src="readme_and_testing_media/404.png" alt="404 page">
-<hr>
+### Edit recipe form
 
-- A back to top button on the products page which only appears when the customer begins scrolling down.
+![Edit recipe page screenshot](media/readme-images/edit-recipe-page.png)
 
-  <img src="readme_and_testing_media/bttbutton.png" alt="Back to top button">
-<hr>
+* __Pre-populated edit recipe__ - When the user is directed to the edit recipe page, the input fields are already populated with the previous content, to make editing and updating easy and quick for the user.
 
-- Defensive programming has been used throughout the development of the application, to prompt users when they are either about to permanently delete something that cannot be done such as a product or discount code, as well as to stop users accessing pages they aren't authorised to access, for instance any page that requires a user to be logged in or for a user to be a super user.
+* __Drop down options__ - To create a simple choice for the user, I included drop downs for certain inputs within the recipe forms, to allow the user to populate it as quickly as possible.
 
-  <img src="readme_and_testing_media/deleteproductmodal.png" alt="Delete product modal">
-  <img src="readme_and_testing_media/defensiveerror.png" alt="Not super user error message">
+* __Edit recipe form__ - Once submitted, this form updates the current recipe on the database linked the cookbook id that was selected in the drop down.
 
-<hr>
+### Add cookbook form
 
-- An intuitive stock management system which checks stock values before allowing a user to place an order in case someone else has made an order since they added the product to their cart, as well updating the stock counts dynamically as and when orders are placed.
+![Add cookbook page screenshot](media/readme-images/add-cookbook-page.png)
 
-  <img src="readme_and_testing_media/stockerror.png" alt="Not enough stock error message">
+* __Cookbook name form__ - This form posts the user's cookbook name to the database linked to the user id from the session cookie.
 
-<hr>
+### Edit cookbook form
+
+![Edit cookbook name page screenshot](media/readme-images/edit-cookbook-name-page.png)
+
+* __Edit cookbook name form__ - Once submitted, this form updates the current cookbook on the database linked the user id from the session cookie.
+
+### Contact Form
+
+![Contact Form screenshot](media/readme-images/contact-page.png)
+
+* I have included a functional contact form created using emailjs for users to contact me.
+* When a form is submitted, I receive an email with the user's message, name and email address included so I can respond to their query.
+* All inputs are required.
+* The contact form checks the input is valid before sending and if not it will alert the user - the email input will not work unless a proper email address is added, and you cannot leave any field blank.
+
+## Thank you page
+
+![Thank you re-direct page screenshot](media/readme-images/contact-form-submission-page.png)
+
+* A quick message to the user to confirm their message has been submitted and to redirect them back to the app page within 5 seconds.
+
+## Error 404 page
+
+![Error 404 page screenshot](media/readme-images/404-page.png)
+
+* Should any errors occur, the user will be directed to this page. I have included this page in the sendmail js file function, should the form not successfully submit. The page has a button that links back to the app page, so the user can return back to the main site easily and quickly.
+
+## Possible Future Features
+
+* __Recipe API__ - In future I would like to implement a recipe api, to give the user the opportunity to search through a much larger database of recipes, and give them the oppourtunity to add copies of recipes to their own digital cookbooks.
+* __Shopping List__ - To provide the user with the ability to add items to their own digital shopping list.
+* __Search Bar__ - To implement word search functionality so the user could search recipes using text rather than dropdowns. 
+
+## Accessibility
+
+I did the following to ensure good accessibility:
+* Designed my app intuitively so it was easy to navigate around and create a positive user journey.
+* Added aria labels to the links across the site to achieve a higher accessibility score.
+* Used semantic HTML when building pages.
+* Checked colour contrast against accessbility standards (mentions above in Colour Accessibility section)
+* Added alt tags to all images.
+
+## Media Queries
+
+* I used Media Queries to debug and override some display issues that were not rectified with Materialize's responsive layouts.
+
+# Deployment #
+
+I used Heroku to deploy my site, coupled with ElephantSQL to host my relational database for free.
+
+## ElephantSQL
+
+1. From the [ElephantSQL](https://www.elephantsql.com/) homepage, you need to sign up for an account or log in.
+
+2. Once logged in, you will be directed to the Instances page for your log in. You need to click on 'Create a new instance' in the top right hand corner.
+
+3. Name your database, choose the 'Tiny Turtle' free plan, select the closest region to your location and then click the 'Create Instance' button and the bottom right corner of the page.
+
+4. Then you will be able to see your new instance listed on your instances page. Click on your database name.
+
+5. Within the database details, you will see a URL section -  copy the URL link and save for later during the Heroku deployment.
+
+6. Finally, make sure in the '__init__.py' that you ad the if statement code snippet below. This ensures that SQLAlchemy can still read the external database.
+
+![if statement for init file](/recipes/static/assets/readme-images/init-file-if-statement-db-url.png)
+
+## Heroku
+
+1. Before navigating to the Heroku site to deploy, you need to make sure you have an up-to-date requirements.txt file and Procfile created in your repository. These will make sure Heroku knows all the required applications and their correct versions to deploy and function properly.
+
+2. To create the requirements.txt file, use the following command in your terminal:
+
+    "pip3 freeze --local > requirements.txt"
+
+3. Similarly for the Procfile, use the following command in your terminal (make sure Procfile is capitalised. It does not need a file extension. The example below assumes the python file to launch your app is called 'run.py', so please change out if required):
+
+    "echo web: python run.py > Procfile"
+
+4. Check both files have been created properly. A couple of potential issues to be made a aware of:
+* Make sure Procfile has the Heroku logo next to it in the file explorer view in your IDE
+* Check that there are no blank lines at the end of the Procfile and delete them if found, as this can prevent it from deploying when being read by Heroku. Save, commit and push these files to your repository.
+
+5. Login or register on the [Heroku](https://www.heroku.com) homepage.
+
+6. Once on your dashboard, click the 'New' button and then 'Create new app' when it drops down.
+
+7. Type in a unique app name, choose your region and click 'Create App'.
+
+8. Now this has been created, we can now linke this to our repository in GitHub and our ElephantSQL database. Click on 'settings' heading in the app dashboard, then scroll down to click 'Reveal Config Vars'.
+
+9. Add your config variables in this section for Heroku to build the app - these will be all the variables in your env.py file. It will look like this:
+
+    | KEY | VALUE |
+    | -- | -- |
+    | DATABASE_URL | POSTGRES_DB_URL_FROM_ELEPHANT_SQL |
+    | DEBUG | TRUE |
+    | IP | 0.0.0.0 |
+    | PORT | 5000 |
+    | SECRET_KEY| YOUR_SECRET_KEY |
+
+NOTES:
+- The secret key value can be anything, but needs to be kept confidential.
+- 'POSTGRES_DB_URL_FROM_ELEPHANT_SQL' - paste your ElephantSQL URL link in here.
+- DEBUG set to TRUE is only for during the development phase, so make sure when deploying the finished app, to delete this variable.
+
+10. Now the config variables are set up, go to the 'Deploy' heading. The quickest, easiest way to deploy is through selecting the 'Connect to GitHub' deployment method. Go through the login GitHub authentication steps.
+
+11. Once your GitHub account is connected, select the respository you want to run in the 'Connect to GitHub' section.
+
+12. For easier updating if you make changes to your repository, enable automatic deployment from GitHub.
+
+13. Now you are ready to click the 'Deploy' button from the main branch. Heroku will now build your app.
+
+14. Finally, we need to click on the 'More' button at the top of the dashboard screen and select 'Run Console' from the dropdown. This will set up the models in the ElephantSQL database. This is where we will set up the tables in the database we have created on ElephantSQL.
+
+12. When the terminal loads, type the following, hitting enter at the end of each line:
+
+    python3
+
+    from recipes import db
+
+    db.create_all()
+
+    exit()
+
+13. This has now created the relational database models from your repository into the ElephantSQL database. When you click on 'Open App' on the dashboard, it should now open Instacook.
+
+### Forking the GitHub Repository
+
+Forking allows users to make a copy of an original repository in GitHub and view and make changes to it without changing the original repository. To create a fork:
+1. Once logged into GitHub, follow the link to your chosen GitHub repository, or use the search bar to find it on the GitHub home page.
+2. Once in the repository window, click the 'Fork' drop down arrow button in the top right-hand corner.
+3. Select 'Create new fork'.
+4. Check the details in the window before clicking the green 'Create Fork' button.
+5. You will now be able to find the copy of the repository in your own GitHub account.
+
+### Making a Local Clone
+
+1. Once logged into GitHub, follow the link to your chosen GitHub repository, or use the search bar to find it on the GitHub home page.
+2. Once in the repository window, click the green 'Code' button.
+3. To clone the repository using HTTPS, copy the link provided below the HTTPS header.
+4. Open a terminal in your code editor.
+5. Change the location in the current working directory to where you want the cloned directory to be created.
+6. Type "git clone" into the terminal, and then paste the URL you copied and click enter.
+7. This should have created a local clone of the repository.
+8. Here is the live link to my website - https://instacook-64f0d9d64709.herokuapp.com/
+
+# Testing #
+
+I have documented my testing in a separate document [TESTING.md](TESTING.md)
+
+# Technologies Used #
+
+## Languages used
+* HTML
+* CSS
+* Python
+* Javascript
+
+## Databases used
+* PostgresSQL relational database
+
+## Frameworks, Libraries & Programs Used
+* [Am I Responsive](https://ui.dev/amiresponsive?url=https://instacook-64f0d9d64709.herokuapp.com) - To generate a screen mockup of my web app for this README.
+* [Gitpod](https://gitpod.com) - To create, edit, preview and push my code to my GitHub repository.
+* [Git](https://git-scm.com/) - For version control.
+* [GitHub](Github.com) - To store versions of my site's repository while developing and then for deployment.
+* [Heroku](heroku.com) - I deployed my project through Heroku.
+* [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) - For designing the logo and favicon.
+* [Balsamiq](https://balsamiq.com/) - For wireframes.
+* [Miro](https://miro.com/) - To create my database schema.
+* [Figma ad FigJam](figma.com) - Used as a design board to lay out my wireframes and keep a copy of my design thought process all in one place. I also used it to creat UX flow charts while planning my web app.
+* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Used for exporting any site images as .webp files to reduce file size and in turn improve the performance of my site.
+* [EmailJS](https://www.emailjs.com/) - Used with my functional contact form that sends user messages to my inbox.
+* [ElephantSQL](https://www.elephantsql.com/index.html) - Hosted my PostgresSQL database online.
+* [Coolors](https://coolors.co/contrast-checker/112a46-acc8e5) - Contrast checker to test readability.
+* [Materialize](https://materializecss.com/) - I used this CSS library for certain components in my web app.
+* [Flask](https://flask.palletsprojects.com/en/2.3.x/) - The micro framework I used for my project.
+* [Font Awesome](https://fontawesome.com/) - For all the icons in my web app.
+* Google Dev Tools - Used to troubleshoot issues both front-end and back-end. It also includes Lighthouse which I used for testing.
+* [Google Fonts](https://fonts.google.com/) - To import the fonts I chose for the website.
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Templating engine
+* [html5pattern](html5pattern.com) - The the HTML 5 regex pattern to make sure users create a secure password.
+* [JSHint](https://jshint.com/) - To validate javaScript code.
+* [SQLAlchemy](https://www.sqlalchemy.org/) - Database toolkit library for Python.
+* [W3C](https://validator.w3.org/) - To validate and test HTML and CSS code.
+* [Favicon](https://favicon.io/) - Generated my favicon files from the favicon I designed.
+
+# Code
+
+* **Thank-you page** - I used this code snippet to get the Thank You page to re-direct back to the site after 5 seconds. This was from a [Stack Overflow thread.](https://stackoverflow.com/questions/3292038/redirect-website-after-specified-amount-of-time)
+![Re-direct for the thank you page code snippet](media/readme-images/redirect-code-snippet.png)
+
+* **Favicon** - I used a [Favicon generator](https://favicon.io/) to create the appropriate files for me to upload to my site, as well as this code snippet to install it site-wide.
+
+* **Login functionality** - I used the Code Institute non relational database walkthrough to base my code on for the login and user creation functionality on the site, tailoring it where needed to fit into a relational database setting.
+
+* **Materialize code** - I used a few materialize code snippets in my project:
+    * Sidenav
+    * Footer
+    * Cards
+    * Form
+    * Dropdown selections
+    * Collapsible
+    * Modal pop-ups
+    * Hero slider
+I have annotated within my code where these site.
+
+* **EmailJS** - I have annotated in my code where EmailJS API code appears for the contact form.
+
+* **Recipe Ingredients and Instructions formatting** - Do add breaks into the instructions and ingredient lists of recipes, I used this solution to change '/n' to 'br' breaks for better readability: [Line Breaks Solutions](https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2)
+
+* **Dropdown Filters** - I used the following articles to help formulate the code for my dropdown filters on the search page:
+    * [Query String Parameters](https://www.claravine.com/a-query-on-using-query-strings-parameters/) - reading through this gave me the idea to use this particular solution for this feature.
+    * [Search Parameters](https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams) - reading on URL object and search params which I used in the JS snippets in my script.js file.
+    * [SQLAlchemy filters](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_filter_operators.htm) - how to apply filters with SQLAlchemy.
+    * [Update a query string parameter](https://stackoverflow.com/a/68499745) - I used the solution below to help form the JS function.
+    
+    ![JS query parameters code](media/readme-images/update-query-params-code-snippet.png)
+
+* **Dropdown validation bug fix** - Initially, if dropdowns on Add and edit recipe pages not selected, no validation message was appearing. Upon inspection of the dropdowns in Google Dev Tools I spotted that Materialize adds a "Display:none" to dropdowns, which removes the usual validation messages. I searched for a solution and found this 'select' code snippet [Dropdown solution](https://stackoverflow.com/questions/34248898/how-to-validate-select-option-for-a-materialize-dropdown ) to remove the materialize CSS on it, so that the validation would show again.
+
+# Credits
+
+* Code Institute relational database walkthrough helped me work out how to create and best approach creating this project.
+* Google fonts for ['Pacifico' typography.](https://fonts.google.com/specimen/Pacifico) and ['Poppins' typography.](https://fonts.google.com/specimen/Poppins)
+* Logo and favicon I designed myself.
+* Images in the hero slider are from [Pexels](pexels.com):
+    * https://www.pexels.com/photo/steak-food-769289/
+    * https://www.pexels.com/photo/vegetable-salad-3026808/
+    * https://www.pexels.com/photo/ice-cream-on-bowl-beside-spoon-1343504/
+    * https://www.pexels.com/photo/assorted-salads-on-bowls-1640773/
+* To populate some example recipes, I used some recipes from the [BBC Good Food website](https://www.bbcgoodfood.com/recipes).
+
+
+
+### Thanks
+
+* Martina Terlevic my CI mentor, for her encouragement and advice.
+* Liz Curtis my friend and fellow coder, for patiently listening, giving encouragement and brainstorming with me when I was troubleshooting.
+* The big and little human beings of the Ulloa-James household who have been very patient with me, allowing me the time day or night to get my coding done.
+
 
 
 ### Future Features
