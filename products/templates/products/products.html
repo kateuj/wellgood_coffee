@@ -83,9 +83,9 @@
                             <div class="row">
                                 <div class="col">
                                     {% if variants %}
-                                    <span class="font-weight-bold">From £{{ product.price }}</span>
+                                    <span class="font-weight-bold">From ${{ product.price }}</span>
                                     {% else %}
-                                    <span class="font-weight-bold">£{{ product.price }}</span>
+                                    <span class="font-weight-bold">${{ product.price }}</span>
                                     {% endif %}
                                     {% if product.type %}
                                     <p class="small mt-1 mb-0">
