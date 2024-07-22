@@ -439,7 +439,7 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ### Search bar in navigation bar
 
-![Search page screenshot](media/readme-images/search-bar.png)
+![Search bar screenshot](media/readme-images/search-bar.png)
 
 * __Search product names and descriptions__ - The search bar allows users to add search words that will be cross referenced across the whole database and bring up products that match the search in their name or description.
 
@@ -459,28 +459,21 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ### Products page
 
-![Products page screenshot](media/readme-images/ #TBC)
+![Products page screenshot](media/readme-images/products-page.png)
 
-* __Add recipes button__ - To create new recipes, the 'Add Recipe' button is at the top of the page for a concise user journey.
-* __Back to cookbook button__ - The user can also return to their dashboard cookbook overview with one click with the 'back to cookbooks' button, which is also at the top of the page so it is easily located by the user.
+* __Coffee type tag__ - The Coffee type (Single Origin/Blend) will appear with the respective product if it is in the database. For coffee fanatics this is a key factor to consider when choosing coffee so felt it was important to highlight easily for the user.
 
-* __Collapsible recipe view__ - The collapsible recipe view allows more recipe titles to list on the screen at any given time, whilst also providing the user the ability to drill down into their chosen recipe content with one click.
+* __Flavour notes tag__ - Similarly flavour notes are important when shoppers are considering what coffee to purchase so again, made sure this was visible on the product list pages for the users' ease. When products have a blank flavour note or type field in their variant, it is not set to visible on the product listing.
 
-* __Edit and delete recipe buttons__ - The edit and delete buttons are nested within each collapsible recipe, just below the instructions and ingredients content. These buttons allow the user to edit/delete that specific recipe. With the delete button, a modal pops up to explain to the user that the action cannot be undone, so they fully understand the action before choosing to commit.
+* __Review rating__ - Review ratings are visible for each product on the page.
 
-### Edit product form
+* __Sort bar__ - The sort bar allows users to sort all the products on the page via name, price and rating, to again make it easier for them to tailor their shopping experience based on their requirements.
 
-![Add recipe page screenshot](media/readme-images/add-recipe-page.png)
+![Sort bar screenshot](media/readme-images/sort-bar.png)
 
+* __Edit and delete product buttons__ - The edit and delete buttons appear next to each product when a superuser is logged in so they can find and choose the product they wish to edit more easily than within the django admin panel.
 
-* __Add recipe form__ - Once submitted, this form adds a new recipe to the database linked the cookbook id that was selected in the drop down.
-
-### Delete product form
-
-![Edit recipe page screenshot](media/readme-images/edit-recipe-page.png)
-
-* __Pre-populated edit recipe__ - When the user is directed to the edit recipe page, the input fields are already populated with the previous content, to make editing and updating easy and quick for the user.
-
+![Edit and delete buttons screenshot](media/readme-images/edit-delete-buttons.png)
 
 ### Coffee Quiz
 
