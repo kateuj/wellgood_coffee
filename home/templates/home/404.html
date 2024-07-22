@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<h1>Error 404</h1>
+
+<div class="card-action">
+    <h2 class="main-header">OOPS!</h2>
+    <h3>Looks like this page doesn't exist</h3>
+    <p>Click below to go back to the site</p>
+
+    <div class="card-action">
+        <a href="{% url 'home' %}" aria-label="Link to home page">Back to Home page</a>
+    </div>
+</div>
+{% endblock %}
