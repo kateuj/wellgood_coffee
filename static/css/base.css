@@ -66,8 +66,8 @@ body {
 }
 
 .card-body {
-    background-color: #F07167;
-    color: #FFFFFF;
+    color: #F07167;
+    font-weight: 700;
 }
 
 .home-title {
