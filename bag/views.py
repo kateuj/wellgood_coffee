@@ -22,7 +22,7 @@ def add_to_bag(request, item_id):
 
     if variant.get('id') in list(bag.keys()):
         bag[variant['id']] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {bag[variant['id']]}')
+        messages.success(request, f"Updated {product.name} quantity to {bag[variant['id']]}")
     else:
         bag[variant['id']] = quantity
         messages.success(request, f'Added {product.name} to your bag')
