@@ -13,13 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-from decouple import config
-
 if os.path.exists("env.py"):
     import env
-
-
-development = config("DEVELOPMENT", default=False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = 'DEVELOPMENT' in os.environ
+print(DEBUG)
 
 ALLOWED_HOSTS = ['wellgood-coffee-f56fcdb787d6.herokuapp.com', '8000-kateuj-wellgoodcoffee-rbbzlckbe92.ws.codeinstitute-ide.net']
 CSRF_TRUSTED_ORIGINS = ['https://8000-kateuj-wellgoodcoffee-rbbzlckbe92.ws.codeinstitute-ide.net', 'https://wellgood-coffee-f56fcdb787d6.herokuapp.com']
@@ -219,7 +215,7 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 
-if development:
+if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'wellgoodcoffee@example.com'
 else:
