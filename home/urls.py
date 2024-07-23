@@ -7,5 +7,3 @@ urlpatterns = [
     path('contact/send/', views.contact_send, name='contact_send'),
     path('contact/success/', views.contact_success, name='contact_success'),
 ]
-
-handler404 = 'home.views.custom_404'
