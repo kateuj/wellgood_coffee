@@ -29,7 +29,7 @@ def contact_send(request):
             f'{name} has got in touch',
             message,
             email,
-            ['email_contact'],
+            [email_contact],
             fail_silently=False,
         )
         return redirect('contact_success')
