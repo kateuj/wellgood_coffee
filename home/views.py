@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 
@@ -17,6 +18,7 @@ def contact(request):
 
 
 def contact_send(request):
+    email_contact = settings.EMAIL_CONTACT
 
     if request.method == 'POST':
         name = request.POST['name']
@@ -27,7 +29,7 @@ def contact_send(request):
             f'{name} has got in touch',
             message,
             email,
-            ['EMAIL_CONTACT'],
+            email_contact,
             fail_silently=False,
         )
         return redirect('contact_success')

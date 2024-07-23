@@ -115,9 +115,8 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-EMAIL_CONTACT = os.getenv('EMAIL_CONTACT', '')
+EMAIL_CONTACT = os.environ.get('EMAIL_CONTACT', '')
 WSGI_APPLICATION = 'wellgood_coffee.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
