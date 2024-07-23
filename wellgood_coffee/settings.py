@@ -115,7 +115,7 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
+EMAIL_CONTACT = os.getenv('EMAIL_CONTACT', '')
 WSGI_APPLICATION = 'wellgood_coffee.wsgi.application'
 
 
