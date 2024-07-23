@@ -34,6 +34,15 @@ body {
     background-color: #FFFFFF !important;
 }
 
+.bg-red {
+    background-color: #F07167;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    color: #FFFFFF;
+}
+
 .header-container {
     background-color: #FFFFFF;
 }
@@ -83,6 +92,22 @@ body {
     background: #007BA0 !important;
     color: #FFFFFF;
     min-width: 260px;
+}
+
+.social-networks {
+    text-align: center;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 1.5rem;
+    padding: 1%;
+    color: #FFFFFF;
 }
 
 .btn-blue {

@@ -148,7 +148,7 @@
     {% block footer %}
     <footer>
         <div class="container-fluid fixed-bottom">
-            <div class="row">
+            <div class="row bg-red pt-lg-2 d-none d-lg-flex text-center">
                 <div class="col s12">
                     <!-- If user is logged in, different links display -->
                     {% if request.user.is_authenticated %}
@@ -159,12 +159,22 @@
                     <a href="{% url 'account_signup' %}" class="footer-text" aria-label="Link to register page">Register</a> |
                     <a href="{% url 'contact' %}" class="footer-text" aria-label="Link to contact page">Contact</a>
                     {% endif %}
+                    <ul class="social-networks">
+                        <li><a href="https://www.tiktok.com/@katebrush_art" target="_blank"
+                            aria-label="Link to Tiktok account (Opens new window)"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="https://patreon.com/KateBrushCreator" target="_blank"
+                            aria-label="Link to Patreon account (Opens new window)"><i class="fab fa-patreon"></i></a></li>
+                        <li><a href="https://www.instagram.com/katebrush_art/" target="_blank"
+                            aria-label="Link to Instagram account (Opens new window)"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="about.html" target="_blank" aria-label="Link to about page"><i
+                              class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid fixed-bottom">
-            <div class="container center-align">
-                © 2024 Copyright Text
+            <div class="row bg-red pt-lg-2 d-none d-lg-flex text-center">
+                <div class="col s12">
+                    <p>© 2024 Copyright Text</p>
+                </div>
             </div>
         </div>
     </footer>
