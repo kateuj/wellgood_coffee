@@ -115,7 +115,7 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-EMAIL_CONTACT = os.environ.get('EMAIL_CONTACT', '')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
 WSGI_APPLICATION = 'wellgood_coffee.wsgi.application'
 
 # Database
@@ -211,7 +211,7 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

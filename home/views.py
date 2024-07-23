@@ -18,7 +18,7 @@ def contact(request):
 
 
 def contact_send(request):
-    email_contact = settings.EMAIL_CONTACT
+    EMAIL_HOST_USER = settings.EMAIL_HOST_USER
 
     if request.method == 'POST':
         name = request.POST['name']
@@ -29,7 +29,7 @@ def contact_send(request):
             f'{name} has got in touch',
             message,
             email,
-            [email_contact],
+            [EMAIL_HOST_USER],
             fail_silently=False,
         )
         return redirect('contact_success')
