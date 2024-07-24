@@ -38,6 +38,7 @@
                 <label>
                     <input type="radio" name="q2" value="decaf"> Decaf
                 </label><br>
+                <label>
                 <input type="radio" name="q2" value="either"> I don't mind
                 </label><br>
             </div>
@@ -66,5 +67,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript" src="{% static 'quiz/js/quiz.js' %}"></script>
+<script src="{% static 'quiz/js/quiz.js' %}"></script>
 {% endblock %}
