@@ -27,95 +27,100 @@ I put every template page in my site into the HTML validator. This was useful to
 ### Home Page
 
 #### Before
-![Home page validator results before](media/testing-images/home-page-html-validator-before.png)
+![Home page validator results before](media/testing-images/html-validator/home-page-html-validator-before.png)
 #### After updates
-![Home page validator results after](media/testing-images/home-page-html-validator-after.png)
+![Home page validator results after](media/testing-images/html-validator/home-page-html-validator-after.png)
 
 ### Coffee Quiz
 
 #### Before
-![Quiz page validator results before](media/testing-images/quiz-html-validator-before.png)
+![Quiz page validator results before](media/testing-images/html-validator/quiz-html-validator-before.png)
 #### After updates
-![Quiz page validator results after](media/testing-images/quiz-html-validator-after.png)
+![Quiz page validator results after](media/testing-images/html-validator/quiz-html-validator-after.png)
 
 ### Product List Page
 
-![Product list page validator results after](media/testing-images/products-html-validator.png)
+![Product list page validator results after](media/testing-images/html-validator/products-html-validator.png)
 
 ### Product Detail Page
 
-![Product detail page validator results before](media/testing-images/product-details-html-validator.png)
+![Product detail page validator results before](media/testing-images/html-validator/product-details-html-validator.png)
 
 ### About Page
 
 #### Before
-![About page validator results before](media/testing-images/about-html-validator-before.png)
+![About page validator results before](media/testing-images/html-validator/about-html-validator-before.png)
 #### After updates
-![About page validator results after](media/testing-images/about-html-validator-after.png.png)
+![About page validator results after](media/testing-images/html-validator/about-html-validator-after.png)
 
 ### Contact Page
 
 #### Before
-![Contact page validator results before](media/testing-images/contact-page-html-validator-before.png)
+![Contact page validator results before](media/testing-images/html-validator/contact-page-html-validator-before.png)
 #### After updates
-![Contact page validator results after](media/testing-images/contact-page-html-validator-after.png)
+![Contact page validator results after](media/testing-images/html-validator/contact-page-html-validator-after.png)
 
 ### Profile Page
 
 The validator would not work for the deployed link of this page, saying it was not retreiveable. This will be due to the fact that the profile only loads when a session cookie is in place from a user login, so it would not be able to render in the validator. To work around this I added the raw code into the validator, and checked through for any justified errors. The validator, due to the fact the raw code has templating code in it that refers to the base.html for the header etc., as well as having python language in it, it was throwing alot of irrelevant errors, as you can see below. I checked each of them one by one, and none were justified errors that required changes.
 
-![Profile page validator results after](media/testing-images/profile-html-validator.png)
+![Profile page validator results after](media/testing-images/html-validator/profile-html-validator.png)
 
 ### Product Management Page / Add Product Page
 
-### Add Product Page
-
 The validator highlighted:
-* __Warning:__ Section lacks h2-h6 heading - The design structure does not require a header for this part. It is the section that holds the flash messages, but from a semantic perspective, it is better to keep the section element rather than a div so I ignored this warning.
+* __Warning:__ 
 
-![Add Product page validator results before](recipes/static/assets/readme-images/add-Product-page-validator.png)
+![Add Product page validator results before](media/testing-images/html-validator/product-management-html-validator-before.png)
+
+![Add Product page validator results after](media/testing-images/html-validator/product-management-html-validator-after.png)
 
 ### Edit Product Page
 
-The validator highlighted:
-* __Warning:__ Section lacks h2-h6 heading - The design structure does not require a header for this part. It is the section that holds the flash messages, but from a semantic perspective, it is better to keep the section element rather than a div so I ignored this warning.
-
-![Edit Product page validator results](recipes/static/assets/readme-images/edit-Product-page-validator.png)
+![Edit Product page validator results](media/testing-images/html-validator/edit-product-html-validator.png)
 
 ### Sign In Page
+
+![Sign in page validator results](media/testing-images/html-validator/login-page-html-validator.png)
+
 ### Sign Out Page
+
+![Sign out page validator results](media/testing-images/html-validator/sign-out-page-html-validator.png)
+
 ### Register Page
-### Edit Product Page
+
+![Register page validator results](media/testing-images/html-validator/register-page-html-validator.png)
+
 ### Checkout Page
-### Checkout Success Page
+
+![Checkout page validator results](media/testing-images/html-validator/checkout-page-html-validator.png)
+
 ### Bag Page
-### 404 Page
-### Thank you Page
 
-The validator highlighted:
-* __Warning:__ Section lacks h2-h6 heading - The design structure does not require a header for this part. It is the section that holds the flash messages, but from a semantic perspective, it is better to keep the section element rather than a div so I ignored this warning.
+![Bag page validator results](media/testing-images/html-validator/bag-page-html-validator.png)
 
-![Search page validator results](recipes/static/assets/readme-images/thank-you-page-validator.png)
 
 ## CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
 
 No errors were found in my CSS code when put through the validator.
-![CSS validator results](recipes/static/assets/readme-images/css-validator.png)
+![CSS validator results](media/testing-images/css-validator.png)
 
 ## JSHint Validator - [JSHint](https://jshint.com/)
 
-### Script.js
-* __Warning:__ 'let' is available in ES6 - no need to change
-* __Warning:__ 'M' undefined variable - This error is a side effect of using the Materialize library. I cannot change this quote without it affecting the function with the library, so have ignored this.
-* __Warning:__ 'updateQueryParams' unused variable - this is used within the search page funtionality, so this warning can be ignored in this instance.
+### Product.js
+* __Warning:__ 
 
-![script.js validator results](recipes/static/assets/readme-images/scriptjs-validator.png)
+![product.js validator results](media/testing-images/product-js-validator.png)
 
-### Send_mail.js
-* __Warning:__ 'emailjs' undefined variable - this is the code snippet required to interact with the EmailJS API so I cannot change this.
-* __Warning:__ 'sendMail' unused variable - The variable is called within the contact page in the HTML, so does not require changing.
+### Countryfield.js
+* __Warning:__ 
 
-![sendmail.js validator results](recipes/static/assets/readme-images/scriptjs-validator.png)
+![countryfield.js validator results](media/testing-images/country-field-js-validator.png)
+
+### Quiz.js
+* __Warning:__ 
+
+![quiz.js validator results](media/testing-images/quiz-js-validator.png)
 
 ## Python Validator - [Code Institute Python Linter](https://pep8ci.herokuapp.com/)
 

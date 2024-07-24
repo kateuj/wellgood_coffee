@@ -9,8 +9,9 @@ from .forms import ProductForm
 
 # Create your views here.
 
+
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """A view to show all products, including sorting and search queries"""
 
     products = Product.objects.all()
     query = None
@@ -23,101 +24,111 @@ def all_products(request):
     variants = Variant.objects.all()
 
     if request.GET:
-        if 'sort' in request.GET:
-            sortkey = request.GET['sort']
+        if "sort" in request.GET:
+            sortkey = request.GET["sort"]
             sort = sortkey
-            if sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
-            if 'direction' in request.GET:
-                direction = request.GET['direction']
-                if direction == 'desc':
-                    sortkey = f'-{sortkey}'
+            if sortkey == "name":
+                sortkey = "lower_name"
+                products = products.annotate(lower_name=Lower("name"))
+            if sortkey == "category":
+                sortkey = "category__name"
+            if "direction" in request.GET:
+                direction = request.GET["direction"]
+                if direction == "desc":
+                    sortkey = f"-{sortkey}"
             products = products.order_by(sortkey)
-            
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
+
+        if "category" in request.GET:
+            categories = request.GET["category"].split(",")
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'type' in request.GET:
-            types = request.GET['type'].split(',')
+        if "type" in request.GET:
+            types = request.GET["type"].split(",")
             products = products.filter(type__in=types)
 
-        if 'flavour_notes' in request.GET:
-            flavour_notes = request.GET['flavour_notes'].split(',')
+        if "flavour_notes" in request.GET:
+            flavour_notes = request.GET["flavour_notes"].split(",")
             products = products.filter(flavour_notes__in=flavour_notes)
 
-        if 'roast' in request.GET:
-            roasts = request.GET['roast'].split(',')
+        if "roast" in request.GET:
+            roasts = request.GET["roast"].split(",")
             products = products.filter(roast__in=roasts)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
+        if "q" in request.GET:
+            query = request.GET["q"]
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+                messages.error(request, "You didn't enter any search \
+                               criteria!")
+                return redirect(reverse("products"))
+
+            queries = \
+                Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'
+    current_sorting = f"{sort}_{direction}"
 
     context = {
-        'products': products,
-        'search_term': query,
-        'current_categories': categories,
-        'current_sorting': current_sorting,
+        "products": products,
+        "search_term": query,
+        "current_categories": categories,
+        "current_sorting": current_sorting,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, "products/products.html", context)
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """A view to show individual product details"""
 
     product = get_object_or_404(Product, pk=product_id)
     variants = Variant.objects.filter(product=product_id)
-    sizes = Variant.objects.filter(product=product_id).values('size').distinct()
-    grinds = Variant.objects.filter(product=product_id).values('grind').distinct()
-    variant_prices = Variant.objects.filter(product=product_id).values('price').distinct().order_by('price')
-
+    sizes = Variant.objects.filter(product=product_id).values("size") \
+        .distinct()
+    grinds = Variant.objects.filter(product=product_id).values("grind") \
+        .distinct()
+    variant_prices = (
+        Variant.objects.filter(product=product_id)
+        .values("price")
+        .distinct()
+        .order_by("price")
+    )
 
     context = {
-        'product': product,
-        'variants': variants,
-        'sizes': [i['size'] for i in sizes if i['size'] is not None],
-        'grinds': [i['grind'] for i in grinds if i['grind'] is not None],
-        'variant_prices': [float(i['price']) for i in variant_prices ],
+        "product": product,
+        "variants": variants,
+        "sizes": [i["size"] for i in sizes if i["size"] is not None],
+        "grinds": [i["grind"] for i in grinds if i["grind"] is not None],
+        "variant_prices": [float(i["price"]) for i in variant_prices],
     }
 
-
-    return render(request, 'products/product_detail.html', context)
+    return render(request, "products/product_detail.html", context)
 
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """Add a product to the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
 
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, "Successfully added product!")
+            return redirect(reverse("product_detail", args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, "Failed to add product. Please ensure the form is \
+                valid."
+            )
     else:
         form = ProductForm()
-        
-    template = 'products/add_product.html'
+
+    template = "products/add_product.html"
     context = {
-        'form': form,
+        "form": form,
     }
 
     return render(request, template, context)
@@ -125,28 +136,31 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """Edit a product in the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
 
     product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, "Successfully updated product!")
+            return redirect(reverse("product_detail", args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, "Failed to update product. Please ensure the form \
+                is valid."
+            )
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+        messages.info(request, f"You are editing {product.name}")
 
-    template = 'products/edit_product.html'
+    template = "products/edit_product.html"
     context = {
-        'form': form,
-        'product': product,
+        "form": form,
+        "product": product,
     }
 
     return render(request, template, context)
@@ -154,12 +168,12 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the store """
+    """Delete a product from the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        messages.error(request, "Sorry, only store owners can do that.")
+        return redirect(reverse("home"))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    messages.success(request, "Product deleted!")
+    return redirect(reverse("products"))

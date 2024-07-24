@@ -3,35 +3,39 @@ from .models import Product, Category, Variant
 
 # Register your models here.
 
+
 class VariantAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
-        'product',
-        'name',
-        'price',
-        'grind',
-        'size',
+        "sku",
+        "product",
+        "name",
+        "price",
+        "grind",
+        "size",
     )
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'name',
-        'category',
-        'type',
-        'rating',
-        'price',
-        'image',
-        'roast',
-        'flavour_notes',
+        "name",
+        "category",
+        "type",
+        "rating",
+        "price",
+        "image",
+        "roast",
+        "flavour_notes",
     )
 
-    ordering = ('name',)
+    ordering = ("name",)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
