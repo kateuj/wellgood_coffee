@@ -124,64 +124,29 @@ No errors were found in my CSS code when put through the validator.
 
 ## Python Validator - [Code Institute Python Linter](https://pep8ci.herokuapp.com/)
 
-### run.py file
+After one final code tidy up, I validated all python code that isn't automatically generated, with the Code Institute Python Linter and returned no errors bar the views.py file below for the Home app, which I have amended accordingly.
 
-The validator highlighted:
-* __Error:__"no new line at end of file" - added new line at the bottom of the code which cleared the error.
+### views.py file
 
-![run.py validator results](recipes/static/assets/readme-images/runpy-validator.png)
-
-### routes.py file
-
-The validator highlighted:
-* __Error:__"no new line at end of file" - added new line at the bottom of the code.
-* __Error:__"expected 2 blank lines, found 1" - added extra line.
-* __Error:__"line too long" - split the line up.
-* __Error:__"over-indented" - reduced indentation.
-* __Error:__"blank line contains whitespace" - removed white space.
-* __Error:__"missing whitespace around operator" - added whitespace.
-
-Cleared all the errors below.
-
-![routes.py validator results](recipes/static/assets/readme-images/routespy-validator.png)
-
-### models.py file
-
-The validator highlighted:
-* __Error:__"no new line at end of file" - added new line at the bottom of the code.
-* __Error:__"expected 2 blank lines, found 1" - added extra line.
-* __Error:__"line too long" - split the line up.
-
-Cleared all the errors below.
-
-![models.py validator results](recipes/static/assets/readme-images/modelspy-validator.png)
-
-### __init__.py file
-
-The validator highlighted:
-* __Error:__"indentation not a multiple of 4" - fixed indent.
-* __Error:__"over-indented" - reduced indent.
-* __Error:__"module level import not at top of file" - this line has to be at the end of the file to be called after the rest.
-
-![init.py validator results](recipes/static/assets/readme-images/initpy-validator.png)
+![python validator results](media/testing-images/home-views-python-linter.png)
 
 ## Lighthouse
 
-To test performance and accessibility, I used Lighthouse within the Chrome Developer Tools. Accessibility was down by 1% on the search page, based on the contrast between the pink background and white recipe name text on top.
+To test performance and accessibility, I used Lighthouse within the Chrome Developer Tools. I improved my Accessibility in particular by making sure I had included meta tags and data and that all relevant objects had alt tags and aria labels.
 
 | Page | Results |
 | --- | --- |
 | Home Page | <img src="recipes/static/assets/readme-images/home-page-lighthouse.png" alt="Light house results for home page"> |
 | Login Page | <img src="recipes/static/assets/readme-images/login-page-lighthouse.png" alt="Light house results for log in page"> |
 | Register Page | <img src="recipes/static/assets/readme-images/register-page-lighthouse.png" alt="Light house results for register page"> |
-| profile Page | <img src="recipes/static/assets/readme-images/profile-page-lighthouse.png" alt="Light house results for profile page"> |
-| Search Page | <img src="recipes/static/assets/readme-images/search-page-lighthouse.png" alt="Light house results for search page"> |
+| Profile Page | <img src="recipes/static/assets/readme-images/profile-page-lighthouse.png" alt="Light house results for profile page"> |
 | Contact Page | <img src="recipes/static/assets/readme-images/contact-page-lighthouse.png" alt="Light house results for contact page"> |
-| Add Recipe Page | <img src="recipes/static/assets/readme-images/add-recipe-page-lighthouse.png" alt="Light house results for add recipe page"> |
-| Edit Recipe Page | <img src="recipes/static/assets/readme-images/edit-recipe-page-lighthouse.png" alt="Light house results for edit recipe page"> |
-| Add Product Page | <img src="recipes/static/assets/readme-images/add-Product-page-lighthouse.png" alt="Light house results for add Product page"> |
-| Edit Product Page | <img src="recipes/static/assets/readme-images/edit-Product-page-lighthouse.png" alt="Light house results for edit Product page"> |
-| Recipes Page | <img src="recipes/static/assets/readme-images/recipes-page-lighthouse.png" alt="Light house results for recipes page"> |
+| Product Management Page | <img src="recipes/static/assets/readme-images/add-recipe-page-lighthouse.png" alt="Light house results for product management page"> |
+| Edit Product Page | <img src="recipes/static/assets/readme-images/edit-recipe-page-lighthouse.png" alt="Light house results for edit product page"> |
+| Product List Page | <img src="recipes/static/assets/readme-images/add-Product-page-lighthouse.png" alt="Light house results for Product list page"> |
+| Product Detail Page | <img src="recipes/static/assets/readme-images/edit-Product-page-lighthouse.png" alt="Light house results for Product detail page"> |
+| Checkout Page | <img src="recipes/static/assets/readme-images/recipes-page-lighthouse.png" alt="Light house results for Checkout page"> |
+| Bag Page | <img src="recipes/static/assets/readme-images/recipes-page-lighthouse.png" alt="Light house results for Bag page"> |
 
 # TEST DRIVEN DEVELOPMENT
 
