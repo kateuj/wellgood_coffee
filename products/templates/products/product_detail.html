@@ -131,7 +131,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
     var priceList = JSON.parse("{{ variant_prices }}");
     </script>
     <script type="text/javascript" src="{% static 'products/js/products.js' %}"></script>
