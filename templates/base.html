@@ -147,26 +147,20 @@
 
     {% block footer %}
     <footer>
-        <div class="container-fluid fixed-bottom">
+        <div class="container-fluid">
             <div class="row bg-red pt-lg-2 d-none d-lg-flex text-center">
                 <div class="col s12">
-                    <!-- If user is logged in, different links display -->
-                    {% if request.user.is_authenticated %}
-                    <a href="{% url 'account_logout' %}" class="footer-text" aria-label="Link to log user out">Logout</a> |
-                    <a href="{% url 'contact' %}" class="footer-text" aria-label="Link to contact page">Contact</a>
-                    {% else %}
-                    <a href="{% url 'account_login' %}" class="footer-text" aria-label="Link to login page">Login</a> |
-                    <a href="{% url 'account_signup' %}" class="footer-text" aria-label="Link to register page">Register</a> |
-                    <a href="{% url 'contact' %}" class="footer-text" aria-label="Link to contact page">Contact</a>
-                    {% endif %}
                     <ul class="social-networks">
-                        <li><a href="https://www.tiktok.com/@katebrush_art" target="_blank"
-                            aria-label="Link to Tiktok account (Opens new window)"><i class="fab fa-tiktok"></i></a></li>
-                        <li><a href="https://patreon.com/KateBrushCreator" target="_blank"
-                            aria-label="Link to Patreon account (Opens new window)"><i class="fab fa-patreon"></i></a></li>
-                        <li><a href="https://www.instagram.com/katebrush_art/" target="_blank"
-                            aria-label="Link to Instagram account (Opens new window)"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="about.html" target="_blank" aria-label="Link to about page"><i
+                        <!-- If user is logged in, different links display -->
+                    {% if request.user.is_authenticated %}
+                        <li><a href="{% url 'account_logout' %}" class="footer-text" aria-label="Link to log user out">Logout</a></li> |
+                    {% else %}
+                        <li><a href="{% url 'account_login' %}" class="footer-text" aria-label="Link to login page">Login</a></li> |
+                        <li><a href="{% url 'account_signup' %}" class="footer-text" aria-label="Link to register page">Register</a></li> |
+                    {% endif %}
+                        <li><a href="https://www.instagram.com/condorshrewsbury" target="_blank"
+                            aria-label="Link to Instagram account (Opens new window)"><i class="fab fa-instagram"></i></a></li> |
+                        <li><a href="{% url 'contact' %}" aria-label="Link to contact form"><i
                               class="fa-regular fa-envelope"></i></a></li>
                     </ul>
                 </div>
