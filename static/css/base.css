@@ -146,6 +146,7 @@ input[name='q']::placeholder {
 .strapline-message {
     font-size: 1.2rem;
     font-family: 'Playwrite IE';
+    background-color: #007BA0;
 }
 
 .dark-overlay {
