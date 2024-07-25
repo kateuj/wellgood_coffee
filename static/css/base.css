@@ -12,6 +12,13 @@ body {
     font-family: 'Mulish';
 }
 
+.card-header {
+    text-align: center;
+    font-family: 'Playwrite IE';
+    color: #007BA0;
+    padding: 2%;
+}
+
 .bg-blue {
     background-color: #007BA0 !important;
 }
@@ -22,6 +29,7 @@ body {
 
 .header-container {
     background-color: #FFFFFF;
+    padding-top: 164px;
 }
 
 #delivery-banner {
@@ -161,7 +169,7 @@ input[name='q']::placeholder {
 /* Footer */
 
 footer {
-    position: fixed;
+    position: sticky;
     width: 100%;
     bottom: 0;
     padding-top: 5vh;
@@ -362,14 +370,14 @@ footer {
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
 }
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -377,20 +385,16 @@ footer {
         left: 0;
         z-index: 1030;
     }
-
-    .header-container {
-        padding-top: 164px;
-    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 1203px) {
+@media screen and (max-width: 1203px) {
     footer {
         padding-top: 15vh;
     }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
@@ -400,9 +404,24 @@ footer {
     }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .home-title {
         font-size: 2rem;
         line-height: 6vh;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .mobile-header {
+        padding-top: 1vh;
+    }
+
+    .drop-down {
+        font-size: 1rem;
+        padding-bottom: 2vh;
+    }
+
+    .strapline-message {
+        font-size: 1rem;
     }
 }

@@ -4,7 +4,6 @@
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
-        <div class="col">Want to get in touch?</div>
     </div>
 </div>
 {% endblock %}
@@ -12,8 +11,8 @@
 {% block content %}
 <div class="container-fluid pt-3 pb-5">
     <div class="container">
-        <div class="card shadow my-1 my-lg-5">
-            <h1 class="py-4 pl-4 mb-1 mb-lg-5">Contact Us</h1>
+        <div class="card my-1 my-lg-5">
+            <h1 class="py-4 pl-4 mb-1 mb-lg-5 card-header">Contact Us</h1>
             <form method="post" action="{% url 'contact_send' %}">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
@@ -28,7 +27,7 @@
                     <textarea rows="6" name="message" id="message" class="form-control mb-3" placeholder="Your message..." required></textarea>
 
                     <p class="text-dark text-muted">All form fields above are required</p>
-                    <button type="submit" class="btn btn-lg col-12 col-md-6 col-xl-3" aria-label="Send message">Send</button>
+                    <button type="submit" class="btn btn-lg btn-blue col-12 col-md-6 col-xl-3" aria-label="Send message">Send</button>
                 </fieldset>
             </form>
         </div>
