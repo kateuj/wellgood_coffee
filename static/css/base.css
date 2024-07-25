@@ -19,6 +19,10 @@ body {
     padding: 2%;
 }
 
+.card-spacing {
+    padding: 5%;
+}
+
 .bg-blue {
     background-color: #007BA0 !important;
 }

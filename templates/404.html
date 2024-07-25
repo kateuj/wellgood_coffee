@@ -14,11 +14,13 @@
     <div class="container">
         <div class="card my-1 my-lg-5">
             <h1 class="py-4 pl-4 mb-1 mb-lg-5 card-header">Error 404</h1>
-            <h2 class="main-header">OOPS!</h2>
-            <h3>Looks like this page doesn't exist</h3>
-            <p>Click below to go back to the site</p>
-            <div class="card-action">
-                <a href="{% url 'home' %}" aria-label="Link to home page">Back to Home page</a>
+            <div class="card-spacing">
+                <h2 class="main-header">OOPS!</h2>
+                <h3>Looks like this page doesn't exist</h3>
+                <p>Click below to go back to the site</p>
+                <div class="card-action">
+                    <a href="{% url 'home' %}" aria-label="Link to home page">Back to Home page</a>
+                </div>
             </div>
         </div>
     </div>
