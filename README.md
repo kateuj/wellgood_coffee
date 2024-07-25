@@ -477,24 +477,24 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ### Coffee Quiz
 
-![Coffee Quiz](media/readme-images/coffee-quiz-page.png)  #TBC
+![Coffee Quiz](media/readme-images/coffee-quiz-page.png)
 
 * __Product recommendation result__ - I have seen on Coffee websites often include a coffee quiz as part of their user journey to help shoppers navigate through the range with a simple 3 step quiz. The user chooses their favourite flavour notes along with brewing choice etc. and I have put some basic logic together to give them a product recommendation. In future I would love to develop and polish this concept more, as I feel it really adds a positive experience to the user journey.
 
 ### Contact Form
 
-![Contact Form screenshot](media/readme-images/) #TBC
+![Contact Form screenshot](media/readme-images/contact-us-page.png)
 
-* I have included a functional contact form created using emailjs for users to contact me. #TBC
+* I have included a functional contact form for users to contact me.
 * When a form is submitted, I receive an email with the user's message, name and email address included so I can respond to their query.
 * All inputs are required.
 * The contact form checks the input is valid before sending and if not it will alert the user - the email input will not work unless a proper email address is added, and you cannot leave any field blank.
 
 ## Contact form success page
 
-![Success re-direct page screenshot](media/readme-images/) #TBC
+![Success page screenshot](media/readme-images/contact-success-page.png)
 
-* A quick message to the user to confirm their message has been submitted and to redirect them back to the app page within 5 seconds. #TBC
+* A quick message to the user to confirm their message has been submitted and a link to the home page included.
 
 ## Error 404 page
 
