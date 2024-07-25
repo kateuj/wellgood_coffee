@@ -1,17 +1,9 @@
-h1 {
-    text-align: center;
-}
-    
-    
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Mulish';
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
 .quiz-container {
     background-color: white;
@@ -21,12 +13,21 @@ body {
     max-width: 800px;
     width: 100%;
     margin-top: 200px;
+    
 }
 
 .quiz-header {
-    margin: auto;
     text-align: center;
+    font-family: 'Playwrite IE';
+    color: #007BA0;
+    padding: 2%;
 }
+
+.quiz-content {
+    padding: 5%;
+
+}
+
 .question {
     margin-bottom: 20px;
 }
@@ -34,5 +35,6 @@ body {
     text-align: center;
     display: none;
     font-weight: bold;
-    color: #333;
+    color: #007BA0;
+    padding: 30px;
 }

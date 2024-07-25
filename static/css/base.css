@@ -1,3 +1,5 @@
+/* Sitewide */
+
 html {
     height: 100%;
 }
@@ -10,37 +12,12 @@ body {
     font-family: 'Mulish';
 }
 
-.bg-black {
+.bg-blue {
     background-color: #007BA0 !important;
-}
-
-.strapline-message {
-    font-size: 1.2rem;
-    font-family: 'Playwrite IE';
-}
-
-.dark-overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background-color: #212121 !important;
-    opacity: 50%;
-	z-index: -1;
 }
 
 .bg-white {
     background-color: #FFFFFF !important;
-}
-
-.bg-red {
-    background-color: #F07167;
-    color: #FFFFFF;
-}
-
-.footer-text {
-    color: #FFFFFF;
 }
 
 .header-container {
@@ -52,21 +29,18 @@ body {
     color: #FFFFFF;
 }
 
-.result {
-    padding: 30px;
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: #FFFFFF !important;
+	z-index: -1;
 }
 
 .text-muted {
     color: #F07167 !important;
-}
-
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
 }
 
 .logo-font {
@@ -80,8 +54,10 @@ body {
 }
 
 .home-title {
+    font-size: 3rem;
     color: #FFFFFF !important;
-    line-height: 6rem;
+    line-height: 10vh;
+    padding-bottom: 3%;
 }
 
 .main-logo-link {
@@ -92,26 +68,6 @@ body {
     background: #007BA0 !important;
     color: #FFFFFF;
     min-width: 260px;
-}
-
-.social-networks {
-    text-align: center;
-    padding-left: 0rem;
-    margin-bottom: 0rem;
-}
-
-.social-networks li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 1rem;
-    padding: 0.5%;
-    color: #FFFFFF;
-}
-
-.copyright-text {
-    font-size: 0.7rem;
 }
 
 .btn-blue {
@@ -154,16 +110,6 @@ body {
     font-family: 'Mulish';
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background-color: #FFFFFF !important;
-	z-index: -1;
-}
-
 a.category-badge > span.badge:hover {
     background: #007BA0 !important;
     color: #FFFFFF !important;
@@ -187,7 +133,65 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* Index page */
+
+.strapline-message {
+    font-size: 1.2rem;
+    font-family: 'Playwrite IE';
+}
+
+.dark-overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: #212121 !important;
+    opacity: 50%;
+	z-index: -1;
+}
+
+/* Footer */
+
+.bg-red {
+    background-color: #F07167;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    color: #FFFFFF;
+}
+
+.footer-objects {
+    text-align: center;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.footer-objects li {
+    display: inline;
+}
+
+.footer-objects i {
+    font-size: 1rem;
+    padding: 0.5%;
+    color: #FFFFFF;
+}
+
+.copyright-text {
+    font-size: 0.7rem;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -337,7 +341,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -369,5 +373,12 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 767px) {
+    .home-title {
+        font-size: 2rem;
+        line-height: 6vh;
     }
 }
