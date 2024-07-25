@@ -390,8 +390,11 @@ I had planned in an extra section for the site into the wireframes, which unfort
 ### Database Schema
 The database schema flow charts were created using [DrawSQL](https://drawsql.app/).
 
-<img src="media/readme-images/database-schema.png" alt="Database schema chart"> #TBC
+#### Orders and Products
+<img src="media/readme-images/database-schema-order-products.png" alt="Database schema for orders and products">
 
+#### Profiles
+<img src="media/readme-images/profiles-data-schema.png" alt="Database schema for profiles">
 
 [Back to top](#title)  
 
@@ -407,7 +410,7 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 * __Reponsive Nav Bar__ - The navigation bar at the top of all the pages reduces to an accordion menu on tablet and mobile view for ease for use for the user. The options displayed on the nav bar are also dependent on whether a user is logged in or not, for an optimum user experience where options, such as 'Register' are no longer visible for logged in users. This keeps the pages clean and easier to navigate. I have included a search icon instead of a search bar on mobile and tablet versions, so the bar does not take up unnecessary space on the screen when not required.
 
-* __Footer__ - #TBC Just like the nav bar, the links displayed in the footer are also dependent on whether a user is logged in or not, for an optimum user experience where options, such as 'Register' are no longer visible for logged in users. This keeps the pages clean and easier to navigate.
+* __Footer__ - Just like the nav bar, the links displayed in the footer are also dependent on whether a user is logged in or not, for an optimum user experience where options, such as 'Register' are no longer visible for logged in users. This keeps the pages clean and easier to navigate.
 
 * __Logo__ - I created my simple text logo using the Playwrite IE font to keep a design consistency within the site.
 
@@ -781,7 +784,6 @@ I have documented my testing in a separate document [TESTING.md](TESTING.md)
 * [DrawSQL](https://drawsql.app/) - To create my database schema.
 * [Figma ad FigJam](figma.com) - Used as a design board to lay out my wireframes and keep a copy of my design thought process all in one place. I also used it to creat UX flow charts while planning my web app.
 * [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - Used for exporting any site images as .webp files to reduce file size and in turn improve the performance of my site. I also used it to create the coffee bag mock-up images for all the coffee products.
-* [EmailJS](https://www.emailjs.com/) - Used with my functional contact form that sends user messages to my inbox. #TBC
 * [ElephantSQL](https://www.elephantsql.com/index.html) - Hosted my PostgresSQL database online.
 * [Coolors](https://coolors.co/contrast-checker/112a46-acc8e5) - Contrast checker to test readability.
 * [Django](https://www.djangoproject.com/) - An open source python web framework.
@@ -800,14 +802,9 @@ I have documented my testing in a separate document [TESTING.md](TESTING.md)
 
 # Code #TBC
 
-* **Contact Success page** - I used this code snippet to get the Thank You page to re-direct back to the site after 5 seconds. This was from a [Stack Overflow thread.](https://stackoverflow.com/questions/3292038/redirect-website-after-specified-amount-of-time)
-![Re-direct for the thank you page code snippet](media/readme-images/redirect-code-snippet.png)
-
 * **Favicon** - I used a [Favicon generator](https://favicon.io/) to create the appropriate files for me to upload to my site, as well as this code snippet to install it site-wide.
 
-* **Login functionality** - I used the Code Institute non relational database walkthrough to base my code on for the login and user creation functionality on the site, tailoring it where needed to fit into a relational database setting.
-
-* **EmailJS** - I have annotated in my code where EmailJS API code appears for the contact form.
+* **Login functionality** - I used the Code Institute Boutique Ado walkthrough to base my code on for the login and user creation functionality on the site, tailoring it where needed to fit into a relational database setting.
 
 # Credits
 
