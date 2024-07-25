@@ -147,6 +147,8 @@ input[name='q']::placeholder {
     font-size: 1.2rem;
     font-family: 'Playwrite IE';
     background-color: #007BA0;
+    top: 0;
+    position: sticky;
 }
 
 .dark-overlay {
@@ -165,6 +167,10 @@ input[name='q']::placeholder {
 
 .product-container {
     padding-bottom: 10vh;
+}
+
+.arrow-top {
+    z-index: 100;
 }
 
 /* Footer */
@@ -403,6 +409,8 @@ footer {
     body {
         height: calc(100vh - 116px);
     }
+
+    
 }
 
 @media screen and (max-width: 767px) {
