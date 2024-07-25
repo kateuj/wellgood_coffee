@@ -478,6 +478,12 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ![Edit and delete buttons screenshot](media/readme-images/edit-delete-buttons.png)
 
+### Product Detail page
+
+![Product detail page screenshot](media/readme-images/product-detail-page.png)
+
+* __Edit and delete product buttons__ - The edit and delete buttons appear next to each product when a superuser is logged in so they can find and choose the product they wish to edit more easily than within the django admin panel. #TBC
+
 ### Coffee Quiz
 
 ![Coffee Quiz](media/readme-images/coffee-quiz-page.png)

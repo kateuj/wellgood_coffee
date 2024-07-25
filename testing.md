@@ -165,46 +165,53 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
       <th>As a...</th>
       <th>Goal</th>
       <th>How is it acheived</th>
+      <th>Image</th>
     </tr>
     <tr>
-      <th colspan="3">Viewing and Navigation</th>
+      <th colspan="4">Viewing and Navigation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Visitor</td>
       <td>Clearly identify the purpose of the site</td>
-      <td>Determine whether the site is what I am searching for</td>
+      <td>Big coffee hero image on landing page with 'shop now' call to action</td>
+      <td><img src="media/readme-images/home-page.png" alt="Home Page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>View a list of products</td>
-      <td>Select some to purchase</td>
+      <td>Selection of categories available for shopper to click on in navbar for easy access straight to lists of products</td>
+      <td><img src="media/testing-images/user-story-testing/category-nav-bar.png" alt="Product list pages from nav bar"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Take a coffee quiz</td>
-      <td>To work out what sort of coffee would suit me best</td>
+      <td>Link to coffee quiz in nav bar for quick access</td>
+      <td><img src="media/testing-images/user-story-testing/quiz-nav-bar.png" alt="Quiz Page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>View individual product details</td>
-      <td>To view the price, description, product rating, product image to check before potential purchase</td>
+      <td>Click on a product to view all details on product detail page</td>
+      <td><img src="media/readme-images/product-detail-page.png" alt="Product Detail Page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Easily view my basket total spend at any time</td>
-      <td>Keep to my budget</td>
+      <td>The bag total is visible in the top right hand corner of the screen at all times</td>
+      <td><img src="media/testing-images/user-story-testing/bag-total.png" alt="Bag total"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Easily view my postage total</td>
-      <td>Keep to my budget and decide whether or not to spend more to meet the free postage threshold</td>
+      <td>Delivery total can be seen on the bag page</td>
+      <td><img src="media/testing-images/user-story-testing/delivery-total-bag-page.png" alt="Delivery total"></td>
     </tr>
     </tbody>
     <thead>
     <tr>
-      <th colspan="3">Registration and User Accounts</th>
+      <th colspan="4">Registration and User Accounts</th>
     </tr>
     </thead>
     <tbody>
