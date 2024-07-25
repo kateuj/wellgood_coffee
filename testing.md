@@ -136,17 +136,20 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
 
 | Page | Results |
 | --- | --- |
-| Home Page | <img src="recipes/static/assets/readme-images/home-page-lighthouse.png" alt="Light house results for home page"> |
-| Login Page | <img src="recipes/static/assets/readme-images/login-page-lighthouse.png" alt="Light house results for log in page"> |
-| Register Page | <img src="recipes/static/assets/readme-images/register-page-lighthouse.png" alt="Light house results for register page"> |
-| Profile Page | <img src="recipes/static/assets/readme-images/profile-page-lighthouse.png" alt="Light house results for profile page"> |
-| Contact Page | <img src="recipes/static/assets/readme-images/contact-page-lighthouse.png" alt="Light house results for contact page"> |
-| Product Management Page | <img src="recipes/static/assets/readme-images/add-recipe-page-lighthouse.png" alt="Light house results for product management page"> |
-| Edit Product Page | <img src="recipes/static/assets/readme-images/edit-recipe-page-lighthouse.png" alt="Light house results for edit product page"> |
-| Product List Page | <img src="recipes/static/assets/readme-images/add-Product-page-lighthouse.png" alt="Light house results for Product list page"> |
-| Product Detail Page | <img src="recipes/static/assets/readme-images/edit-Product-page-lighthouse.png" alt="Light house results for Product detail page"> |
-| Checkout Page | <img src="recipes/static/assets/readme-images/recipes-page-lighthouse.png" alt="Light house results for Checkout page"> |
-| Bag Page | <img src="recipes/static/assets/readme-images/recipes-page-lighthouse.png" alt="Light house results for Bag page"> |
+| Home Page | <img src="media/testing-images/lighthouse-testing/home-page-lighthouse.png" alt="Light house results for home page"> |
+| About Page | <img src="media/testing-images/lighthouse-testing/about-page-lighthouse.png" alt="Light house results for about page"> |
+| Login Page | <img src="media/testing-images/lighthouse-testing/login-page-lighthouse.png" alt="Light house results for log in page"> |
+| Register Page | <img src="media/testing-images/lighthouse-testing/register-page-lighthouse.png" alt="Light house results for register page"> |
+| Quiz Page | <img src="media/testing-images/lighthouse-testing/quiz-page-lighthouse.png" alt="Light house results for quiz page"> |
+| Profile Page | <img src="media/testing-images/lighthouse-testing/profile-page-lighthouse.png" alt="Light house results for profile page"> |
+| Contact Page | <img src="media/testing-images/lighthouse-testing/contact-page-lighthouse.png" alt="Light house results for contact page"> |
+| Product Management Page | <img src="media/testing-images/lighthouse-testing/product-management-page-lighthouse.png" alt="Light house results for product management page"> <img src="media/testing-images/lighthouse-testing/product-management-crispy-form-issue.png" alt="Light house crispy form issue"> The accessibility score was lower on this page due to it wanting to see aria labels on certain form inputs. Unfortunately, these particular inputs were crispy form inputs generated so I was not able to rectify this in this particular instance.|
+| Edit Product Page | <img src="media/testing-images/lighthouse-testing/edit-product-page-lighthouse.png" alt="Light house results for edit product page"> |
+| Product List Page | <img src="media/testing-images/lighthouse-testing/products-page-lighthouse-before.png" alt="Light house results for Product list page before"> Before - To improve my scores I removed an unneccessary aria-label and did a sitewide compression of all images <img src="media/testing-images/lighthouse-testing/products-page-lighthouse-after.png" alt="Light house results for Product list page after"> After|
+| Product Detail Page | <img src="media/testing-images/lighthouse-testing/product-detail-page-lightouse-before.png" alt="Light house results for Product detail page"> Before - To improve my scores I removed an unneccessary aria-label and did a sitewide compression of all images <img src="media/testing-images/lighthouse-testing/product-detail-page-lightouse-before.png" alt="Light house results for Product detail page after"> After|
+| Checkout Page | <img src="media/testing-images/lighthouse-testing/checkout-page-lighthouse.png" alt="Light house results for Checkout page"> |
+| Bag Page | <img src="media/testing-images/lighthouse-testing/bag-page-lighthouse.png" alt="Light house results for Bag page"> |
+| Performance issues | <img src="media/testing-images/lighthouse-testing/performance issues.png" alt="General performance issues"> Most pages had a performance score of 85-90 due to the issues above, which has been down to the fact that the site is calling to alot of external sources to load, coupled with the framework meaning that again code is being sourced from numerous files to formulate a singular page. Given more time I would look into this issue further as a future improvement. Compressing the images on the site did improve load time and performance slightly.|
 
 # TEST DRIVEN DEVELOPMENT
 
@@ -156,22 +159,228 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
 
 ## Testing User Stories
 
-### First time user
-
-| Goals | How are they achieved? | Image |
-| --- | --- | --- |
-| As a first time user, I need to be able to understand the purpose of the site instantly and lead intuitively to thr first call-to-action. | This is achieved through a simple and clear synopsis on screen as the first thing the user sees. Right below to call-to-action to 'Register' is easily visible. | ![Home Page](/recipes/static/assets/readme-images/home-page.png) |
-| I want to be able to start creating digital Products quickly and add recipes to them. | Once the new user has registered they are automatically redirected to their profile where they can create Products and the create recipes within them. | ![profile Page](/recipes/static/assets/readme-images/profile-page.png) |
-| I need to have simple instructions and layout so I am not overwhelmed by too much content or instructions. | This is achieved with clear calls to action buttons, like the buttons on each Product card on the user's profile clearly demonstrate what is possible as next steps. | ![profile Page](/recipes/static/assets/readme-images/profile-page.png) |
-| I want to be able to get inspiration and a feel for what other recipes users have uploaded. | Whether logged in or not I can filter through and view all the recipes on the site, with 3 simple dropdown filters. A link to this page is in the nav bar on all pages. | ![Search page](/recipes/static/assets/readme-images/search-page.png)|
-| Should I have any questions or issues, I need to be able to contact the developer easily | The user can find a link to the contact form on all pages in both the nav bar and footer, so wherever the user is looking on the page, a link will always be clearly visible | ![Contact Page](/recipes/static/assets/readme-images/contact-page.png) |
-
-
-### Returning/Frequent user
-| Goals | How are they achieved? | Image |
-| --- | --- | --- |
-| As a returning user, I want to easily log in to my existing account to access my content. | The home page displays a prominent login call to action button and once a user is logged in, they are redirected to their profile to see their current Products.| ![Home Page](/recipes/static/assets/readme-images/home-page.png) ![profile Page](/recipes/static/assets/readme-images/profile-page.png)|
-| I want to be able to modify or delete existing Products and recipes | From their profile, the user can edit their Product names by clicking the edit button on their chosen Product card. They can also delete Products and all recipes within that Product, just by clicking the delete button on the Product card. They will be met with a modal pop-up asking them to confirm their action, to avoid Products and recipes within them being deleted accidentally. From the recipes page view, they can edit and delete recipes using the buttons at the bottom of the recipe info. | ![profile Page](/recipes/static/assets/readme-images/profile-page.png) ![Recipes page](/recipes/static/assets/readme-images/edit-delete-recipe-buttons.png) |
+<table>
+  <thead>
+    <tr>
+      <th>As a...</th>
+      <th>Goal</th>
+      <th>How is it acheived</th>
+    </tr>
+    <tr>
+      <th colspan="3">Viewing and Navigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visitor</td>
+      <td>Clearly identify the purpose of the site</td>
+      <td>Determine whether the site is what I am searching for</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>View a list of products</td>
+      <td>Select some to purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Take a coffee quiz</td>
+      <td>To work out what sort of coffee would suit me best</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>View individual product details</td>
+      <td>To view the price, description, product rating, product image to check before potential purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Easily view my basket total spend at any time</td>
+      <td>Keep to my budget</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Easily view my postage total</td>
+      <td>Keep to my budget and decide whether or not to spend more to meet the free postage threshold</td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr>
+      <th colspan="3">Registration and User Accounts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>New visitor</td>
+      <td>Register for an account</td>
+      <td>To have all orders and profile information in one place for future purchases</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>Login or logout</td>
+      <td>Access my personal account information and previous purchases</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>Reset my password in case I forget it</td>
+      <td>Recover access to my account</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>Receive an email confirmation after registering</td>
+      <td>Verify that my account registration was successful</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>Have a personalised user profile</td>
+      <td>View my personal order history and order confirmation, and save my payment information</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>Have my email address verified by the site</td>
+      <td>Ensure my email address and personal data are safe and secure</td>
+    </tr>
+    <tr>
+      <td>Registered User</td>
+      <td>See my past order history</td>
+      <td>Make repeat orders</td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr>
+      <th colspan="3">Sorting and Searching</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Shopper</td>
+      <td>Sort the list of available products</td>
+      <td>Easily identify the best rated, best priced and categorically sorted products</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Sort a specific category of product</td>
+      <td>Find the best priced or best rated product in a specific category, or sort the products in that category by name</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Sort multiple categories of products simultaneously</td>
+      <td>Find all associated equipment linked to a word search</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Search for a product by name or description</td>
+      <td>Find a specific product I would like to purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Easily see what I've searched for and the number of results</td>
+      <td>Quickly decide whether the product I want is available</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Save my billing and shipping details</td>
+      <td>Checkout even quicker and more conveniently on future orders</td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr>
+      <th colspan="3">Purchasing and Checkout</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Shopper</td>
+      <td>Easily select the size, grind type and quantity of a coffee when purchasing it</td>
+      <td>Ensure I don't accidentally select the wrong product, quantity, grind type or size</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>View items in my bag to be purchased</td>
+      <td>Identify the total cost of my purchase and all items I will receive</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>View the total cost of my purchase before checking out</td>
+      <td>So that I can see what the total cost of my purchase is including any additional costs such as shipping are before making my final purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Adjust the quantity of individual items in my bag</td>
+      <td>Easily make changes to my purchase before checkout</td>
+    </tr>
+        <tr>
+      <td>Shopper</td>
+      <td>Remove items in my bag</td>
+      <td>Easily make changes to my purchase before checkout</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Easily enter my payment information</td>
+      <td>Check out quickly with no hassles</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Feel my personal and payment information is safe and secure</td>
+      <td>Confidently product the needed information to make a purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>View an order confirmation at checkout</td>
+      <td>Verify that I haven't made any mistakes</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Receive an email confirmation after checking out</td>
+      <td>Keep the confirmation of what I've purchase for my records</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Contact the store easily with any questions or concerns</td>
+      <td>Get further information about a product or purchase</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>See at a glance if there are any items in my shopping basket</td>
+      <td>See quickly at a glance if there are any items already in my basket</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>See how much I need to spend to qualify for free shipping</td>
+      <td>Ensure I am getting the best value on potentially larger purchases</td>
+    </tr>
+    <tr>
+      <td>Shopper</td>
+      <td>Be able to checkout without registering for an account</td>
+      <td>Checkout quickly and easily even if I don't want to register for an account with the store</td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr>
+      <th colspan="3">Admin and Store Management</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Store Owner/Staff Member</td>
+      <td>Add a product</td>
+      <td>Add new items to my store</td>
+    </tr>
+    <tr>
+      <td>Store Owner/Staff Member</td>
+      <td>Edit/Update a product</td>
+      <td>Change product prices, descriptions, images and other product criteria</td>
+    </tr>
+    <tr>
+      <td>Store Owner/Staff Member</td>
+      <td>Delete a product</td>
+      <td>Remove items that are no longer for sale</td>
+    </tr>
+    <tr>
+      <td>Store Owner/Staff Member</td>
+      <td>Manage Stock levels</td>
+      <td>Keep track of available inventory</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Devices Used For Testing
 
@@ -189,59 +398,53 @@ Google Pixel - Chrome
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Login button | User is redirected to the Login page when clicked | Clicked Login button | Redirected to the login page | Pass |
-| Register button | User is redirected to the Register page when clicked | Clicked the Register button | Redirected to the register page | Pass  |
 
-### Login
+### Quiz
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Login with correct credentials | User is redirected to the their profile with a flash message at the top of the page that says 'Welcome "Username"' | Used correct credentials in input fields | Redirected to the profile and flash message appeared | Pass |
-| Login with incorrect credentials | User is kept on the Login page and a flash message appears at the top of the page saying 'Incorrect Username and/or Password' | Used incorrect credentials in input fields | Flash message appeared | Pass  |
-| Register link | User is redirected to the Register page when clicked | Clicked the Register button | Redirected to the register page | Pass  |
 
-### Register
+### Products List
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Register with incorrect username format | It stays on the register page and a validation message appears asking them to match the required format. | Entered a username below 5 characters, over 15 characters and with special characters. | Validation message appeared | Pass |
-| Register with incorrect password format | It stays on the register page and a validation message appears asking them to match the required format. | Tried to register with a password below 5 characters, over 15 characters, only numbers, only lowercase letters, only uppercase characters, only lowercase characters and numbers, only uppercase characters and numbers, only special characters. | Validation message appeared | Pass |
-| Input correct username and password. | User is redirected to their profile and flash message 'Registration successful'. | Registered with correct details. | Redirected to the profile with flash message "Registration successful".| Pass |
-| Login link | Redirect to the login page. | Clicked login button | Redirected to the the login page | Pass |
 
-### Search
+### Product Detail
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Select a meal type filter dropdown option | Should filter recipes to show only recipes that match the meal type and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
-| Select a dish origin filter dropdown option | Should filter recipes to show only recipes that match the dish origin and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
-| Select a star rating filter dropdown option | Should filter recipes to show only recipes that match the star rating and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
-| Select a filter dropdown option from two of the dropdowns | Should filter recipes to show only recipes that match the dish origin and selection remain visible in the dropdown | Selected a dropdown option from two dropdowns (tried all combinations) at the same time | Recipes filtered successfully  and selection remained visible in dropdown| Pass |
-| Select a filter dropdown option from all three of the dropdowns | Should filter recipes to show only recipes that match the dish origin | Selected a dropdown option for all three dropdowns at the same time | Recipes filtered successfully and selection remained visible in dropdown| Pass |
-| Clear selection button | Should reset all filters to blank by refreshing the page | Click the 'clear selection' button | Page refreshed successfully | Pass |
-| Collapsed recipe | Should open to display recipe info when clicked | Click recipe title | Recipe info appeared correctly | Pass |
+
+### About
+| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Select a meal type filter dropdown option | Should filter recipes to show only recipes that match the meal type and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
 
 ### Contact
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
-| Leave inputs blank | Stays on page and validation message with appear prompting the user to input info into field | Left username, email and message inputs empty individually before pressing submit button | Validation message appeared to prompt user to add input | Pass |
-| Email input without @ symbol | Validation message appears to prompt user to add @ sign | Input text into email input without @ symbol | Validation message is visible | Pass |
-| Type a message with not enough characters | Validation message is visible | Added an input less than 10 characters long | Validation message is visible | Pass |
-| Type a message with too many characters | Should not be possible, after 750 characters, characters typed will not appear | Tried to type a message with more than 750 characters | No characters typed over 750 characters appear | Pass |
-| Submit will all correct format inputs | Redirect to the thank you page | Input correctly into fields and click submit button | Redirected to thank you page | Pass |
+
+### Login
+| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
+
+### Register
+| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
 
 ### Thank you
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Redirect countdown | Redirect to the home page after 5 second countdown | Load the thank you page | Redirected to home page successfully after 5 seconds | Pass |
 
-### profile
+### Profile
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Add Product button | Redirect to add Product page | Click add Product button | Redirected to add Product page successfully | Pass |
-| Edit Product button | Redirect to edit Product page for specific Product | Click edit Product button | Redirected to edit Product page successfully | Pass |
-| View Recipes button | Redirect to recipes page with view of recipes linked to specific Product | Click view recipes button | Redirected to view recipes page successfully with view of recipes linked to specific Product | Pass |
-| Add Recipe button | Redirect to add recipe page | Click add recipe button | Redirected to add recipe page successfully | Pass |
-| Delete Product button | Modal pop-up to confirm the user wants to delete with 'delete' and 'cancel' buttons | Click delete Product button | Modal pop-up appears with 'delete' or 'cancel' options. Cancel button closes the modal. Delete button successfully deletes the chosen Product | Pass |
 
-### Recipes
+### Product Management
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Add Recipe button | Redirect to add recipe page | Click add recipe button | Redirected to add recipe page successfully | Pass |
@@ -252,39 +455,23 @@ Google Pixel - Chrome
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Pre-populated input field | Previously saved Product name to pre-populate the input field | Direct to the edit Product page from profile | Previously saved Product name was pre-populated into the input field, ready for editing | Pass |
-| Save changes button | Redirect to profile, flash message 'Product updated', with the chosen Product name updated on its respective card | Save changes button | Redirected to profile page successfully with flash message 'Product updated', Product name updated on card | Pass |
 
-### Add Recipe
+### Checkout
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Input fields left empty when form submitted | Validation message to appear "Please fill in this field" | Submit the form with each input left empty on their own | Each input had the validation message appear as expected | Pass |
-| Input fields left too short when form submitted | Validation message to appear "Please lengthen this text to 5 characters or more" | Submit the form with each input short strings individually | Each input had the validation message appear as expected | Pass |
-| Input fields with too many characters | Should not be possible, after max length, characters typed will not appear | Tried to type a message with more than max length in each input field | No characters typed over 750 characters appear | Pass |
-| Create recipe button | Redirect to profile, with recipe in their chosen Product card | Click create recipe button | Redirect to profile successfully, with recipe in their chosen Product card | Pass |
-| Dropdown options left empty | If a dropdown is left empty when form submitted, validation message should appear | Leave each dropdown empty individually to check | The form does not submit, but no validation message appears to tell the user why | Fail |
-After adding an if statement to check if dropdowns are left blank, I re-tested.
-| Dropdown options left empty | If a dropdown is left empty when form submitted, validation message should appear | Leave each dropdown empty individually to check | The form does not submit and flash message appears telling the user to make a selection | Pass |
 
-### Edit Recipe
+### Bag
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Pre-populated input field | Previously saved recipe inputs to pre-populate the input field | Direct to the edit recipe page from profile | Previously saved recipe info was pre-populated into the input field, ready for editing | Pass |
-| Save changes button | Redirect to profile, flash message 'Recipe updated', with the chosen Product name updated on its respective card | Save changes button | Redirected to profile page successfully with flash message 'Product updated', Product name updated on card | Pass |
-
-### Add Product
-| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Create Product button |  | Click create Product button | Redirected to profile page successfully with flash message 'Product created' | Pass |
 
 ### 404 Page
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | User tries to access an incorrect URL or page cannot cannot be found | User is redirected to the 404 page with a message displayed "Sorry this page doesn't exist", with a button linked to the Home page. | Typed an incorrect URL into address bar | Not redirected to custom 404 page. | Fail |
-I revisited the 404 app route and found a code error - not '@app.errorhandler', so fixed this and tested again.
-![404 App route fix](/recipes/static/assets/readme-images/404-page-route-update.png)
-| User tries to access an incorrect URL or page cannot cannot be found | User is redirected to the 404 page with a message displayed "Sorry this page doesn't exist", with a button linked to the Home page. | Typed an incorrect URL into address bar | Redirected to custom 404 page | Pass |
 
-### Log out nav bar
+### Log out
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | User logs out using log out link in nav bar | User is redirected to login page with a message displayed "You have been logged out", and the link disappears from the nav bar, replaced by Login and Register | Click on log out link | Redirected successfully to login page with a message displayed "You have been logged out", and the link disappears from the nav bar. Register and Login reappear as links in nav bar. | Pass |
@@ -294,6 +481,11 @@ I revisited the 404 app route and found a code error - not '@app.errorhandler', 
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Links change when logged in | User logs in and links change from 'Login, Register and Contact' to 'profile, Logout, Contact' | Login to registered user accunt | Links changed from 'Login, Register and Contact' to 'profile, Logout, Contact' | Pass |
+
+### Nav Bar
+| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
 
 ## Bugs
 
