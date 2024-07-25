@@ -353,7 +353,31 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td><img src="media/manual-coffee-grinder.webp" height="130" alt="Manual Coffee Grinder"></td>
       <td><a href="https://www.pexels.com/photo/brown-coffee-grinder-beside-mug-362135/">Image by Mateusz Dach</a> on Pexels</td>
     </tr>
-
+    <tr>
+      <td>Metal Filter</td>
+      <td><img src="media/aeropress-metal-filter.webp" height="130" alt="Metal Filter"></td>
+      <td><a href="https://www.amazon.co.uk/AeroPress-Stainless-Steel-Reusable-Filter/dp/B0B3BTYSTD">Image from</a> Amazon</td>
+    </tr>
+    <tr>
+      <td>V60 Filter Papers</td>
+      <td><img src="media/v60-filter-papers.webp" height="130" alt="V60 Filter papers"></td>
+      <td><a href="https://www.themaltmiller.co.uk/product/hario-v60-coffee-filter-papers-size-02-white-40-pack/?v=79cba1185463">Image from</a> The Malt Miller</td>
+    </tr>
+    <tr>
+      <td>Caramel Syrup</td>
+      <td><img src="media/caramel-syrup.webp" height="130" alt="caramel syrup"></td>
+      <td><a href="https://wavescoffeeco.co.uk/product/caramel-coffee-syrup/">Image from</a> Waves Coffee Co</td>
+    </tr>
+    <tr>
+      <td>Chocolate Syrup</td>
+      <td><img src="media/chocolate-syrup.webp" height="130" alt="chocolate syrup"></td>
+      <td><a href="https://wavescoffeeco.co.uk/product/chocolate-coffee-syrup/">Image from</a> Waves Coffee Co</td>
+    </tr>
+    <tr>
+      <td>Vanilla Syrup</td>
+      <td><img src="media/vanilla-syrup.webp" height="130" alt="vanilla syrup"></td>
+      <td><a href="https://www.amazon.co.uk/Simply-Vanilla-Syrup-1l/dp/B004FN0PA8">Image from</a> Amazon</td>
+    </tr>
   </tbody>
 </table>
 <br>
@@ -767,6 +791,11 @@ Forking allows users to make a copy of an original repository in GitHub and view
 
 # Testing #
 
+### Stripe Test Card Payments
+To put through test payments when using the site, you can use Stripe test card details which appear as:
+
+4242 4242 4242 4242   04/42  424 24242
+
 I have documented my testing in a separate document [TESTING.md](TESTING.md)
 
 [Back to top](#title)  
@@ -823,6 +852,7 @@ I have documented my testing in a separate document [TESTING.md](TESTING.md)
 * Google fonts for ['Playwrite IE' typography.](https://fonts.google.com/specimen/Playwrite+IE) and ['Mulish' typography.](https://fonts.google.com/specimen/Mulish)
 * Logo and favicon I designed myself.
 * Product images I have credited here : [Imagery](#product-images) Most are from [Pexels](pexels.com).
+* [Intl documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) - this site helped me understand Intl number formatting to form a solution for my price display bug in my testing file.
 
 ### Content
 
