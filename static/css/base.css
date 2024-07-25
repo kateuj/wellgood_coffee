@@ -151,7 +151,25 @@ input[name='q']::placeholder {
 	z-index: -1;
 }
 
+
+/* Products pages */
+
+.product-container {
+    padding-bottom: 10vh;
+}
+
 /* Footer */
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5vh;
+}
+
+.footer-container {
+    width: 100%;
+}
 
 .bg-red {
     background-color: #F07167;
@@ -366,6 +384,12 @@ input[name='q']::placeholder {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 1203px) {
+    footer {
+        padding-top: 15vh;
+    }
+}
+
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;

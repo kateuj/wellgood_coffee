@@ -5,3 +5,15 @@ body {
     color: #ffffff;
     font-family: 'Mulish';
 }
+
+.about-container {
+    padding-bottom: 10vh !important;
+}
+
+@media (max-width: 767px) {
+    .home-title {
+        padding-top: 10vh;
+        font-size: 2rem;
+        line-height: 6vh;
+    }
+}
