@@ -63,7 +63,7 @@
                                 {% if sizes %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select aria-label="select size of product" class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
                                         {% for size in sizes %}
                                         <option value="{{ size }}">{{ size }}</option>
                                         {% endfor %}
@@ -74,7 +74,7 @@
                                 {% if grinds %}
                                 <div class="col-12">
                                     <p><strong>Grind Type:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_grind" id='id_product_grind'>
+                                    <select aria-label="select grind of coffee" class="form-control rounded-0 w-50" name="product_grind" id='id_product_grind'>
                                         {% for grind in grinds %}
                                         <option value="{{ grind }}">{{ grind }}</option>
                                         {% endfor %}
@@ -95,12 +95,12 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <input class="form-control qty_input" type="number"
+                                        <input aria-label="quantity of product wanted" class="form-control qty_input" type="number"
                                             name="quantity" value="1" min="1" max="99"
                                             data-item_id="{{ product.id }}"
                                             id="id_qty_{{ product.id }}">
-                                        <div aria-label="increase quantity of product" class="input-group-append">
-                                            <button class="increment-qty btn btn-blue rounded-0"
+                                        <div class="input-group-append">
+                                            <button aria-label="increase quantity of product" class="increment-qty btn btn-blue rounded-0"
                                                 data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
