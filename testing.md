@@ -395,7 +395,7 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
       <td>Store Owner/Staff Member</td>
       <td>Add a product</td>
       <td>When signed in as a superuser, the 'Product Management' link is available in the 'My Profile' dropdown options. On this page the superuser can fill in a form to add new products to the database</td>
-      <td><img src="media/testing-images/user-story-testing/product-management-dropdown.png" alt="product management dropdown"></td>
+      <td><img src="media/readme-images/product-management-page.png" alt="product management page"></td>
     </tr>
     <tr>
       <td>Store Owner/Staff Member</td>
@@ -427,95 +427,121 @@ Google Pixel - Chrome
 ### Home
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Login button | User is redirected to the Login page when clicked | Clicked Login button | Redirected to the login page | Pass |
+| Shop Now | User is redirected to a page with a list of all available products when clicked | Clicked Shop Now button | Redirected to the all products page | Pass |
 
 ### Quiz
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Login with correct credentials | User is redirected to the their profile with a flash message at the top of the page that says 'Welcome "Username"' | Used correct credentials in input fields | Redirected to the profile and flash message appeared | Pass |
+| Submit form | Quiz prints a product recommendation at the bottom of the quiz. | Radio button selected for each question | Product recommendation printed at the bottom | Pass |
 
 ### Products List
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Register with incorrect username format | It stays on the register page and a validation message appears asking them to match the required format. | Entered a username below 5 characters, over 15 characters and with special characters. | Validation message appeared | Pass |
+| Sort items | Products are sorted based on sort selected | Select sort by options each one tested. | Products sorted in the correct order each time | Pass |
+| Back to top arrow | Should be visible and when clicked scroll the page back to the top | Arrow clicked | Page scrolled back to the top | Pass |
+| Edit product | Redirect to edit product detail form page of the specific product being views | Click edit link | Redirected to Edit Product form page | Pass |
+| Delete product | Delete product with one click and message to appear to confirm deletion | Click delete on product no longer required | Product deleted and message appeared in the top right hand corner to confirm this action | Pass |
+
+### Bag
+| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Keep shopping | Redirect back to all products page | Keep Shopping clicked | Redirected back to all products page | Pass |
+| Reduce quantity | Quantity of item to reduce but no less than 1 | Minus button clicked several times | Quantity decreased until it reaches 1 and went no lower | Pass |
+| Increase quantity | Quantity of item to increase incrementally by 1 with each click | Click plus button several times | Quantity contiues to increase with each click by 1 | Pass |
+| Go to checkout | Redirect to checkout page | Click checkout button | Redirected to checkout page | Pass |
+| Update link | Update edited quantity of product and price totals in turn | Click Update link | Quantity updated along with price totals | Pass |
+| Remove link | Remove item from bag and show success message | Click remove link | Item removed from bag and message appeared | Pass |
 
 ### Product Detail
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Select a meal type filter dropdown option | Should filter recipes to show only recipes that match the meal type and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
+| Add to bag | The message appears with what has been added to the bag in the top right hand corner of the screen. The correct product chosen size and grind type where applicable should be added to the bag | Add to bag button clicked | Message appears in top right hand corner | Pass |
+| Choose size (if applicable to product) | Size is visible on relevant product and drop down shows available sizes and can be selected and price changes | Select size option from drop down | Selection successful and price changed accordingly | Pass |
+| Choose grind (if applicable to product) | Grind is visible on coffee products and drop down shows available types and can be selected | Select grind option from drop down | Selection successful | Pass |
+| Keep shopping | Redirect back to all products page | Keep Shopping clicked | Redirected back to all products page | Pass |
+| Reduce quantity | Quantity of item to reduce but no less than 1 | Minus button clicked several times | Quantity decreased until it reaches 1 and went no lower | Pass |
+| Increase quantity | Quantity of item to increase incrementally by 1 with each click | Click plus button several times | Quantity contiues to increase with each click by 1 | Pass |
+| Edit product | Redirect to edit product detail form page of the specific product being views | Click edit link | Redirected to Edit Product form page | Pass |
+| Delete product | Delete product with one click and message to appear to confirm deletion | Click delete on product no longer required | Product deleted and message appeared in the top right hand corner to confirm this action | Pass |
 
 ### About
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Select a meal type filter dropdown option | Should filter recipes to show only recipes that match the meal type and selection remain visible in the dropdown | Selected each of the dropdown options to view recipes filtered for each | Recipes filtered successfully and selection remained visible in dropdown | Pass |
+| Shop Now | User is redirected to a page with a list of all available products when clicked | Clicked Shop Now button | Redirected to the all products page | Pass |
 
 ### Contact
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
+| Leave inputs blank | Stays on page and validation message with appear prompting the user to input info into field | Left username, email and message inputs empty individually before pressing submit button | Validation message appeared to prompt user to add input | Pass |
+| Email input without @ symbol | Validation message appears to prompt user to add @ sign | Input text into email input without @ symbol | Validation message is visible | Pass |
+| Submit will all correct format inputs | Redirect to the thank you page | Input correctly into fields and click submit button | Redirected to thank you page | Pass |
 
 ### Login
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
+| Login with correct credentials | User is redirected to the home page with a flash message at the top of the page that says 'Successfully signed in as "Username"' | Used correct credentials in input fields | Redirected to the Home page and message appeared | Pass |
+| Login with incorrect credentials | User is kept on the Login page and a flash message appears at the top of the page saying 'Incorrect Username and/or Password' | Used incorrect credentials in input fields | Flash message appeared | Pass |
+| Register link | User is redirected to the Register page when clicked | Clicked the Register button | Redirected to the register page | Pass |
 
 ### Register
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
+| Register with incorrect password format | It stays on the register page and a validation message appears asking them to match the required format. | Tried to register with a password below 8 characters, only numbers, only lowercase letters, only uppercase characters, only lowercase characters and numbers, only uppercase characters and numbers, only special characters. | Validation message appeared | Pass |
+| Input correct username and password. | User is redirected to verification page and email sent to their inputted email to verify their account | Registered with correct details. | Redirected to the verification page and received email with link to use to verifiy.| Pass |
+| Login link | Redirect to the login page. | Clicked login button | Redirected to the the login page | Pass |
 
 ### Thank you
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Redirect countdown | Redirect to the home page after 5 second countdown | Load the thank you page | Redirected to home page successfully after 5 seconds | Pass |
+| Back to home page | Redirect to the home page | Click the home page link | Redirected to home page | Pass |
 
 ### Profile
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Add Product button | Redirect to add Product page | Click add Product button | Redirected to add Product page successfully | Pass |
+| Save billing and shipping details | Information saved in Profile area | Inputted fields and clicked 'update information', then leave the page and return to it | Information saved in fields | Pass |
+| View previous order details | Redirected to the previous order summary | Click on order number in order history section | Redirected to order summary page for chosen order | Pass |
 
 ### Product Management
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Add Recipe button | Redirect to add recipe page | Click add recipe button | Redirected to add recipe page successfully | Pass |
-| Back to Products button | Redirect to profile page | Click back to Products button | Redirected to profile page successfully | Pass |
-| Collapsed recipe | Should open to display recipe info when clicked | Click recipe title | Recipe info appeared correctly | Pass |
+| Add Product button | Message to confirm product addition to appear and redirect to product detail page for product that had just been created | Add Product button pressed | Message appeared and redirected to product detail page | Pass |
+| Try to submit with required fields left blank | Error message to appear to highlight issue | Left each required field blank individually | Error message appeared | Pass |
 
 ### Edit Product
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Pre-populated input field | Previously saved Product name to pre-populate the input field | Direct to the edit Product page from profile | Previously saved Product name was pre-populated into the input field, ready for editing | Pass |
+| View product information already inputted | All fields to be pre-populated with existing content | CLick edit button on product | Redirected to the edit product page where all previous content is in the fields | Pass |
+| Edit product info and update | New info to appear on product detail page and message to appear to confirm updates | Edit info in fields and click 'Update Product' button | Redirected to the product detail page, content is updated and a message appears to confirm the changes have been successful | Pass |
 
 ### Checkout
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Input fields left empty when form submitted | Validation message to appear "Please fill in this field" | Submit the form with each input left empty on their own | Each input had the validation message appear as expected | Pass |
-
-### Bag
-| Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Pre-populated input field | Previously saved recipe inputs to pre-populate the input field | Direct to the edit recipe page from profile | Previously saved recipe info was pre-populated into the input field, ready for editing | Pass |
+| Saved Delivery information | Information saved previously in profile page to populate the input fields | Login and go to checkout with item in bag | Info populated in fields successfully | Pass |
+| Adjust bag | Takes user back to their bag | Click Adjust bag button | Successfully redirected back to the bag page | Pass |
+| Complete Order | Order and payment success, redirected to confirmation page and email confirmation sent | Fill in test card details with delivery info, click 'Complete Order' button | Redirected to confirmation and order summary page and email received with order summary included | Pass |
 
 ### 404 Page
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| User tries to access an incorrect URL or page cannot cannot be found | User is redirected to the 404 page with a message displayed "Sorry this page doesn't exist", with a button linked to the Home page. | Typed an incorrect URL into address bar | Not redirected to custom 404 page. | Fail |
+| User tries to access an incorrect URL or page cannot cannot be found | User is redirected to the 404 page with a message displayed "Sorry this page doesn't exist", with a button linked to the Home page. | Typed an incorrect URL into address bar | Redirected to custom 404 page. | Pass |
 
 ### Log out
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| User logs out using log out link in nav bar | User is redirected to login page with a message displayed "You have been logged out", and the link disappears from the nav bar, replaced by Login and Register | Click on log out link | Redirected successfully to login page with a message displayed "You have been logged out", and the link disappears from the nav bar. Register and Login reappear as links in nav bar. | Pass |
-
+| Click one of the logout links | Redirected to logout confirmation page | Click on log out link | Redirected successfully to logout confirmation page | Pass |
 
 ### Footer
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Links change when logged in | User logs in and links change from 'Login, Register and Contact' to 'profile, Logout, Contact' | Login to registered user accunt | Links changed from 'Login, Register and Contact' to 'profile, Logout, Contact' | Pass |
+| Links change when logged in | User logs in and links change from 'Login, Register and Contact' to 'Logout, Contact' | Login to registered user accunt | Links changed from 'Login, Register and Contact' to 'Logout, Contact' | Pass |
 
 ### Nav Bar
 | Feature/Action | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Input first name with over 30 characters | Should not be possible, after 30 characters, characters typed will not appear | Tried to input more than 30 characters | No characters typed over 30 characters appear | Pass |
+| All links working and dropdowns | All should go to relevant links | Clicked all links | All went to respective pages | Pass |
+| Accordion mobile nav bar view | Links to move into accordion view in mobile and tablet view | Tested on mobile and tablet screen size | Accordion view appears and links work | Pass |
+| Search bar | Should produce a list of products that match the keyword searched | Search key word | Product list appears with relevant products that match the key word search | Pass |
 
 ## Bugs
 
