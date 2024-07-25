@@ -185,7 +185,7 @@ I have created this as my fourth milestone project for the Code Institute's Leve
     <tr>
       <td>Shopper</td>
       <td>Feel my personal and payment information is safe and secure</td>
-      <td>Confidently product the needed information to make a purchase</td>
+      <td>Confidently produce the needed information to make a purchase</td>
     </tr>
     <tr>
       <td>Shopper</td>
@@ -238,11 +238,6 @@ I have created this as my fourth milestone project for the Code Institute's Leve
       <td>Store Owner/Staff Member</td>
       <td>Delete a product</td>
       <td>Remove items that are no longer for sale</td>
-    </tr>
-    <tr>
-      <td>Store Owner/Staff Member</td>
-      <td>Manage Stock levels</td>
-      <td>Keep track of available inventory</td>
     </tr>
   </tbody>
 </table>
@@ -489,6 +484,16 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 ![Coffee Quiz](media/readme-images/coffee-quiz-page.png)
 
 * __Product recommendation result__ - I have seen on Coffee websites often include a coffee quiz as part of their user journey to help shoppers navigate through the range with a simple 3 step quiz. The user chooses their favourite flavour notes along with brewing choice etc. and I have put some basic logic together to give them a product recommendation. In future I would love to develop and polish this concept more, as I feel it really adds a positive experience to the user journey.
+
+### Bag page
+
+![Bag page screenshot](media/readme-images/bag-page.png)
+#TBC
+
+### Checkout page
+
+![Checkout page screenshot](media/readme-images/checkout-page.png)
+#TBC
 
 ### Contact Form
 

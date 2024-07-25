@@ -154,7 +154,6 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
 # TEST DRIVEN DEVELOPMENT
 
 
-
 # MANUAL TESTING
 
 ## Testing User Stories
@@ -198,7 +197,7 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
     </tr>
     <tr>
       <td>Shopper</td>
-      <td>Easily view my basket total spend at any time</td>
+      <td>Easily view my bag total spend at any time</td>
       <td>The bag total is visible in the top right hand corner of the screen at all times</td>
       <td><img src="media/testing-images/user-story-testing/bag-total.png" alt="Bag total"></td>
     </tr>
@@ -218,173 +217,197 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
     <tr>
       <td>New visitor</td>
       <td>Register for an account</td>
-      <td>To have all orders and profile information in one place for future purchases</td>
+      <td>'My Account' icon in top right corner of screen at all times with link to register in one click</td>
+      <td><img src="media/testing-images/user-story-testing/bag-total.png" alt="my account icon in nav bar"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>Login or logout</td>
-      <td>Access my personal account information and previous purchases</td>
+      <td>The dropdowns of the 'My Account' icon in the nav bar offers 'Login' as an option, which then changes to the option 'Logout' if they are already logged in.</td>
+      <td><img src="media/testing-images/user-story-testing/logout-option.png" alt="logout option"><img src="media/testing-images/user-story-testing/login-option.png" alt="login option"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>Reset my password in case I forget it</td>
-      <td>Recover access to my account</td>
+      <td>Choice to reset password from login page underneath fields.</td>
+      <td><img src="media/testing-images/user-story-testing/password-reset.png" alt="password reset"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>Receive an email confirmation after registering</td>
-      <td>Verify that my account registration was successful</td>
+      <td>Email received to verify registration</td>
+      <td><img src="media/testing-images/user-story-testing/verify-email-page.png" alt="verification page"><img src="media/testing-images/user-story-testing/verification-email.png" alt="verification email"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>Have a personalised user profile</td>
-      <td>View my personal order history and order confirmation, and save my payment information</td>
+      <td>Once logged in 'My Profile' will appear as a drop down from 'My Account' and will redirect the user to their profile page</td>
+      <td><img src="media/testing-images/user-story-testing/profile-page.png" alt="profile page"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>Have my email address verified by the site</td>
-      <td>Ensure my email address and personal data are safe and secure</td>
+      <td>When the user clicks on the link in their verification email, they go to the confirmation page, click 'Confirm' it verifies their email for the site so the user can login.</td>
+      <td><img src="media/testing-images/user-story-testing/confirm-email.png" alt="confirm email"></td>
     </tr>
     <tr>
       <td>Registered User</td>
       <td>See my past order history</td>
-      <td>Make repeat orders</td>
+      <td>This can be found in 'My Profile' for a logged in user.</td>
+      <td><img src="media/testing-images/user-story-testing/profile-page.png" alt="profile page"></td>
     </tr>
     </tbody>
     <thead>
     <tr>
-      <th colspan="3">Sorting and Searching</th>
+      <th colspan="4">Sorting and Searching</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td>Shopper</td>
       <td>Sort the list of available products</td>
-      <td>Easily identify the best rated, best priced and categorically sorted products</td>
+      <td>Sort by drop on the product list pages</td>
+      <td><img src="media/testing-images/user-story-testing/sort-by-dropdown.png" alt="sort by dropdown"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Sort a specific category of product</td>
-      <td>Find the best priced or best rated product in a specific category, or sort the products in that category by name</td>
+      <td>Sort by drop on the product list pages</td>
+      <td><img src="media/testing-images/user-story-testing/sort-by-dropdown.png" alt="sort by dropdown"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Sort multiple categories of products simultaneously</td>
-      <td>Find all associated equipment linked to a word search</td>
+      <td>Sort by drop on the product list pages</td>
+      <td><img src="media/testing-images/user-story-testing/sort-by-dropdown.png" alt="sort by dropdown"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Search for a product by name or description</td>
-      <td>Find a specific product I would like to purchase</td>
+      <td>Use search bar in nav bar to search desired keywords in product names and descriptions.</td>
+      <td><img src="media/testing-images/user-story-testing/single-origin-search.png" alt="search bar results"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Easily see what I've searched for and the number of results</td>
-      <td>Quickly decide whether the product I want is available</td>
+      <td>Above the product list it displays a string with how many products have been found and what words were searched for in the search bar.</td>
+      <td><img src="media/testing-images/user-story-testing/single-origin-search.png" alt="search bar results"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Save my billing and shipping details</td>
-      <td>Checkout even quicker and more conveniently on future orders</td>
+      <td>Info can be saved in 'My Profile' for a logged in user.</td>
+      <td><img src="media/testing-images/user-story-testing/profile-page.png" alt="profile page"></td>
     </tr>
     </tbody>
     <thead>
     <tr>
-      <th colspan="3">Purchasing and Checkout</th>
+      <th colspan="4">Purchasing and Checkout</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td>Shopper</td>
       <td>Easily select the size, grind type and quantity of a coffee when purchasing it</td>
-      <td>Ensure I don't accidentally select the wrong product, quantity, grind type or size</td>
+      <td>Relevant dropdowns appear on coffee product detail pages only and correlate to the database so the correct item with size and grind is added to the bag</td>
+      <td><img src="media/readme-images/product-detail-page.png" alt="product detail page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>View items in my bag to be purchased</td>
-      <td>Identify the total cost of my purchase and all items I will receive</td>
+      <td>When a product is added to the bag a message will appear in the right hand corner of the page with a summary of what is in the bag. Shoppers can also view the items in the bag by clicking on the bag icon in the nav bar top right hand corner</td>
+      <td><img src="media/readme-images/bag-page.png" alt="bag page"><img src="media//testing-images/user-story-testing/add-to-bag-toast.png" alt="add to bag toast"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>View the total cost of my purchase before checking out</td>
-      <td>So that I can see what the total cost of my purchase is including any additional costs such as shipping are before making my final purchase</td>
+      <td>This can be viewed at the bottom of the bag page</td>
+      <td><img src="media/readme-images/bag-page.png" alt="bag page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Adjust the quantity of individual items in my bag</td>
-      <td>Easily make changes to my purchase before checkout</td>
+      <td>There are plus and minus icons by each product in the bag and the user clicks 'update' to update quantities</td>
+      <td><img src="media/readme-images/bag-page.png" alt="bag page"></td>
     </tr>
         <tr>
       <td>Shopper</td>
       <td>Remove items in my bag</td>
-      <td>Easily make changes to my purchase before checkout</td>
+      <td>The shopper can click 'remove' to remove the item completely from their bag on the bag page</td>
+      <td><img src="media/readme-images/bag-page.png" alt="bag page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Easily enter my payment information</td>
-      <td>Check out quickly with no hassles</td>
+      <td>Form is on the checkout page</td>
+      <td><img src="media/readme-images/checkout-page.png" alt="checkout page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Feel my personal and payment information is safe and secure</td>
-      <td>Confidently product the needed information to make a purchase</td>
+      <td>Used stripe to authenticate payments and send an email to confirm orders</td>
+      <td><img src="media/readme-images/checkout-page.png" alt="checkout page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>View an order confirmation at checkout</td>
-      <td>Verify that I haven't made any mistakes</td>
+      <td>Order summary can be viewed on the checkout page</td>
+      <td><img src="media/readme-images/checkout-page.png" alt="checkout page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Receive an email confirmation after checking out</td>
-      <td>Keep the confirmation of what I've purchase for my records</td>
+      <td>Email sent to shopper after order and purchase has been confirmed</td>
+      <td><img src="media/testing-images/user-story-testing/order-confirmation-email.png" alt="order confirmation email"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Contact the store easily with any questions or concerns</td>
-      <td>Get further information about a product or purchase</td>
+      <td>Users can click on the 'email' contact icon in the footer to fill in a contact form to contact the store</td>
+      <td><img src="media/readme-images/contact-us-page.png" alt="contact form"></td>
     </tr>
     <tr>
       <td>Shopper</td>
-      <td>See at a glance if there are any items in my shopping basket</td>
-      <td>See quickly at a glance if there are any items already in my basket</td>
+      <td>See at a glance if there are any items in my shopping bag</td>
+      <td>The bag icon in the top right hand corner of the screen updates the bag total automatically so users always know if there is anything in the bag or not</td>
+      <td><img src="media/testing-images/user-story-testing/bag-total.png" alt="bag total"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>See how much I need to spend to qualify for free shipping</td>
-      <td>Ensure I am getting the best value on potentially larger purchases</td>
+      <td>User can see by the grand total on the bag page how much more they need to spend to qualify for free shipping</td>
+      <td><img src="media/readme-images/bag-page.png" alt="bag page"></td>
     </tr>
     <tr>
       <td>Shopper</td>
       <td>Be able to checkout without registering for an account</td>
-      <td>Checkout quickly and easily even if I don't want to register for an account with the store</td>
+      <td>You can checkout without logging in</td>
+      <td><img src="media/readme-images/checkout-page.png" alt="checkout page"></td>
     </tr>
     </tbody>
     <thead>
     <tr>
-      <th colspan="3">Admin and Store Management</th>
+      <th colspan="4">Admin and Store Management</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td>Store Owner/Staff Member</td>
       <td>Add a product</td>
-      <td>Add new items to my store</td>
+      <td>When signed in as a superuser, the 'Product Management' link is available in the 'My Profile' dropdown options. On this page the superuser can fill in a form to add new products to the database</td>
+      <td><img src="media/testing-images/user-story-testing/product-management-dropdown.png" alt="product management dropdown"></td>
     </tr>
     <tr>
       <td>Store Owner/Staff Member</td>
       <td>Edit/Update a product</td>
-      <td>Change product prices, descriptions, images and other product criteria</td>
+      <td>On both the product list page alongside each product, as well as in the product detail pages, there are 'Edit' buttons that link to the edit product form</td>
+      <td><img src="media/readme-images//edit-delete-buttons.png" alt="edit link"></td>
     </tr>
     <tr>
       <td>Store Owner/Staff Member</td>
       <td>Delete a product</td>
-      <td>Remove items that are no longer for sale</td>
-    </tr>
-    <tr>
-      <td>Store Owner/Staff Member</td>
-      <td>Manage Stock levels</td>
-      <td>Keep track of available inventory</td>
+      <td>On both the product list page alongside each product, as well as in the product detail pages, there are 'Delete' buttons that link to the edit product form</td>
+      <td><img src="media/readme-images//edit-delete-buttons.png" alt="delete link"></td>
     </tr>
   </tbody>
 </table>
