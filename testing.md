@@ -22,7 +22,7 @@ I have used a mixture of manual and automated testing while developing, both of 
 
 ## HTML Validator - [W3C](https://validator.w3.org/)
 
-I put every template page in my site into the HTML validator. This was useful to highlight some code errors that I had missed looking through manually.
+I put every template page in my site into the HTML validator. This was useful to highlight some code errors that I had missed looking through manually. I have rectified all valid errors and updated my code during this process.
 
 ### Home Page
 
@@ -75,6 +75,8 @@ The validator highlighted:
 
 ![Add Product page validator results after](media/testing-images/html-validator/product-management-html-validator-after.png)
 
+I updated what I could, but the 'aria-describedby' error is automated code wihtin the template and crispy forms that I cannot update. You will see some more of these below.
+
 ### Edit Product Page
 
 ![Edit Product page validator results](media/testing-images/html-validator/edit-product-html-validator.png)
@@ -91,6 +93,8 @@ The validator highlighted:
 
 ![Register page validator results](media/testing-images/html-validator/register-page-html-validator.png)
 
+* Again, this page includes automated code from the crispy forms and templating that I cannot edit to rectify the errors displayed.
+
 ### Checkout Page
 
 ![Checkout page validator results](media/testing-images/html-validator/checkout-page-html-validator.png)
@@ -106,6 +110,9 @@ No errors were found in my CSS code when put through the validator.
 ![CSS validator results](media/testing-images/css-validator.png)
 
 ## JSHint Validator - [JSHint](https://jshint.com/)
+
+All javascript files are working as they should.
+The undefined variables highlighted below are either jquery, or defined in inline script snippets on their respective templates.
 
 ### Product.js
 * __Warning:__ 
@@ -153,6 +160,26 @@ To test performance and accessibility, I used Lighthouse within the Chrome Devel
 
 # TEST DRIVEN DEVELOPMENT
 
+During this last section of lessons in Code Institute I have learnt about Test Driven Development and wanted to demonstrate some of my understanding within this project. It was a steep learning curve but I want to include a snippet of what I had undertaken during the process of creating this project.
+
+I used TDD to begin the coding process for the Profiles app.
+
+1.  I created my first test to fail.
+![Test 1](/media/testing-images/profile-tdd/1-test.png)
+2. I added the UserProfile model.
+![Add UserProfile model](/media/testing-images/profile-tdd/2-add-userprofile-model.png) 
+3. Second test failed because it was not migrated.
+![Second fail](/media/testing-images/profile-tdd/3-test-fail.png) 
+4. The first test passed after performing migrations of the model.
+![First test pass](/media/testing-images/profile-tdd/4-test-pass.png) 
+5. Second profile page view test created to fail.
+![Second test built](/media/testing-images/profile-tdd/5-test-fail.png) 
+6. Added view, still failed.
+![Added view](/media/testing-images/profile-tdd/6-add-view-fail.png)
+7. Added urls, still failed.
+![Added URLs](/media/testing-images/profile-tdd/7-add-urls-fail.png) 
+8. Added template, and the test passed.
+![Added template second test pass](/media/testing-images/profile-tdd/8-add-template-pass.png) 
 
 # MANUAL TESTING
 
@@ -558,5 +585,5 @@ Google Pixel - Chrome
 
 ### Unsolved Bugs
 
-None known at this time.
-drop down for syrups sizes
+* Drop down for Syrup sizes showing Large first, but showing Small price.
+* 

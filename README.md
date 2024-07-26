@@ -15,8 +15,7 @@ I have created this as my fourth milestone project for the Code Institute's Leve
 2. [Features](#features)
 3. [Deployment](#deployment)
 4. [Technologies Used](#technologies-used)
-5. [Code](#code)
-6. [Credits](#credits)
+5. [Credits](#credits)
 
 <img src="(media/readme-images/screen-mock-up.png)" alt="Screen mockup of WellGood Coffee">
 
@@ -501,7 +500,9 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ![Product detail page screenshot](media/readme-images/product-detail-page.png)
 
-* __Edit and delete product buttons__ - The edit and delete buttons appear next to each product when a superuser is logged in so they can find and choose the product they wish to edit more easily than within the django admin panel. #TBC
+* __Edit and delete product buttons__ - The edit and delete buttons appear next to each product when a superuser is logged in so they can find and choose the product they wish to edit more easily than within the django admin panel.
+* __Dropdown options for size and grind type__ - for coffee products to keep the variants all in one place rather than listing them all individually in the product list pages.
+* __Quantity__ - decrease and increase quantity before adding to bag.
 
 ### Coffee Quiz
 
@@ -512,12 +513,19 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 ### Bag page
 
 ![Bag page screenshot](media/readme-images/bag-page.png)
-#TBC
+
+* Users can increase and decrease quantities of items in their bag.
+* Users can remove items from their bag.
+* They can view total price.
+* They can see how much more they need to spend to qualify for free shipping.
 
 ### Checkout page
 
 ![Checkout page screenshot](media/readme-images/checkout-page.png)
-#TBC
+
+* Fields will be pre-populated with any details the user has already saved to reduce checkout time
+* There is an order summary view so shoppers can review their purchase before submitting their payment
+* Once submitted, the user will receive an order confirmation email and an order summary page redirect. 
 
 ### Contact Form
 
@@ -536,7 +544,7 @@ The database schema flow charts were created using [DrawSQL](https://drawsql.app
 
 ## Error 404 page
 
-![Error 404 page screenshot](media/readme-images/) #TBC
+![Error 404 page screenshot](media/readme-images/404-page.png)
 
 * Should any errors occur, the user will be directed to this page. I have included this page in the sendmail js file function, should the form not successfully submit. The page has a button that links back to the app page, so the user can return back to the main site easily and quickly.
 
@@ -840,19 +848,16 @@ I have documented my testing in a separate document [TESTING.md](TESTING.md)
 
 [Back to top](#title)  
 
-# Code #TBC
-
-* **Favicon** - I used a [Favicon generator](https://favicon.io/) to create the appropriate files for me to upload to my site, as well as this code snippet to install it site-wide.
-
-* **Login functionality** - I used the Code Institute Boutique Ado walkthrough to base my code on for the login and user creation functionality on the site, tailoring it where needed to fit into a relational database setting.
-
 # Credits
 
-* Code Institute Boutique Ado walkthrough helped me work out how to create and best approach creating this project.
+* Favicon : I used a [Favicon generator](https://favicon.io/) to create the appropriate files for me to upload to my site, as well as this code snippet to install it site-wide.
+* Code Institute Boutique Ado walkthrough helped me work out how to best approach creating this project, so I have used the tutorials to guide the planning process and basic structure and then heavily modified and build upon the basic code to suit the my site's requirements.
 * Google fonts for ['Playwrite IE' typography.](https://fonts.google.com/specimen/Playwrite+IE) and ['Mulish' typography.](https://fonts.google.com/specimen/Mulish)
 * Logo and favicon I designed myself.
 * Product images I have credited here : [Imagery](#product-images) Most are from [Pexels](pexels.com).
 * [Intl documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) - this site helped me understand Intl number formatting to form a solution for my price display bug in my testing file.
+* [SQLite DB Dumpdata Backup](https://hevodata.com/learn/sqlite-to-postgresql/#Step1) : This showed me how to export my SQLite files into JSON files for me to turn into fixtures for adding to online database.
+* I have used Bootstrap frameworks to build and layout my site.
 
 ### Content
 
