@@ -100,9 +100,10 @@ def remove_from_bag(request, item_id):
                 bag.pop(item_id)
             messages.success(
                 request,
-                f"Removed size {size.upper()} {
-                    product.name
-                } from your bag",
+                msg = (
+                    f"Removed size {size.upper()} {product.name}"
+                    f"from your bag"
+                ),
             )
         else:
             bag.pop(item_id)
