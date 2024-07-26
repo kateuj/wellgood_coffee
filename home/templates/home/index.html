@@ -10,18 +10,20 @@
 {% endblock %}
 
 {% block content %}
-    <div class="relative-container home-div">
-        <div class="row content-wrap">
-            <div  class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font home-title">
-                    Are you ready for your coffee adventure?
-                </h1>
-                <div>
-                    <h4>
-                        <a aria-label="link to all products list" href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3" aria-label="shop products now button">Shop Now</a>
-                    </h4>
-                </div>
+<div class="relative-container home-div">
+    <div class="row content-wrap">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font home-title">
+                Are you ready for your coffee adventure?
+            </h1>
+            <div>
+                <h4>
+                    <a aria-label="link to all products list" href="{% url 'products' %}"
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"
+                        aria-label="shop products now button">Shop Now</a>
+                </h4>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

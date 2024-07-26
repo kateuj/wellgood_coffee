@@ -16,7 +16,8 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
             {% for c in current_categories %}
-            <a aria-label="link to products in category list" class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+            <a aria-label="link to products in category list" class="category-badge text-decoration-none"
+                href="{% url 'products' %}?category={{ c.name }}">
                 <span
                     class="p-2 mt-2 badge badge-white text-blue rounded-0 border border-dark">{{ c.friendly_name }}</span>
             </a>
@@ -55,7 +56,8 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-red mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a aria-label="link to all products list" href="{% url 'products' %}">Products Home</a> | </span>
+                        <span class="small"><a aria-label="link to all products list"
+                                href="{% url 'products' %}">Products Home</a> | </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
@@ -105,8 +107,10 @@
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
-                                        <a aria-label="link to edit product" href="{% url 'edit_product' product.id %}">Edit</a> |
-                                        <a aria-label="link to delete product" class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        <a aria-label="link to edit product"
+                                            href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a aria-label="link to delete product" class="text-danger"
+                                            href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
                                 </div>

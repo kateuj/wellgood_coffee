@@ -5,15 +5,19 @@
                 <ul class="footer-objects">
                     <!-- If user is logged in, different links display -->
                     {% if request.user.is_authenticated %}
-                        <li><a href="{% url 'account_logout' %}" class="footer-text" aria-label="Link to log user out">Logout</a></li>
+                    <li><a href="{% url 'account_logout' %}" class="footer-text"
+                            aria-label="Link to log user out">Logout</a></li>
                     {% else %}
-                        <li><a href="{% url 'account_login' %}" class="footer-text" aria-label="Link to login page">Login</a></li>
-                        <li><a href="{% url 'account_signup' %}" class="footer-text" aria-label="Link to register page">Register</a></li>
+                    <li><a href="{% url 'account_login' %}" class="footer-text"
+                            aria-label="Link to login page">Login</a></li>
+                    <li><a href="{% url 'account_signup' %}" class="footer-text"
+                            aria-label="Link to register page">Register</a></li>
                     {% endif %}
-                        <li><a href="https://www.instagram.com/condorshrewsbury" target="_blank"
-                            aria-label="Link to Instagram account (Opens new window)"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="{% url 'contact' %}" aria-label="Link to contact form"><i
-                            class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/condorshrewsbury" target="_blank"
+                            aria-label="Link to Instagram account (Opens new window)"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="{% url 'contact' %}" aria-label="Link to contact form"><i
+                                class="fa-regular fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
