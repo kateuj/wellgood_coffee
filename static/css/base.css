@@ -44,11 +44,6 @@ body {
     padding-top: 164px;
 }
 
-#delivery-banner {
-    height: 4.5vh;
-    color: #FFFFFF;
-}
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -59,8 +54,20 @@ body {
 	z-index: -1;
 }
 
-.text-muted {
+.text-red {
     color: #F07167 !important;
+}
+
+.text-blue {
+    color: #007BA0 !important;
+}
+
+.text-white {
+    color: #FFFFFF !important;
+}
+
+.border-blue {
+    border: 1px solid #007BA0 !important;
 }
 
 .logo-font {
@@ -73,22 +80,32 @@ body {
     font-weight: 700;
 }
 
-.home-title {
-    font-size: 3rem;
-    color: #FFFFFF !important;
-    line-height: 1.6;
-    padding-bottom: 3%;
+/* Strapline message */
+
+.strapline-message {
+    font-size: 1.2rem;
+    font-family: 'Playwrite IE';
+    background-color: #007BA0;
+    top: 0;
+    position: sticky;
 }
+
+#delivery-banner {
+    height: 4.5vh;
+    color: #FFFFFF;
+}
+
+/* Nav Bar */
 
 .main-logo-link {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: #007BA0 !important;
-    color: #FFFFFF;
-    min-width: 260px;
+.nav-item {
+    font-family: 'Mulish';
 }
+
+/* Buttons */
 
 .btn-blue {
     background: #007BA0 !important; 
@@ -108,6 +125,12 @@ body {
     color: #FFFFFF !important;
 }
 
+.shop-now-button {
+    background: #007BA0 !important;
+    color: #FFFFFF;
+    min-width: 260px;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -116,22 +139,6 @@ body {
 .btn-blue:focus {
     background: #007BA0 !important;
     color: #FFFFFF;
-}
-
-.text-blue {
-    color: #007BA0 !important;
-}
-
-.text-white {
-    color: #FFFFFF !important;
-}
-
-.border-blue {
-    border: 1px solid #007BA0 !important;
-}
-
-.nav-item {
-    font-family: 'Mulish';
 }
 
 a.category-badge > span.badge:hover {
@@ -159,12 +166,11 @@ input[name='q']::placeholder {
 
 /* Index page */
 
-.strapline-message {
-    font-size: 1.2rem;
-    font-family: 'Playwrite IE';
-    background-color: #007BA0;
-    top: 0;
-    position: sticky;
+.home-title {
+    font-size: 3rem;
+    color: #FFFFFF !important;
+    line-height: 1.6;
+    padding-bottom: 3%;
 }
 
 .home-div {
