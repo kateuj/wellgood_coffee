@@ -169,6 +169,7 @@ input[name='q']::placeholder {
 
 .home-div {
     padding-top: 8vh;
+    padding-bottom: 40vh;
 }
 
 .dark-overlay {
@@ -182,6 +183,9 @@ input[name='q']::placeholder {
 	z-index: -1;
 }
 
+.account-forms-container{
+    padding-bottom: 50vh;
+}
 
 /* Products pages */
 
@@ -199,8 +203,9 @@ footer {
     width: 100%;
     background-color: #F07167;
     color: #FFFFFF;
+    position: sticky;
     bottom: 0;
-    position: fixed;
+    margin-top: 2px;
 }
 
 .footer-text {
@@ -429,6 +434,10 @@ footer {
         height: calc(100vh - 116px);
     }
 
+    footer {
+        margin-top: 20px;
+    }
+
     .display-4.logo-font.text-blue {
         font-size: 2rem;
     }
@@ -479,6 +488,7 @@ footer {
 
     .copyright-text {
         font-size: .6rem;
+        text-align: left;
     }
 
     p {
@@ -490,4 +500,7 @@ footer {
         padding: 2%;
     }
 
+    .btn-blue {
+        width: 45vw;
+    }
 }
