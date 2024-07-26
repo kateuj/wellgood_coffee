@@ -17,7 +17,7 @@ I have created this as my fourth milestone project for the Code Institute's Leve
 4. [Technologies Used](#technologies-used)
 5. [Credits](#credits)
 
-<img src="(media/readme-images/screen-mock-up.png)" alt="Screen mockup of WellGood Coffee">
+<img src="media/readme-images/screen-mock-up.png" alt="Screen mockup of WellGood Coffee">
 
 ## User Experience (UX) 
 
