@@ -68,7 +68,7 @@ body {
 .home-title {
     font-size: 3rem;
     color: #FFFFFF !important;
-    line-height: 10vh;
+    line-height: 1.6;
     padding-bottom: 3%;
 }
 
@@ -391,7 +391,7 @@ footer {
 }
 
 /* fixed top navbar only on medium and up */
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -401,15 +401,14 @@ footer {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media screen and (max-width: 1203px) {
+@media (max-width: 1203px) {
 
     .home-div {
         padding-left: 10vw;
     }
 }
 
-@media screen and (max-width: 991px) {
+/* @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
@@ -419,27 +418,67 @@ footer {
     }
 
     
+} */
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .home-title {
         font-size: 2rem;
-        line-height: 6vh;
     }
 }
 
-@media screen and (max-width: 429px) {
-    .mobile-header {
-        padding-top: 1vh;
-        font-size: 0.5rem;
+@media screen and (max-width: 329px) {
+    .navbar-toggler {
+        width: 5vw;
     }
 
-    .drop-down {
-        font-size: 1rem;
-        padding-bottom: 2vh;
-    }
-
-    .strapline-message {
-        font-size: 1rem;
+    .home-title {
+        font-size: 1.5rem;
     }
 }
