@@ -31,6 +31,14 @@ body {
     background-color: #FFFFFF !important;
 }
 
+.bg-warning {
+    background-color: #FED9B7 !important;
+}
+
+.text-primary {
+    color: #007BA0 !important;
+}
+
 .header-container {
     background-color: #FFFFFF;
     padding-top: 164px;
@@ -87,15 +95,15 @@ body {
     color: #FFFFFF;
 }
 
-.btn-outline-black {
+.btn-outline-blue {
     background: #FFFFFF;
     color: #007BA0 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #007BA0;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-blue:hover,
+.btn-outline-blue:active,
+.btn-outline-blue:focus {
     background: #007BA0;
     color: #FFFFFF !important;
 }
@@ -185,6 +193,7 @@ input[name='q']::placeholder {
 
 footer {
     width: 100%;
+    z-index: 90;
 }
 
 .footer-container {
@@ -451,13 +460,13 @@ footer {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-blue.rounded-0,
+    .btn.btn-blue.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-blue.rounded-0.btn-lg,
+    .btn.btn-blue.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -475,7 +484,7 @@ footer {
 
 @media screen and (max-width: 329px) {
     .navbar-toggler {
-        width: 5vw;
+        width: 8vw;
     }
 
     .home-title {
