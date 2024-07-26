@@ -183,7 +183,7 @@ input[name='q']::placeholder {
 	z-index: -1;
 }
 
-.account-forms-container{
+.padding-bottom-container{
     padding-bottom: 50vh;
 }
 
