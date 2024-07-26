@@ -65,9 +65,8 @@ def adjust_bag(request, item_id):
                 bag.pop(item_id)
             messages.success(
                 request,
-                f"Removed size {size.upper()} {
-                    product.name
-                } from your bag",
+                f"Removed \
+                size {size.upper()} {product.name} from your bag",
             )
     else:
         if quantity > 0:
