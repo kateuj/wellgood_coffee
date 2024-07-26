@@ -18,10 +18,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
-    type = None
     flavour_notes = None
-    roast = None
-    variants = Variant.objects.all()
 
     if request.GET:
         if "sort" in request.GET:
@@ -85,9 +82,9 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     variants = Variant.objects.filter(product=product_id)
-    sizes = Variant.objects.filter(product=product_id).values(
-        "size"
-    ).distinct()
+    sizes = Variant.objects.filter(product=product_id).order_by(
+        "price"
+    ).values("size").distinct()
     grinds = Variant.objects.filter(product=product_id).values(
         "grind"
     ).distinct()

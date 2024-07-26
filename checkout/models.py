@@ -6,7 +6,7 @@ from django.conf import settings
 
 from django_countries.fields import CountryField
 
-from products.models import Product, Variant
+from products.models import Variant
 from profiles.models import UserProfile
 
 

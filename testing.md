@@ -582,9 +582,9 @@ Google Pixel - Chrome
 | 4. | The product detail add to bag was not linked up to the bag properly so was not adding the variant products to the bag | I checked that the correct variant product was feeding through to the bag by using print statements, before coming up with the final code to select the correct to add to the bag when the size and grind options are selected on the product detail page. ![Add to bag test](/media/testing-images/bug-fixes/add-to-bag-testing.png) ![Add to bag fix](/media/testing-images/bug-fixes/add-to-bag-fix.png)|
 | 5. | When deploying the site I needed to find a way of transferring all my product data over to my ElephantSQL database, as I had inputted them manually via the admin panel | I found a site that explained how to export db sqlite files into json files and then I could reformat them into fixtures. [SQLite DB Dumpdata Backup](https://hevodata.com/learn/sqlite-to-postgresql/#Step1)|
 | 6. | Checkout was not working because the OrderLineItem model was trying to use the foreign key from the 'Product' model rather than the Variant | I updated the model and views files in the Checkout app to query from the Variant model. ![OrderLineItem Model Fix](/media/testing-images/bug-fixes/orderlineitem-model-fix.png)|
+| 7. | Drop down for Syrup sizes on product detail pages showing Large first, but showing Small price | I added '.order_by("price")' to the query.|
+| 8. | Update and remove buttons appear infront of the footer. | I updated the z-index of the footer to sit on-top of the buttons which looking into Bootstrap documentation automatically have a z-index of 2.|
 
 ### Unsolved Bugs
 
-* Drop down for Syrup sizes showing Large first, but showing Small price.
-* Update and remove buttons appear infront of the footer.
-* Excess scroll on home page.
+* Excess scroll on home page, and account pages - This is due to the templating making it difficult to get the footer to stay at the bottom of the page.

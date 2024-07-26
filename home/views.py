@@ -37,7 +37,8 @@ def contact_send(request):
         )
         return redirect("contact_success")
     else:
-        messages.error(request, "Please check your form is valid and try again.")
+        messages.error(request, "Please check your form is valid \
+        and try again.")
 
     return render(request, "home/contact.html")
 

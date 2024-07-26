@@ -170,6 +170,7 @@ input[name='q']::placeholder {
 .home-div {
     padding-top: 8vh;
     padding-bottom: 40vh;
+    padding-left: 10vw;
 }
 
 .dark-overlay {
@@ -415,13 +416,6 @@ footer {
 
     .header-container {
         padding-top: 164px;
-    }
-}
-
-@media (max-width: 1203px) {
-
-    .home-div {
-        padding-left: 10vw;
     }
 }
 
