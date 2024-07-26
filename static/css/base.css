@@ -155,6 +155,10 @@ input[name='q']::placeholder {
     position: sticky;
 }
 
+.home-div {
+    padding-top: 8vh;
+}
+
 .dark-overlay {
 	height: 100%;
 	width: 100%;
@@ -180,10 +184,7 @@ input[name='q']::placeholder {
 /* Footer */
 
 footer {
-    position: sticky;
     width: 100%;
-    bottom: 0;
-    padding-top: 5vh;
 }
 
 .footer-container {
@@ -193,6 +194,8 @@ footer {
 .bg-red {
     background-color: #F07167;
     color: #FFFFFF;
+    bottom: 0;
+    position: fixed;
 }
 
 .footer-text {
@@ -400,8 +403,9 @@ footer {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media screen and (max-width: 1203px) {
-    footer {
-        padding-top: 15vh;
+
+    .home-div {
+        padding-left: 10vw;
     }
 }
 
@@ -427,6 +431,7 @@ footer {
 @media screen and (max-width: 429px) {
     .mobile-header {
         padding-top: 1vh;
+        font-size: 0.5rem;
     }
 
     .drop-down {
