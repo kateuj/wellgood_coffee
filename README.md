@@ -328,6 +328,11 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td><a href="https://www.pexels.com/photo/brewing-coffee-in-a-dripper-15672166/">Image by Onur Kaya</a> on Pexels</td>
     </tr>
     <tr>
+      <td>Electric Grinder</td>
+      <td><img src="media/electric-espresso-grinder.webp" height="130" alt="Electric grinder"></td>
+      <td><a href="https://www.pexels.com/photo/crop-cafe-employees-with-coffee-grinders-and-machines-at-work-6205608/">Image by Tim Douglas</a> on Pexels</td>
+    </tr>
+    <tr>
       <td>Blend Coffee Bean Gift Set</td>
       <td><img src="media/blend-coffee-bags.webp" height="130" alt="Coffee Blends Gift Set"></td>
       <td><a href="https://www.pexels.com/photo/pack-of-coffee-in-different-size-13741286/">Image by Dorukhan Pekcan</a> on Pexels</td>
@@ -346,6 +351,17 @@ I chose a cursive font for titles, 'Playwrite IE' and 'Mulish' a simple sans-ser
       <td>Grinder, Mug and Coffee Set</td>
       <td><img src="media/gift-set.webp" height="130" alt="Grinder, Mug and Coffee Set"></td>
       <td><a href="https://www.pexels.com/photo/cup-with-mustache-and-beard-pattern-on-box-7488474/">Image by Karen Laårk Boshoff</a> on Pexels</td>
+    </tr>
+    <tr>
+      <td>V60 Plastic</td>
+      <td><img src="media/v60-plastic-image.webp" height="130" alt="V60 Plastic"></td>
+      <td><a href="https://www.pexels.com/photo/red-and-clear-glass-coffee-dripper-8211266/">Image by Arun Thomas</a> on Pexels</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>V60 Glass</td>
+      <td><img src="media/v60-product-image.webp" height="130" alt="V60 Glass"></td>
+      <td><a href="https://www.pexels.com/photo/preparing-coffee-in-the-dripper-v60-15672165/">Image by Onur Kaya</a> on Pexels</td>
     </tr>
     <tr>
       <td>Manual Coffee Grinder</td>
