@@ -1,25 +1,25 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="font-weight-bold nav-link text-blue mr-5" href="{% url 'home' %}" id="home-link">
+            <a aria-label="link to home page" class="font-weight-bold nav-link text-blue mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'quiz' %}" id="coffee-quiz-link">
+            <a aria-label="link to quiz page" class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'quiz' %}" id="coffee-quiz-link">
                 Coffee Quiz
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'products' %}?category=coffee" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a aria-label="link to all coffee products" class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'products' %}?category=coffee" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop Coffees
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="coffee-link">
-                <a href="{% url 'products' %}?type=Blend" class="dropdown-item">Blends</a>
-                <a href="{% url 'products' %}?q=origin" class="dropdown-item">Single Origin</a>
-                <a href="{% url 'products' %}?q=decaf" class="dropdown-item">Decaf</a>
-                <a href="{% url 'products' %}?category=syrups" class="dropdown-item">Syrups</a>
-                <a href="{% url 'products' %}?category=coffee" class="dropdown-item">All coffee</a>
+                <a aria-label="link to coffee blend products" href="{% url 'products' %}?type=Blend" class="dropdown-item">Blends</a>
+                <a aria-label="link to single origin cofffee products" href="{% url 'products' %}?q=origin" class="dropdown-item">Single Origin</a>
+                <a aria-label="link to decaf coffee products" href="{% url 'products' %}?q=decaf" class="dropdown-item">Decaf</a>
+                <a aria-label="link to coffee syrups" href="{% url 'products' %}?category=syrups" class="dropdown-item">Syrups</a>
+                <a aria-label="link to all coffee products" href="{% url 'products' %}?category=coffee" class="dropdown-item">All coffee</a>
             </div>
         </li>
 
@@ -28,26 +28,26 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
-                <a href="{% url 'products' %}?category=brewing_equipment" class="dropdown-item">Brewing Equipment</a>
-                <a href="{% url 'products' %}?category=grinders" class="dropdown-item">Grinders</a>
-                <a href="{% url 'products' %}?category=filter_paper" class="dropdown-item">Filter Papers</a>
-                <a href="{% url 'products' %}?q=v60" class="dropdown-item">V60</a>
-                <a href="{% url 'products' %}?q=aeropress" class="dropdown-item">Aeropress</a>
+                <a aria-label="link to brewing equipment products" href="{% url 'products' %}?category=brewing_equipment" class="dropdown-item">Brewing Equipment</a>
+                <a aria-label="link to grinders" href="{% url 'products' %}?category=grinders" class="dropdown-item">Grinders</a>
+                <a aria-label="link to filter papers" href="{% url 'products' %}?category=filter_paper" class="dropdown-item">Filter Papers</a>
+                <a aria-label="link to V60s products" href="{% url 'products' %}?q=v60" class="dropdown-item">V60</a>
+                <a aria-label="link to Aeropress products" href="{% url 'products' %}?q=aeropress" class="dropdown-item">Aeropress</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'products' %}?category=gift_sets" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a aria-label="link to gift products" class="font-weight-bold nav-link drop-down text-blue mr-5" href="{% url 'products' %}?category=gift_sets" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gifts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
-                <a href="{% url 'products' %}?category=gift_sets" class="dropdown-item">Gifts & Bundles</a>
-                <a href="{% url 'products' %}?category=starter_kits" class="dropdown-item">Starter Kits</a>
+                <a aria-label="link to gift products" href="{% url 'products' %}?category=gift_sets" class="dropdown-item">Gifts & Bundles</a>
+                <a aria-label="link to starter kits" href="{% url 'products' %}?category=starter_kits" class="dropdown-item">Starter Kits</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link drop-down text-blue" href="{% url 'about' %}" id="about-link">
+            <a aria-label="link to about page" class="font-weight-bold nav-link drop-down text-blue" href="{% url 'about' %}" id="about-link">
                 About
             </a>
         </li>
