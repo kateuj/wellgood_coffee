@@ -586,4 +586,4 @@ Google Pixel - Chrome
 ### Unsolved Bugs
 
 * Drop down for Syrup sizes showing Large first, but showing Small price.
-* 
+* Update and remove buttons appear infront of the footer.
